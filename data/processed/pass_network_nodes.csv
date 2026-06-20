@@ -1,0 +1,1979 @@
+match_id,team,player,total_passes_sent,total_passes_received,weighted_degree
+3857254,Denmark,Andreas Christensen,78,73,151
+3857254,Denmark,Christian Dannemann Eriksen,66,67,133
+3857254,Denmark,Joachim Andersen,62,58,120
+3857254,Denmark,Joakim Mæhle,43,40,83
+3857254,Denmark,Kasper Dolberg,10,16,26
+3857254,Denmark,Kasper Schmeichel,22,13,35
+3857254,Denmark,Mathias Jensen,28,29,57
+3857254,Denmark,Mikkel Damsgaard,22,23,45
+3857254,Denmark,Pierre-Emile Højbjerg,68,68,136
+3857254,Denmark,Simon Thorup Kjær,50,45,95
+3857254,Denmark,Thomas Delaney,26,26,52
+3857254,Denmark,Andreas Evald Cornelius,3,12,15
+3857254,Denmark,Andreas Skov Olsen,19,30,49
+3857254,Denmark,Rasmus Nissen Kristensen,44,39,83
+3857254,Denmark,Jesper Lindstrøm,3,5,8
+3857254,Tunisia,Ali Abdi,27,29,56
+3857254,Tunisia,Anis Ben Slimane,17,18,35
+3857254,Tunisia,Aymen Dahmen,25,19,44
+3857254,Tunisia,Aïssa Bilal Laïdouni,36,32,68
+3857254,Tunisia,Ellyes Joris Skhiri,30,24,54
+3857254,Tunisia,Issam Jebali,15,20,35
+3857254,Tunisia,Montassar Omar Talbi,38,33,71
+3857254,Tunisia,Naïm Sliti,6,8,14
+3857254,Tunisia,Youssef Msakni,19,25,44
+3857254,Tunisia,Dylan Daniel Mahmoud Bronn,30,31,61
+3857254,Tunisia,Mohamed Dräger,23,24,47
+3857254,Tunisia,Yassine Meriah,44,47,91
+3857254,Tunisia,Taha Yassine Khenissi,1,2,3
+3857254,Tunisia,Hannibal Mejbri,2,1,3
+3857254,Tunisia,Ferjani Sassi,1,2,3
+3857254,Tunisia,Wajdi Kechrida,1,0,1
+3857255,Japan,Ao Tanaka,20,21,41
+3857255,Japan,Daichi Kamada,10,14,24
+3857255,Japan,Daizen Maeda,3,3,6
+3857255,Japan,Hidemasa Morita,26,25,51
+3857255,Japan,Junya Ito,20,18,38
+3857255,Japan,Kaoru Mitoma,8,10,18
+3857255,Japan,Ko Itakura,16,12,28
+3857255,Japan,Maya Yoshida,17,12,29
+3857255,Japan,Ritsu Doan,2,7,9
+3857255,Japan,Shogo Taniguchi,26,18,44
+3857255,Japan,Takuma Asano,4,7,11
+3857255,Japan,Takefusa Kubo,6,10,16
+3857255,Japan,Yuto Nagatomo,7,10,17
+3857255,Japan,Shūichi Gonda,11,9,20
+3857255,Japan,Takehiro Tomiyasu,1,1,2
+3857255,Spain,Alejandro Balde Martínez,58,54,112
+3857255,Spain,Daniel Olmo Carvajal,36,51,87
+3857255,Spain,Pau Francisco Torres,171,178,349
+3857255,Spain,Pedro González López,116,121,237
+3857255,Spain,Rodrigo Hernández Cascante,206,193,399
+3857255,Spain,Unai Simón Mendibil,37,28,65
+3857255,Spain,Anssumane Fati,17,18,35
+3857255,Spain,Jordi Alba Ramos,49,47,96
+3857255,Spain,Marco Asensio Willemsen,20,33,53
+3857255,Spain,Sergio Busquets i Burgos,69,63,132
+3857255,Spain,César Azpilicueta Tanco,70,65,135
+3857255,Spain,Nicholas Williams Arthuer,22,24,46
+3857255,Spain,Pablo Martín Páez Gavira,41,41,82
+3857255,Spain,Álvaro Borja Morata Martín,11,17,28
+3857255,Spain,Daniel Carvajal Ramos,57,44,101
+3857255,Spain,Ferrán Torres García,13,16,29
+3857256,Serbia,Aleksandar Mitrović,17,24,41
+3857256,Serbia,Andrija Živković,21,26,47
+3857256,Serbia,Dušan Tadić,28,34,62
+3857256,Serbia,Dušan Vlahović,3,11,14
+3857256,Serbia,Filip Kostić,35,30,65
+3857256,Serbia,Saša Lukić,53,47,100
+3857256,Serbia,Sergej Milinković-Savić,26,23,49
+3857256,Serbia,Strahinja Pavlović,66,65,131
+3857256,Serbia,Milos Veljkovic,29,26,55
+3857256,Serbia,Nemanja Maksimović,17,11,28
+3857256,Serbia,Nikola Milenković,51,52,103
+3857256,Serbia,Vanja Milinković Savić,30,24,54
+3857256,Serbia,Luka Jović,7,12,19
+3857256,Serbia,Filip Đuričić,2,3,5
+3857256,Serbia,Nemanja Gudelj,17,12,29
+3857256,Serbia,Nemanja Radonjić,5,7,12
+3857256,Switzerland,Breel-Donald Embolo,14,23,37
+3857256,Switzerland,Djibril Sow,23,23,46
+3857256,Switzerland,Edimilson Fernandes,13,11,24
+3857256,Switzerland,Granit Xhaka,52,45,97
+3857256,Switzerland,Remo Freuler,14,21,35
+3857256,Switzerland,Ruben Vargas,17,23,40
+3857256,Switzerland,Silvan Widmer,50,43,93
+3857256,Switzerland,Xherdan Shaqiri,16,26,42
+3857256,Switzerland,Christian Fassnacht,8,8,16
+3857256,Switzerland,Ricardo Iván Rodríguez Araya,31,36,67
+3857256,Switzerland,Denis Lemi Zakaria Lako Lado,8,5,13
+3857256,Switzerland,Manuel Obafemi Akanji,46,41,87
+3857256,Switzerland,Fabian Lukas Schär,35,30,65
+3857256,Switzerland,Gregor Kobel,19,10,29
+3857256,Switzerland,Noah Okafor,0,1,1
+3857257,Australia,Aaron Mooy,23,22,45
+3857257,Australia,Craig Goodwin,12,17,29
+3857257,Australia,Jackson Irvine,21,19,40
+3857257,Australia,Keanu Baccus,7,9,16
+3857257,Australia,Kye Rowles,21,15,36
+3857257,Australia,Mathew Leckie,18,31,49
+3857257,Australia,Mathew Ryan,24,12,36
+3857257,Australia,Miloš Degenek,22,16,38
+3857257,Australia,Mitchell Thomas Duke,13,23,36
+3857257,Australia,Riley McGree,11,18,29
+3857257,Australia,Ajdin Hrustic,1,0,1
+3857257,Australia,Aziz Eraltay Behich,29,24,53
+3857257,Australia,Bailey Wright,1,2,3
+3857257,Australia,Jamie MacLaren,2,4,6
+3857257,Australia,Harry Souttar,14,7,21
+3857257,Denmark,Alexander Hartmann Bah,33,33,66
+3857257,Denmark,Andreas Christensen,89,79,168
+3857257,Denmark,Andreas Evald Cornelius,8,14,22
+3857257,Denmark,Andreas Skov Olsen,25,33,58
+3857257,Denmark,Christian Dannemann Eriksen,69,60,129
+3857257,Denmark,Joachim Andersen,95,100,195
+3857257,Denmark,Kasper Schmeichel,34,26,60
+3857257,Denmark,Mathias Jensen,25,34,59
+3857257,Denmark,Mikkel Damsgaard,12,12,24
+3857257,Denmark,Pierre-Emile Højbjerg,71,51,122
+3857257,Denmark,Joakim Mæhle,40,41,81
+3857257,Denmark,Kasper Dolberg,4,9,13
+3857257,Denmark,Martin Braithwaite Christensen,10,13,23
+3857257,Denmark,Rasmus Nissen Kristensen,39,35,74
+3857257,Denmark,Robert Skov,16,17,33
+3857257,Denmark,Jesper Lindstrøm,20,33,53
+3857258,Brazil,Alex Sandro Lobo Silva,83,69,152
+3857258,Brazil,Alisson Ramsés Becker,20,6,26
+3857258,Brazil,Antony Matheus dos Santos,15,19,34
+3857258,Brazil,Carlos Henrique Casimiro,57,51,108
+3857258,Brazil,Danilo Luiz da Silva,72,67,139
+3857258,Brazil,Frederico Rodrigues Santos,14,14,28
+3857258,Brazil,Gabriel Teodoro Martinelli Silva,1,4,5
+3857258,Brazil,Lucas Tolentino Coelho de Lima,30,34,64
+3857258,Brazil,Marcos Aoás Corrêa,62,52,114
+3857258,Brazil,Neymar da Silva Santos Junior,36,58,94
+3857258,Brazil,Richarlison de Andrade,12,17,29
+3857258,Brazil,Rodrygo Silva de Goes,12,15,27
+3857258,Brazil,Thiago Emiliano da Silva,69,62,131
+3857258,Brazil,Vinícius José Paixão de Oliveira Júnior,21,29,50
+3857258,Brazil,Gabriel Fernando de Jesus,7,7,14
+3857258,Brazil,Raphael Dias Belloli,28,35,63
+3857258,Serbia,Aleksandar Mitrović,17,19,36
+3857258,Serbia,Andrija Živković,20,20,40
+3857258,Serbia,Dušan Tadić,20,31,51
+3857258,Serbia,Ivan Ilić,19,16,35
+3857258,Serbia,Nemanja Gudelj,29,30,59
+3857258,Serbia,Saša Lukić,28,25,53
+3857258,Serbia,Sergej Milinković-Savić,28,36,64
+3857258,Serbia,Strahinja Pavlović,31,34,65
+3857258,Serbia,Filip Mladenović,19,15,34
+3857258,Serbia,Milos Veljkovic,40,39,79
+3857258,Serbia,Nikola Milenković,42,32,74
+3857258,Serbia,Vanja Milinković Savić,35,23,58
+3857258,Serbia,Darko Lazović,7,8,15
+3857258,Serbia,Dušan Vlahović,4,7,11
+3857258,Serbia,Nemanja Maksimović,5,5,10
+3857258,Serbia,Nemanja Radonjić,7,11,18
+3857259,Cameroon,André-Frank Zambo Anguissa,20,17,37
+3857259,Cameroon,Bryan Mbeumo,13,23,36
+3857259,Cameroon,Christian Mougang Bassogog,5,10,15
+3857259,Cameroon,Gaël Ondoua,10,6,16
+3857259,Cameroon,Jean-Eric Maxim Choupo-Moting,19,20,39
+3857259,Cameroon,Karl Brillant Toko Ekambi,7,9,16
+3857259,Cameroon,Martin Hongla Yma II,22,23,45
+3857259,Cameroon,Ngoran Suiru Fai Collins,44,37,81
+3857259,Cameroon,Nicolas Alexis Julio N'Koulou Ndoubena,27,28,55
+3857259,Cameroon,Pierre Kunde Malong,17,21,38
+3857259,Cameroon,Vincent Paté Aboubakar,7,9,16
+3857259,Cameroon,Jean-Charles Castelletto,24,21,45
+3857259,Cameroon,Devis Rogers Epassy Mboka,26,18,44
+3857259,Cameroon,Nouhou Tolo,25,24,49
+3857259,Cameroon,Georges-Kévin Nkoudou Mbida,6,6,12
+3857259,Cameroon,Samuel Yves Oum Gwet,4,4,8
+3857259,Serbia,Aleksandar Mitrović,18,23,41
+3857259,Serbia,Andrija Živković,32,29,61
+3857259,Serbia,Dušan Tadić,40,54,94
+3857259,Serbia,Filip Kostić,38,44,82
+3857259,Serbia,Nemanja Maksimović,29,25,54
+3857259,Serbia,Saša Lukić,62,60,122
+3857259,Serbia,Sergej Milinković-Savić,36,46,82
+3857259,Serbia,Stefan Mitrović,17,17,34
+3857259,Serbia,Milos Veljkovic,30,26,56
+3857259,Serbia,Nikola Milenković,43,31,74
+3857259,Serbia,Filip Đuričić,3,2,5
+3857259,Serbia,Marko Grujić,14,15,29
+3857259,Serbia,Nemanja Radonjić,4,4,8
+3857259,Serbia,Strahinja Pavlović,24,22,46
+3857259,Serbia,Srđan Babić,11,12,23
+3857259,Serbia,Vanja Milinković Savić,27,18,45
+3857260,Mexico,Carlos Alberto Rodríguez Gómez,3,8,11
+3857260,Mexico,Edson Omar Álvarez Velázquez,41,35,76
+3857260,Mexico,Hirving Rodrigo Lozano Bahena,19,38,57
+3857260,Mexico,Carlos Uriel Antuna Romero,4,9,13
+3857260,Mexico,Jorge Eduardo Sánchez Ramos,29,23,52
+3857260,Mexico,Luis Gerardo Chávez Magallón,38,40,78
+3857260,Mexico,César Jasib Montes Castro,57,55,112
+3857260,Mexico,Francisco Guillermo Ochoa Magaña,38,21,59
+3857260,Mexico,Henry Josué Martín Mex,7,14,21
+3857260,Mexico,Héctor Alfredo Moreno Herrera,55,42,97
+3857260,Mexico,Jesús Daniel Gallardo Vasconcelos,38,28,66
+3857260,Mexico,Kevin Nahin Álvarez Campos,3,3,6
+3857260,Mexico,Orbelín Pineda Alvarado,20,31,51
+3857260,Mexico,Ernesto Alexis Vega Rojas,10,14,24
+3857260,Mexico,Rogelio Gabriel Funes Mori,0,1,1
+3857260,Mexico,Raúl Alonso Jiménez Rodríguez,5,5,10
+3857260,Saudi Arabia,Abdulelah Al Amri,24,19,43
+3857260,Saudi Arabia,Abdulrahman Al-Obood,6,7,13
+3857260,Saudi Arabia,Firas Tariq Nasser Al Albirakan,13,27,40
+3857260,Saudi Arabia,Mohammed Kanoo,21,25,46
+3857260,Saudi Arabia,Mohammed Khalil Al Owais,17,7,24
+3857260,Saudi Arabia,Riyadh Sharahili,17,10,27
+3857260,Saudi Arabia,Saleh Khalid Al Shehri,10,16,26
+3857260,Saudi Arabia,Salem Mohammed Al Dawsari,15,22,37
+3857260,Saudi Arabia,Saud Abdullah Abdul Hamid,14,11,25
+3857260,Saudi Arabia,Sultan Abdullah Salim Al Ghannam,22,21,43
+3857260,Saudi Arabia,Abdullah Mohammed Madu,4,5,9
+3857260,Saudi Arabia,Hassan Mohammed Al-Tambakti,15,12,27
+3857260,Saudi Arabia,Ali Al Hassan,4,5,9
+3857260,Saudi Arabia,Ali Albulayhi,10,4,14
+3857260,Saudi Arabia,Hattan Babhir,2,3,5
+3857261,England,Callum Wilson,5,11,16
+3857261,England,Harry Maguire,77,82,159
+3857261,England,Jude Bellingham,47,48,95
+3857261,England,Marcus Rashford,23,34,57
+3857261,England,Phil Foden,27,34,61
+3857261,England,Trent Alexander-Arnold,21,17,38
+3857261,England,Declan Rice,45,36,81
+3857261,England,Harry Kane,7,13,20
+3857261,England,John Stones,75,72,147
+3857261,England,Jordan Brian Henderson,50,52,102
+3857261,England,Kyle Walker,50,40,90
+3857261,England,Luke Shaw,51,51,102
+3857261,England,Jack Grealish,14,14,28
+3857261,England,Jordan Pickford,29,25,54
+3857261,England,Kalvin Phillips,15,14,29
+3857261,England,Kieran Trippier,17,10,27
+3857261,Wales,Aaron Ramsey,24,24,48
+3857261,Wales,Ben Davies,15,18,33
+3857261,Wales,Brennan Johnson,2,5,7
+3857261,Wales,Chris Mepham,48,42,90
+3857261,Wales,Connor Roberts,27,25,52
+3857261,Wales,Daniel James,10,11,21
+3857261,Wales,Ethan Ampadu,27,23,50
+3857261,Wales,Joe Allen,23,24,47
+3857261,Wales,Joe Rodon,42,36,78
+3857261,Wales,Kieffer Roberto Francisco Moore,11,23,34
+3857261,Wales,Neco Williams,5,3,8
+3857261,Wales,Daniel Ward,20,17,37
+3857261,Wales,Joseff Morrell,11,9,20
+3857261,Wales,Gareth Frank Bale,1,5,6
+3857261,Wales,Harry Wilson,6,6,12
+3857261,Wales,Rubin Colwill,2,3,5
+3857262,Portugal,André Miguel Valente Silva,10,12,22
+3857262,Portugal,João Maria Lobo Alves Palhinha Gonçalves,16,15,31
+3857262,Portugal,João Mário Naval da Costa Eduardo,34,33,67
+3857262,Portugal,João Pedro Cavaco Cancelo,77,66,143
+3857262,Portugal,Kléper Laveran Lima Ferreira,67,61,128
+3857262,Portugal,Rafael Alexandre Conceição Leão,7,13,20
+3857262,Portugal,Ricardo Jorge Luz Horta,13,17,30
+3857262,Portugal,Vitor Machado Ferreira,59,62,121
+3857262,Portugal,António João Pereira Albuquerque Tavares Silva,57,50,107
+3857262,Portugal,Diogo Meireles Costa,23,19,42
+3857262,Portugal,José Diogo Dalot Teixeira,53,55,108
+3857262,Portugal,Matheus Luiz Nunes,21,31,52
+3857262,Portugal,Rúben Diogo Da Silva Neves,62,59,121
+3857262,Portugal,Bernardo Mota Veiga de Carvalho e Silva,7,8,15
+3857262,Portugal,William Silva de Carvalho,13,13,26
+3857262,Portugal,Cristiano Ronaldo dos Santos Aveiro,15,20,35
+3857262,South Korea,Gue-Sung Cho,13,26,39
+3857262,South Korea,Hee-Chan Hwang,3,9,12
+3857262,South Korea,Heung-Min Son,16,20,36
+3857262,South Korea,In-Beom Hwang,33,37,70
+3857262,South Korea,Jae-Sung Lee,12,11,23
+3857262,South Korea,Jin-Su Kim,26,23,49
+3857262,South Korea,Kang-In Lee,22,23,45
+3857262,South Korea,Moon-Hwan Kim,31,24,55
+3857262,South Korea,Woo-Young Jung,48,47,95
+3857262,South Korea,Kyung-Won Kwon,32,28,60
+3857262,South Korea,Jun-Ho Son,7,6,13
+3857262,South Korea,Young-Gwon Kim,33,32,65
+3857262,South Korea,Seung-Gyu Kim,31,21,52
+3857262,South Korea,Ui-Jo Hwang,2,2,4
+3857263,Germany,Antonio Rüdiger,41,40,81
+3857263,Germany,David Raum,33,31,64
+3857263,Germany,Jamal Musiala,17,30,47
+3857263,Germany,Jonas Hofmann,1,1,2
+3857263,Germany,Joshua Kimmich,30,22,52
+3857263,Germany,Manuel Neuer,32,29,61
+3857263,Germany,Niklas Süle,41,34,75
+3857263,Germany,Thilo Kehrer,21,20,41
+3857263,Germany,Leon Goretzka,19,16,35
+3857263,Germany,Niclas Füllkrug,5,8,13
+3857263,Germany,Serge Gnabry,12,20,32
+3857263,Germany,Thomas Müller,8,12,20
+3857263,Germany,İlkay Gündoğan,13,12,25
+3857263,Germany,Leroy Sané,7,10,17
+3857263,Germany,Nico Schlotterbeck,3,3,6
+3857263,Germany,Lukas Klostermann,8,3,11
+3857263,Spain,Alejandro Balde Martínez,8,8,16
+3857263,Spain,Aymeric Laporte,89,84,173
+3857263,Spain,Daniel Olmo Carvajal,33,47,80
+3857263,Spain,Pedro González López,59,58,117
+3857263,Spain,Rodrigo Hernández Cascante,95,87,182
+3857263,Spain,Daniel Carvajal Ramos,65,48,113
+3857263,Spain,Ferrán Torres García,11,28,39
+3857263,Spain,Jordi Alba Ramos,71,63,134
+3857263,Spain,Jorge Resurrección Merodio,8,11,19
+3857263,Spain,Marco Asensio Willemsen,29,36,65
+3857263,Spain,Pablo Martín Páez Gavira,10,12,22
+3857263,Spain,Sergio Busquets i Burgos,41,29,70
+3857263,Spain,Unai Simón Mendibil,47,41,88
+3857263,Spain,Nicholas Williams Arthuer,8,14,22
+3857263,Spain,Álvaro Borja Morata Martín,4,12,16
+3857264,Argentina,Alexis Mac Allister,50,51,101
+3857264,Argentina,Enzo Fernandez,86,85,171
+3857264,Argentina,Julián Álvarez,20,25,45
+3857264,Argentina,Leandro Daniel Paredes,77,73,150
+3857264,Argentina,Lionel Andrés Messi Cuccittini,59,76,135
+3857264,Argentina,Marcos Javier Acuña,35,33,68
+3857264,Argentina,Nahuel Molina Lucero,71,64,135
+3857264,Argentina,Nicolás Alejandro Tagliafico,38,35,73
+3857264,Argentina,Nicolás Hernán Otamendi,89,85,174
+3857264,Argentina,Rodrigo Javier De Paul,142,138,280
+3857264,Argentina,Ángel Fabián Di María Hernández,40,51,91
+3857264,Argentina,Cristian Gabriel Romero,67,63,130
+3857264,Argentina,Damián Emiliano Martínez,12,7,19
+3857264,Argentina,Germán Alejandro Pezzella,18,16,34
+3857264,Argentina,Lautaro Javier Martínez,10,11,21
+3857264,Argentina,Thiago Ezequiel Almada,12,13,25
+3857264,Poland,Artur Jędrzejczyk,4,3,7
+3857264,Poland,Damian Szymański,9,8,17
+3857264,Poland,Jakub Piotr Kiwior,38,38,76
+3857264,Poland,Robert Lewandowski,12,21,33
+3857264,Poland,Bartosz Bereszyński,26,18,44
+3857264,Poland,Jakub Kamiński,4,8,12
+3857264,Poland,Karol Świderski,7,5,12
+3857264,Poland,Krystian Bielik,24,29,53
+3857264,Poland,Piotr Zieliński,27,21,48
+3857264,Poland,Przemysław Frankowski,8,13,21
+3857264,Poland,Wojciech Szczęsny,20,16,36
+3857264,Poland,Grzegorz Krychowiak,20,19,39
+3857264,Poland,Kamil Glik,32,32,64
+3857264,Poland,Matty Cash,27,26,53
+3857264,Poland,Michał Skóraś,8,9,17
+3857264,Poland,Krzysztof Piątek,1,1,2
+3857265,Mexico,Carlos Alberto Rodríguez Gómez,17,19,36
+3857265,Mexico,Carlos Uriel Antuna Romero,2,6,8
+3857265,Mexico,César Jasib Montes Castro,57,57,114
+3857265,Mexico,Edson Omar Álvarez Velázquez,44,42,86
+3857265,Mexico,Ernesto Alexis Vega Rojas,25,33,58
+3857265,Mexico,Hirving Rodrigo Lozano Bahena,19,31,50
+3857265,Mexico,Héctor Alfredo Moreno Herrera,73,73,146
+3857265,Mexico,Jesús Daniel Gallardo Vasconcelos,40,33,73
+3857265,Mexico,Jorge Eduardo Sánchez Ramos,43,31,74
+3857265,Mexico,Luis Gerardo Chávez Magallón,45,48,93
+3857265,Mexico,Raúl Alonso Jiménez Rodríguez,6,9,15
+3857265,Mexico,Francisco Guillermo Ochoa Magaña,32,16,48
+3857265,Mexico,Héctor Miguel Herrera López,26,25,51
+3857265,Mexico,Henry Josué Martín Mex,8,14,22
+3857265,Poland,Arkadiusz Milik,4,6,10
+3857265,Poland,Matty Cash,27,23,50
+3857265,Poland,Robert Lewandowski,13,33,46
+3857265,Poland,Bartosz Bereszyński,30,17,47
+3857265,Poland,Grzegorz Krychowiak,19,18,37
+3857265,Poland,Jakub Piotr Kiwior,34,33,67
+3857265,Poland,Krystian Bielik,18,15,33
+3857265,Poland,Nicola Zalewski,12,13,25
+3857265,Poland,Piotr Zieliński,21,20,41
+3857265,Poland,Przemysław Frankowski,7,6,13
+3857265,Poland,Sebastian Szymański,16,25,41
+3857265,Poland,Wojciech Szczęsny,24,12,36
+3857265,Poland,Jakub Kamiński,9,14,23
+3857265,Poland,Kamil Glik,25,24,49
+3857266,Denmark,Alexander Hartmann Bah,4,4,8
+3857266,Denmark,Christian Dannemann Eriksen,58,55,113
+3857266,Denmark,Christian Nørgaard,14,13,27
+3857266,Denmark,Victor Nelsson,68,55,123
+3857266,Denmark,Andreas Christensen,69,67,136
+3857266,Denmark,Joachim Andersen,42,41,83
+3857266,Denmark,Joakim Mæhle,37,36,73
+3857266,Denmark,Mikkel Damsgaard,23,27,50
+3857266,Denmark,Pierre-Emile Højbjerg,61,61,122
+3857266,Denmark,Rasmus Nissen Kristensen,56,60,116
+3857266,Denmark,Andreas Evald Cornelius,10,15,25
+3857266,Denmark,Jesper Lindstrøm,15,24,39
+3857266,Denmark,Kasper Dolberg,3,4,7
+3857266,Denmark,Martin Braithwaite Christensen,3,11,14
+3857266,Denmark,Kasper Schmeichel,16,6,22
+3857266,France,Adrien Rabiot,41,41,82
+3857266,France,Antoine Griezmann,37,34,71
+3857266,France,Aurélien Djani Tchouaméni,67,61,128
+3857266,France,Dayotchanculle Upamecano,54,46,100
+3857266,France,Hugo Lloris,20,16,36
+3857266,France,Ibrahima Konaté,11,12,23
+3857266,France,Jules Koundé,53,50,103
+3857266,France,Kingsley Coman,13,14,27
+3857266,France,Kylian Mbappé Lottin,30,49,79
+3857266,France,Raphaël Varane,35,32,67
+3857266,France,Theo Bernard François Hernández,66,60,126
+3857266,France,Marcus Thuram,4,5,9
+3857266,France,Olivier Giroud,8,14,22
+3857266,France,Ousmane Dembélé,23,29,52
+3857266,France,Youssouf Fofana,2,1,3
+3857267,Ecuador,Alan Steven Franco Palma,4,2,6
+3857267,Ecuador,Angelo Smit Preciado Quiñónez,29,26,55
+3857267,Ecuador,Carlos Armando Gruezo Arboleda,13,14,27
+3857267,Ecuador,Gonzalo Jordy Plata Jiménez,24,23,47
+3857267,Ecuador,Djorkaeff Neicer Reasco González,3,5,8
+3857267,Ecuador,Felix Eduardo Torres Caicedo,56,55,111
+3857267,Ecuador,José Adoni Cifuentes Charcopa,27,29,56
+3857267,Ecuador,Michael Steveen Estrada Martínez,3,12,15
+3857267,Ecuador,Moisés Isaac Caicedo Corozo,41,39,80
+3857267,Ecuador,Piero Martín Hincapié Reyna,74,75,149
+3857267,Ecuador,Enner Remberto Valencia Lastra,8,18,26
+3857267,Ecuador,Pervis Josué Estupiñán Tenorio,42,37,79
+3857267,Ecuador,Jeremy Leonel Sarmiento Morante,12,11,23
+3857267,Ecuador,Hernán Ismael Galíndez,22,14,36
+3857267,Ecuador,Jackson Gabriel Porozo Vernaza,4,2,6
+3857267,Senegal,Abdou Diallo,20,19,39
+3857267,Senegal,Edouard Mendy,16,10,26
+3857267,Senegal,Idrissa Gana Gueye,22,20,42
+3857267,Senegal,Ismail Jakobs,21,19,40
+3857267,Senegal,Ismaïla Sarr,15,25,40
+3857267,Senegal,Kalidou Koulibaly,20,16,36
+3857267,Senegal,Pape Gueye,20,17,37
+3857267,Senegal,Pathé Ismaël Ciss,22,19,41
+3857267,Senegal,Youssouf Sabaly,27,25,52
+3857267,Senegal,Boulaye Dia,5,17,22
+3857267,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,3,5,8
+3857267,Senegal,Iliman Ndiaye,11,15,26
+3857267,Senegal,Nampalys Mendy,11,6,17
+3857268,Belgium,Amadou Onana,18,19,37
+3857268,Belgium,Axel Witsel,45,32,77
+3857268,Belgium,Ikoma Loïs Openda,3,6,9
+3857268,Belgium,Kevin De Bruyne,29,33,62
+3857268,Belgium,Leander Dendoncker,73,67,140
+3857268,Belgium,Leandro Trossard,11,14,25
+3857268,Belgium,Michy Batshuayi Tunga,8,21,29
+3857268,Belgium,Thomas Meunier,17,18,35
+3857268,Belgium,Toby Alderweireld,69,66,135
+3857268,Belgium,Eden Hazard,20,22,42
+3857268,Belgium,Jan Vertonghen,55,62,117
+3857268,Belgium,Thibaut Courtois,42,26,68
+3857268,Belgium,Timothy Castagne,34,37,71
+3857268,Belgium,Youri Tielemans,14,17,31
+3857268,Belgium,Yannick Ferreira Carrasco,13,11,24
+3857268,Canada,Alistair Johnston,46,36,82
+3857268,Canada,Alphonso Davies,33,30,63
+3857268,Canada,Atiba Hutchinson,27,24,51
+3857268,Canada,Cyle Larin,9,16,25
+3857268,Canada,David Junior Hoilett,6,9,15
+3857268,Canada,Ismael Koné,30,30,60
+3857268,Canada,Jonathan David,17,29,46
+3857268,Canada,Jonathan Osorio,8,9,17
+3857268,Canada,Milan Borjan,27,15,42
+3857268,Canada,Richie Laryea,14,19,33
+3857268,Canada,Stephen Antunes Eustáquio,58,55,113
+3857268,Canada,Steven de Sousa Vitoria,44,40,84
+3857268,Canada,Tajon Buchanan,18,30,48
+3857268,Canada,Kamal Miller,39,35,74
+3857268,Canada,Liam Millar,5,7,12
+3857268,Canada,Sam Adekugbe,20,17,37
+3857269,Brazil,Alex Nicolao Telles,10,6,16
+3857269,Brazil,Alisson Ramsés Becker,11,8,19
+3857269,Brazil,Bruno Guimarães Rodriguez Moura,20,23,43
+3857269,Brazil,Carlos Henrique Casimiro,40,35,75
+3857269,Brazil,Gabriel Fernando de Jesus,4,5,9
+3857269,Brazil,Rodrygo Silva de Goes,21,23,44
+3857269,Brazil,Thiago Emiliano da Silva,77,76,153
+3857269,Brazil,Vinícius José Paixão de Oliveira Júnior,18,37,55
+3857269,Brazil,Alex Sandro Lobo Silva,63,50,113
+3857269,Brazil,Frederico Rodrigues Santos,23,25,48
+3857269,Brazil,Lucas Tolentino Coelho de Lima,33,36,69
+3857269,Brazil,Marcos Aoás Corrêa,92,81,173
+3857269,Brazil,Raphael Dias Belloli,25,28,53
+3857269,Brazil,Richarlison de Andrade,3,12,15
+3857269,Brazil,Éder Gabriel Militão,56,51,107
+3857269,Brazil,Antony Matheus dos Santos,11,11,22
+3857269,Switzerland,Breel-Donald Embolo,8,17,25
+3857269,Switzerland,Djibril Sow,19,18,37
+3857269,Switzerland,Edimilson Fernandes,11,13,24
+3857269,Switzerland,Fabian Rieder,9,14,23
+3857269,Switzerland,Granit Xhaka,59,57,116
+3857269,Switzerland,Nico Elvedi,67,62,129
+3857269,Switzerland,Renato Steffen,12,9,21
+3857269,Switzerland,Ruben Vargas,13,20,33
+3857269,Switzerland,Manuel Obafemi Akanji,67,70,137
+3857269,Switzerland,Remo Freuler,35,30,65
+3857269,Switzerland,Silvan Widmer,35,44,79
+3857269,Switzerland,Fabian Frei,2,4,6
+3857269,Switzerland,Ricardo Iván Rodríguez Araya,41,33,74
+3857269,Switzerland,Michel Aebischer,2,4,6
+3857269,Switzerland,Yann Sommer,46,30,76
+3857269,Switzerland,Haris Seferović,2,3,5
+3857270,Portugal,Bernardo Mota Veiga de Carvalho e Silva,55,52,107
+3857270,Portugal,Bruno Miguel Borges Fernandes,48,58,106
+3857270,Portugal,Cristiano Ronaldo dos Santos Aveiro,30,40,70
+3857270,Portugal,Diogo Meireles Costa,22,26,48
+3857270,Portugal,Gonçalo Matias Ramos,5,5,10
+3857270,Portugal,João Félix Sequeira,30,41,71
+3857270,Portugal,João Pedro Cavaco Cancelo,51,45,96
+3857270,Portugal,Kléper Laveran Lima Ferreira,51,43,94
+3857270,Portugal,Nuno Mendes,30,28,58
+3857270,Portugal,Rafael Alexandre Conceição Leão,8,11,19
+3857270,Portugal,Raphaël Adelino José Guerreiro,24,19,43
+3857270,Portugal,Rúben Diogo Da Silva Neves,44,43,87
+3857270,Portugal,Rúben Santos Gato Alves Dias,57,48,105
+3857270,Portugal,William Silva de Carvalho,59,55,114
+3857270,Portugal,Matheus Luiz Nunes,4,5,9
+3857270,Portugal,João Maria Lobo Alves Palhinha Gonçalves,7,6,13
+3857270,Uruguay,Darwin Gabriel Núñez Ribeiro,11,21,32
+3857270,Uruguay,Edinson Roberto Cavani Gómez,13,18,31
+3857270,Uruguay,Facundo Pellistri Rebollo,9,13,22
+3857270,Uruguay,Federico Santiago Valverde Dipetta,38,39,77
+3857270,Uruguay,Guillermo Varela Olivera,23,23,46
+3857270,Uruguay,Mathías Olivera Miramontes,27,23,50
+3857270,Uruguay,Matías Vecino Falero,11,13,24
+3857270,Uruguay,Rodrigo Bentancur Colmán,49,41,90
+3857270,Uruguay,Diego Roberto Godín Leal,19,13,32
+3857270,Uruguay,José María Giménez de Vargas,40,37,77
+3857270,Uruguay,Sebastián Coates Nión,38,30,68
+3857270,Uruguay,Sergio Rochet Álvarez,15,14,29
+3857270,Uruguay,Giorgian Daniel De Arrascaeta Benedetti,20,21,41
+3857270,Uruguay,Maximiliano Gómez González,2,4,6
+3857270,Uruguay,Luis Alberto Suárez Díaz,5,8,13
+3857270,Uruguay,Matías Nicolás Viña Susperreguy,4,6,10
+3857271,England,Bukayo Saka,22,31,53
+3857271,England,Declan Rice,92,85,177
+3857271,England,Harry Kane,10,16,26
+3857271,England,John Stones,117,112,229
+3857271,England,Jude Bellingham,94,86,180
+3857271,England,Kieran Trippier,84,74,158
+3857271,England,Luke Shaw,104,97,201
+3857271,England,Mason Mount,32,35,67
+3857271,England,Raheem Sterling,25,33,58
+3857271,England,Callum Wilson,4,4,8
+3857271,England,Jack Grealish,19,22,41
+3857271,England,Marcus Rashford,15,24,39
+3857271,England,Phil Foden,17,22,39
+3857271,England,Eric Dier,29,25,54
+3857271,England,Harry Maguire,64,57,121
+3857271,England,Jordan Pickford,18,23,41
+3857271,Iran,Ahmad Nourollahi,12,13,25
+3857271,Iran,Alireza Jahanbakhsh,5,6,11
+3857271,Iran,Ehsan Hajsafi,16,19,35
+3857271,Iran,Mehdi Taremi,17,20,37
+3857271,Iran,Milad Mohammadi,9,8,17
+3857271,Iran,Sadegh Moharrami,19,14,33
+3857271,Iran,Saeid Ezatolahi Afagh,9,8,17
+3857271,Iran,Seyed Majid Hosseini,12,11,23
+3857271,Iran,Ali Gholizadeh,10,13,23
+3857271,Iran,Mehdi Torabi,9,8,17
+3857271,Iran,Sardar Azmoun,4,4,8
+3857271,Iran,Ali Karimi,3,3,6
+3857271,Iran,Morteza Pouraliganji,18,16,34
+3857271,Iran,Roozbeh Cheshmi,5,4,9
+3857271,Iran,Seyed Hossein Hosseini,7,8,15
+3857271,Iran,Mohammad Hossein Kanani Zadegan,8,7,15
+3857271,Iran,Alireza Safar Beiranvand,0,1,1
+3857272,England,Bukayo Saka,20,27,47
+3857272,England,Declan Rice,56,47,103
+3857272,England,Harry Kane,16,29,45
+3857272,England,Jude Bellingham,33,36,69
+3857272,England,Kieran Trippier,64,51,115
+3857272,England,Luke Shaw,69,62,131
+3857272,England,Raheem Sterling,18,21,39
+3857272,England,Harry Maguire,70,64,134
+3857272,England,Jack Grealish,9,14,23
+3857272,England,John Stones,86,85,171
+3857272,England,Mason Mount,27,34,61
+3857272,England,Marcus Rashford,2,3,5
+3857272,England,Jordan Brian Henderson,9,11,20
+3857272,England,Jordan Pickford,21,16,37
+3857272,United States,Antonee Robinson,33,32,65
+3857272,United States,Christian Pulisic,23,34,57
+3857272,United States,Haji Wright,7,11,18
+3857272,United States,Shaquell Moore,12,12,24
+3857272,United States,Tim Ream,47,45,92
+3857272,United States,Tyler Adams,41,33,74
+3857272,United States,Walker Zimmerman,62,57,119
+3857272,United States,Weston McKennie,29,28,57
+3857272,United States,Yunus Dimoara Musah,30,33,63
+3857272,United States,Brenden Aaronson,9,9,18
+3857272,United States,Giovanni Reyna,2,4,6
+3857272,United States,Timothy Weah,19,23,42
+3857272,United States,Sergino Dest,33,32,65
+3857272,United States,Joshua Sargent,1,2,3
+3857272,United States,Matthew Charles Turner,29,22,51
+3857273,Iran,Ahmad Nourollahi,13,14,27
+3857273,Iran,Ali Gholizadeh,21,25,46
+3857273,Iran,Mehdi Taremi,17,29,46
+3857273,Iran,Milad Mohammadi,23,15,38
+3857273,Iran,Ramin Rezaeian,32,32,64
+3857273,Iran,Saeid Ezatolahi Afagh,18,15,33
+3857273,Iran,Sardar Azmoun,8,17,25
+3857273,Iran,Seyed Majid Hosseini,24,10,34
+3857273,Iran,Ehsan Hajsafi,21,21,42
+3857273,Iran,Ali Karimi,3,6,9
+3857273,Iran,Alireza Jahanbakhsh,6,8,14
+3857273,Iran,Karim Ansarifard,3,4,7
+3857273,Iran,Mehdi Torabi,6,11,17
+3857273,Iran,Morteza Pouraliganji,15,12,27
+3857273,Iran,Seyed Hossein Hosseini,15,8,23
+3857273,Iran,Roozbeh Cheshmi,2,0,2
+3857273,Wales,Aaron Ramsey,38,48,86
+3857273,Wales,Ben Davies,65,58,123
+3857273,Wales,Chris Mepham,49,47,96
+3857273,Wales,Connor Roberts,27,30,57
+3857273,Wales,Daniel James,6,13,19
+3857273,Wales,Ethan Ampadu,54,53,107
+3857273,Wales,Gareth Frank Bale,19,27,46
+3857273,Wales,Harry Wilson,19,23,42
+3857273,Wales,Joe Rodon,54,43,97
+3857273,Wales,Kieffer Roberto Francisco Moore,17,30,47
+3857273,Wales,Neco Williams,42,38,80
+3857273,Wales,Wayne Hennessey,30,12,42
+3857273,Wales,Brennan Johnson,7,10,17
+3857273,Wales,Joe Allen,7,3,10
+3857273,Wales,Daniel Ward,4,3,7
+3857274,Ecuador,Angelo Smit Preciado Quiñónez,26,23,49
+3857274,Ecuador,Enner Remberto Valencia Lastra,17,33,50
+3857274,Ecuador,Gonzalo Jordy Plata Jiménez,27,32,59
+3857274,Ecuador,Jackson Gabriel Porozo Vernaza,33,29,62
+3857274,Ecuador,Jeremy Leonel Sarmiento Morante,6,10,16
+3857274,Ecuador,Jhegson Sebastián Méndez Carabalí,54,45,99
+3857274,Ecuador,Michael Steveen Estrada Martínez,15,22,37
+3857274,Ecuador,Moisés Isaac Caicedo Corozo,43,44,87
+3857274,Ecuador,Pervis Josué Estupiñán Tenorio,44,35,79
+3857274,Ecuador,Romario Andrés Ibarra Mina,0,2,2
+3857274,Ecuador,Felix Eduardo Torres Caicedo,53,49,102
+3857274,Ecuador,Piero Martín Hincapié Reyna,29,26,55
+3857274,Ecuador,Hernán Ismael Galíndez,12,8,20
+3857274,Ecuador,Kevin José Rodríguez Cortez,0,1,1
+3857274,Netherlands,Andries Noppert,36,28,64
+3857274,Netherlands,Daley Blind,56,54,110
+3857274,Netherlands,Denzel Dumfries,19,21,40
+3857274,Netherlands,Frenkie de Jong,67,61,128
+3857274,Netherlands,Jurriën David Norman Timber,56,50,106
+3857274,Netherlands,Nathan Aké,73,66,139
+3857274,Netherlands,Virgil van Dijk,48,44,92
+3857274,Netherlands,Cody Mathès Gakpo,12,21,33
+3857274,Netherlands,Davy Klaassen,21,22,43
+3857274,Netherlands,Memphis Depay,9,18,27
+3857274,Netherlands,Teun Koopmeiners,29,34,63
+3857274,Netherlands,Marten de Roon,7,6,13
+3857274,Netherlands,Steven Berghuis,8,14,22
+3857274,Netherlands,Steven Bergwijn,15,17,32
+3857274,Netherlands,Wout Weghorst,1,1,2
+3857275,France,Adrien Rabiot,14,21,35
+3857275,France,Antoine Griezmann,29,28,57
+3857275,France,Aurélien Djani Tchouaméni,89,85,174
+3857275,France,Axel Disasi,55,47,102
+3857275,France,Eduardo Camavinga,70,62,132
+3857275,France,Ibrahima Konaté,66,59,125
+3857275,France,Kylian Mbappé Lottin,17,30,47
+3857275,France,Ousmane Dembélé,13,15,28
+3857275,France,William Saliba,37,29,66
+3857275,France,Youssouf Fofana,27,36,63
+3857275,France,Randal Kolo Muani,12,25,37
+3857275,France,Jordan Veretout,32,30,62
+3857275,France,Kingsley Coman,16,23,39
+3857275,France,Mattéo Guendouzi Olié,28,25,53
+3857275,France,Raphaël Varane,41,40,81
+3857275,France,Steve Mandanda,18,9,27
+3857275,Tunisia,Ali Abdi,1,0,1
+3857275,Tunisia,Issam Jebali,3,6,9
+3857275,Tunisia,Ali Maâloul,39,35,74
+3857275,Tunisia,Anis Ben Slimane,18,30,48
+3857275,Tunisia,Aïssa Bilal Laïdouni,37,36,73
+3857275,Tunisia,Ellyes Joris Skhiri,30,31,61
+3857275,Tunisia,Mohamed Ali Ben Romdhane,14,17,31
+3857275,Tunisia,Montassar Omar Talbi,25,18,43
+3857275,Tunisia,Wahbi Khazri,8,12,20
+3857275,Tunisia,Wajdi Kechrida,29,33,62
+3857275,Tunisia,Yassine Meriah,32,28,60
+3857275,Tunisia,Aymen Dahmen,8,6,14
+3857275,Tunisia,Nader Ghandri,27,21,48
+3857275,Tunisia,Ghilane Chalali,4,2,6
+3857276,Canada,Alistair Johnston,58,43,101
+3857276,Canada,Alphonso Davies,19,27,46
+3857276,Canada,Atiba Hutchinson,28,22,50
+3857276,Canada,Cyle Larin,6,12,18
+3857276,Canada,David Junior Hoilett,20,22,42
+3857276,Canada,Ismael Koné,27,26,53
+3857276,Canada,Jonathan David,11,13,24
+3857276,Canada,Jonathan Osorio,27,29,56
+3857276,Canada,Kamal Miller,83,76,159
+3857276,Canada,Mark Anthony Kaye,50,56,106
+3857276,Canada,Milan Borjan,21,12,33
+3857276,Canada,Steven de Sousa Vitoria,70,63,133
+3857276,Canada,Tajon Buchanan,21,34,55
+3857276,Canada,Sam Adekugbe,31,30,61
+3857276,Canada,David Wallace Wotherspoon,3,7,10
+3857276,Canada,Richie Laryea,5,8,13
+3857276,Morocco,Abdelhamid Sabiri,21,22,43
+3857276,Morocco,Achraf Hakimi Mouh,49,42,91
+3857276,Morocco,Azzedine Ounahi,27,28,55
+3857276,Morocco,Hakim Ziyech,26,32,58
+3857276,Morocco,Noussair Mazraoui,18,14,32
+3857276,Morocco,Romain Saïss,30,28,58
+3857276,Morocco,Sofiane Boufal,15,21,36
+3857276,Morocco,Sofyan Amrabat,43,38,81
+3857276,Morocco,Yassine Bounou,25,21,46
+3857276,Morocco,Abderrazak Hamdallah,3,7,10
+3857276,Morocco,Zakaria Aboukhlal,3,3,6
+3857276,Morocco,Nayef Aguerd,35,33,68
+3857276,Morocco,Youssef En-Nesyri,12,19,31
+3857276,Morocco,Jawad El Yamiq,1,0,1
+3857276,Morocco,Selim Amallah,0,2,2
+3857276,Morocco,Yahya Jabrane,2,0,2
+3857277,Croatia,Andrej Kramarić,10,14,24
+3857277,Croatia,Borna Sosa,47,51,98
+3857277,Croatia,Dejan Lovren,82,79,161
+3857277,Croatia,Ivan Perišić,29,32,61
+3857277,Croatia,Joško Gvardiol,102,101,203
+3857277,Croatia,Luka Modrić,77,74,151
+3857277,Croatia,Marcelo Brozović,77,79,156
+3857277,Croatia,Nikola Vlašić,7,15,22
+3857277,Croatia,Dominik Livaković,26,13,39
+3857277,Croatia,Lovro Majer,9,10,19
+3857277,Croatia,Mario Pašalić,14,15,29
+3857277,Croatia,Marko Livaja,3,8,11
+3857277,Croatia,Mateo Kovačić,48,46,94
+3857277,Croatia,Mislav Oršić,1,1,2
+3857277,Croatia,Josip Juranović,45,39,84
+3857277,Morocco,Abdelhamid Sabiri,7,10,17
+3857277,Morocco,Nayef Aguerd,41,36,77
+3857277,Morocco,Romain Saïss,45,41,86
+3857277,Morocco,Sofyan Amrabat,41,33,74
+3857277,Morocco,Yahia Attiyat allah,14,7,21
+3857277,Morocco,Yassine Bounou,20,11,31
+3857277,Morocco,Achraf Hakimi Mouh,43,34,77
+3857277,Morocco,Azzedine Ounahi,22,31,53
+3857277,Morocco,Hakim Ziyech,20,32,52
+3857277,Morocco,Selim Amallah,10,18,28
+3857277,Morocco,Sofiane Boufal,14,21,35
+3857277,Morocco,Youssef En-Nesyri,7,11,18
+3857277,Morocco,Noussair Mazraoui,17,11,28
+3857277,Morocco,Abdessamad Ezzalzouli,0,4,4
+3857277,Morocco,Abderrazak Hamdallah,0,1,1
+3857278,Iran,Abolfazl Jalali,21,19,40
+3857278,Iran,Ali Karimi,30,27,57
+3857278,Iran,Mehdi Taremi,27,37,64
+3857278,Iran,Morteza Pouraliganji,60,59,119
+3857278,Iran,Saeid Ezatolahi Afagh,44,44,88
+3857278,Iran,Saman Ghoddos,15,21,36
+3857278,Iran,Seyed Majid Hosseini,51,42,93
+3857278,Iran,Ahmad Nourollahi,14,13,27
+3857278,Iran,Ali Gholizadeh,16,13,29
+3857278,Iran,Ehsan Hajsafi,27,30,57
+3857278,Iran,Ramin Rezaeian,39,41,80
+3857278,Iran,Sardar Azmoun,6,11,17
+3857278,Iran,Mehdi Torabi,16,14,30
+3857278,Iran,Alireza Safar Beiranvand,21,16,37
+3857278,Iran,Milad Mohammadi,13,12,25
+3857278,Iran,Karim Ansarifard,2,3,5
+3857278,United States,Antonee Robinson,36,39,75
+3857278,United States,Brenden Aaronson,7,14,21
+3857278,United States,Cameron Carter-Vickers,50,42,92
+3857278,United States,Christian Pulisic,12,17,29
+3857278,United States,Haji Wright,1,8,9
+3857278,United States,Joshua Sargent,19,25,44
+3857278,United States,Kellyn Kai Perry-Acosta,3,3,6
+3857278,United States,Matthew Charles Turner,29,15,44
+3857278,United States,Sergino Dest,43,48,91
+3857278,United States,Tim Ream,54,47,101
+3857278,United States,Timothy Weah,27,33,60
+3857278,United States,Tyler Adams,63,49,112
+3857278,United States,Weston McKennie,31,37,68
+3857278,United States,Yunus Dimoara Musah,47,45,92
+3857278,United States,Shaquell Moore,2,4,6
+3857278,United States,Walker Zimmerman,2,0,2
+3857279,Australia,Aaron Mooy,58,60,118
+3857279,Australia,Awer Denis Bul Mabil,9,12,21
+3857279,Australia,Aziz Eraltay Behich,55,49,104
+3857279,Australia,Craig Goodwin,18,21,39
+3857279,Australia,Garang Kuol,2,4,6
+3857279,Australia,Harry Souttar,43,44,87
+3857279,Australia,Jackson Irvine,28,33,61
+3857279,Australia,Jason Cummings,4,4,8
+3857279,Australia,Keanu Baccus,6,6,12
+3857279,Australia,Kye Rowles,59,56,115
+3857279,Australia,Mathew Leckie,21,31,52
+3857279,Australia,Miloš Degenek,10,9,19
+3857279,Australia,Mitchell Thomas Duke,7,10,17
+3857279,Australia,Nathaniel Atkinson,30,20,50
+3857279,Australia,Riley McGree,18,19,37
+3857279,Australia,Mathew Ryan,26,16,42
+3857279,France,Adrien Rabiot,61,61,122
+3857279,France,Antoine Griezmann,66,70,136
+3857279,France,Aurélien Djani Tchouaméni,74,71,145
+3857279,France,Benjamin Pavard,81,70,151
+3857279,France,Dayotchanculle Upamecano,112,103,215
+3857279,France,Ibrahima Konaté,87,89,176
+3857279,France,Jules Koundé,7,5,12
+3857279,France,Kingsley Coman,12,13,25
+3857279,France,Kylian Mbappé Lottin,42,63,105
+3857279,France,Olivier Giroud,10,14,24
+3857279,France,Ousmane Dembélé,25,33,58
+3857279,France,Theo Bernard François Hernández,60,54,114
+3857279,France,Youssouf Fofana,18,17,35
+3857279,France,Lucas Hernández Pi,6,6,12
+3857279,France,Hugo Lloris,19,11,30
+3857280,Brazil,Alex Nicolao Telles,25,25,50
+3857280,Brazil,Ederson Santana de Moraes,28,14,42
+3857280,Brazil,Frederico Rodrigues Santos,29,33,62
+3857280,Brazil,Fábio Henrique Tavares,50,40,90
+3857280,Brazil,Gabriel Fernando de Jesus,12,11,23
+3857280,Brazil,Gabriel Teodoro Martinelli Silva,23,38,61
+3857280,Brazil,Gleison Bremer Silva Nascimento,62,54,116
+3857280,Brazil,Rodrygo Silva de Goes,22,31,53
+3857280,Brazil,Éder Gabriel Militão,69,64,133
+3857280,Brazil,Antony Matheus dos Santos,36,53,89
+3857280,Brazil,Bruno Guimarães Rodriguez Moura,26,30,56
+3857280,Brazil,Daniel Alves da Silva,71,56,127
+3857280,Brazil,Éverton Augusto de Barros Ribeiro,15,19,34
+3857280,Brazil,Marcos Aoás Corrêa,32,24,56
+3857280,Brazil,Pedro Guilherme Abreu dos Santos,5,11,16
+3857280,Brazil,Raphael Dias Belloli,7,9,16
+3857280,Cameroon,André-Frank Zambo Anguissa,39,43,82
+3857280,Cameroon,Bryan Mbeumo,8,12,20
+3857280,Cameroon,Christopher Wooh,27,28,55
+3857280,Cameroon,Enzo Ebosse,34,30,64
+3857280,Cameroon,Jean-Eric Maxim Choupo-Moting,13,26,39
+3857280,Cameroon,Jules Olivier Ntcham,11,10,21
+3857280,Cameroon,Karl Brillant Toko Ekambi,8,7,15
+3857280,Cameroon,Ngoran Suiru Fai Collins,19,10,29
+3857280,Cameroon,Nicolas Moumi Ngamaleu,19,21,40
+3857280,Cameroon,Nouhou Tolo,16,12,28
+3857280,Cameroon,Pierre Kunde Malong,22,16,38
+3857280,Cameroon,Vincent Paté Aboubakar,7,20,27
+3857280,Cameroon,Devis Rogers Epassy Mboka,30,15,45
+3857280,Cameroon,Jerome Ngom Mbekeli,1,4,5
+3857281,Canada,Alistair Johnston,52,42,94
+3857281,Canada,Alphonso Davies,30,39,69
+3857281,Canada,Atiba Hutchinson,48,47,95
+3857281,Canada,Cyle Larin,6,9,15
+3857281,Canada,David Junior Hoilett,14,19,33
+3857281,Canada,Ismael Koné,39,38,77
+3857281,Canada,Jonathan David,15,20,35
+3857281,Canada,Jonathan Osorio,19,20,39
+3857281,Canada,Kamal Miller,62,59,121
+3857281,Canada,Milan Borjan,27,18,45
+3857281,Canada,Richie Laryea,16,17,33
+3857281,Canada,Sam Adekugbe,11,10,21
+3857281,Canada,Stephen Antunes Eustáquio,27,22,49
+3857281,Canada,Steven de Sousa Vitoria,46,41,87
+3857281,Canada,Tajon Buchanan,22,33,55
+3857281,Canada,Lucas Daniel Cavallini,3,3,6
+3857281,Croatia,Andrej Kramarić,28,34,62
+3857281,Croatia,Borna Sosa,45,35,80
+3857281,Croatia,Dejan Lovren,43,38,81
+3857281,Croatia,Dominik Livaković,14,13,27
+3857281,Croatia,Ivan Perišić,30,36,66
+3857281,Croatia,Josip Juranović,37,33,70
+3857281,Croatia,Joško Gvardiol,44,40,84
+3857281,Croatia,Luka Modrić,45,48,93
+3857281,Croatia,Marcelo Brozović,55,53,108
+3857281,Croatia,Marko Livaja,8,19,27
+3857281,Croatia,Mateo Kovačić,42,34,76
+3857281,Croatia,Bruno Petković,6,15,21
+3857281,Croatia,Mario Pašalić,5,1,6
+3857281,Croatia,Mislav Oršić,3,3,6
+3857281,Croatia,Nikola Vlašić,4,5,9
+3857281,Croatia,Lovro Majer,2,4,6
+3857282,United States,Antonee Robinson,49,42,91
+3857282,United States,Christian Pulisic,30,51,81
+3857282,United States,Haji Wright,4,7,11
+3857282,United States,Joshua Sargent,10,13,23
+3857282,United States,Kellyn Kai Perry-Acosta,7,8,15
+3857282,United States,Matthew Charles Turner,22,17,39
+3857282,United States,Sergino Dest,65,63,128
+3857282,United States,Tim Ream,68,65,133
+3857282,United States,Timothy Weah,24,27,51
+3857282,United States,Tyler Adams,63,49,112
+3857282,United States,Walker Zimmerman,82,76,158
+3857282,United States,Weston McKennie,27,27,54
+3857282,United States,Yunus Dimoara Musah,38,42,80
+3857282,United States,Brenden Aaronson,17,20,37
+3857282,United States,DeAndre Yedlin,12,11,23
+3857282,United States,Jordan Morris,2,2,4
+3857282,Wales,Aaron Ramsey,24,31,55
+3857282,Wales,Chris Mepham,46,43,89
+3857282,Wales,Connor Roberts,38,33,71
+3857282,Wales,Ethan Ampadu,29,30,59
+3857282,Wales,Gareth Frank Bale,14,25,39
+3857282,Wales,Harry Wilson,23,21,44
+3857282,Wales,Joe Rodon,51,55,106
+3857282,Wales,Kieffer Roberto Francisco Moore,13,19,32
+3857282,Wales,Neco Williams,24,20,44
+3857282,Wales,Wayne Hennessey,22,16,38
+3857282,Wales,Ben Davies,41,28,69
+3857282,Wales,Sorba Thomas,3,4,7
+3857282,Wales,Brennan Johnson,3,3,6
+3857282,Wales,Daniel James,7,11,18
+3857282,Wales,Joseff Morrell,1,0,1
+3857283,Belgium,Amadou Onana,39,43,82
+3857283,Belgium,Axel Witsel,77,65,142
+3857283,Belgium,Eden Hazard,25,33,58
+3857283,Belgium,Jan Vertonghen,97,89,186
+3857283,Belgium,Kevin De Bruyne,45,52,97
+3857283,Belgium,Thomas Meunier,39,40,79
+3857283,Belgium,Thorgan Hazard,30,33,63
+3857283,Belgium,Timothy Castagne,65,61,126
+3857283,Belgium,Toby Alderweireld,94,95,189
+3857283,Belgium,Dries Mertens,11,15,26
+3857283,Belgium,Leandro Trossard,10,12,22
+3857283,Belgium,Michy Batshuayi Tunga,7,14,21
+3857283,Belgium,Thibaut Courtois,34,19,53
+3857283,Belgium,Youri Tielemans,27,26,53
+3857283,Belgium,Charles De Ketelaere,3,5,8
+3857283,Belgium,Romelu Lukaku Menama,1,2,3
+3857283,Morocco,Abdelhamid Sabiri,5,4,9
+3857283,Morocco,Abderrazak Hamdallah,3,6,9
+3857283,Morocco,Azzedine Ounahi,26,26,52
+3857283,Morocco,Munir Mohand Mohamedi,18,8,26
+3857283,Morocco,Nayef Aguerd,38,35,73
+3857283,Morocco,Romain Saïss,32,29,61
+3857283,Morocco,Hakim Ziyech,21,32,53
+3857283,Morocco,Zakaria Aboukhlal,3,5,8
+3857283,Morocco,Achraf Hakimi Mouh,30,31,61
+3857283,Morocco,Selim Amallah,17,18,35
+3857283,Morocco,Sofiane Boufal,21,26,47
+3857283,Morocco,Sofyan Amrabat,35,30,65
+3857283,Morocco,Youssef En-Nesyri,4,6,10
+3857283,Morocco,Noussair Mazraoui,28,26,54
+3857283,Morocco,Jawad El Yamiq,2,0,2
+3857283,Morocco,Yahia Attiyat allah,4,5,9
+3857284,Germany,Antonio Rüdiger,106,104,210
+3857284,Germany,David Raum,60,59,119
+3857284,Germany,Jamal Musiala,38,52,90
+3857284,Germany,Jonas Hofmann,15,17,32
+3857284,Germany,Joshua Kimmich,82,83,165
+3857284,Germany,Leon Goretzka,7,8,15
+3857284,Germany,Manuel Neuer,50,42,92
+3857284,Germany,Nico Schlotterbeck,109,96,205
+3857284,Germany,Niklas Süle,95,82,177
+3857284,Germany,Serge Gnabry,39,48,87
+3857284,Germany,Thomas Müller,32,37,69
+3857284,Germany,İlkay Gündoğan,64,62,126
+3857284,Germany,Kai Havertz,17,22,39
+3857284,Germany,Mario Götze,4,4,8
+3857284,Germany,Niclas Füllkrug,3,6,9
+3857284,Germany,Youssoufa Moukoko,2,1,3
+3857284,Japan,Ao Tanaka,23,28,51
+3857284,Japan,Daichi Kamada,15,17,32
+3857284,Japan,Daizen Maeda,2,4,6
+3857284,Japan,Hiroki Sakai,17,17,34
+3857284,Japan,Junya Ito,7,15,22
+3857284,Japan,Ko Itakura,22,17,39
+3857284,Japan,Maya Yoshida,32,32,64
+3857284,Japan,Shūichi Gonda,23,18,41
+3857284,Japan,Takefusa Kubo,1,3,4
+3857284,Japan,Takehiro Tomiyasu,18,15,33
+3857284,Japan,Wataru Endo,24,18,42
+3857284,Japan,Kaoru Mitoma,13,6,19
+3857284,Japan,Takuma Asano,5,10,15
+3857284,Japan,Yuto Nagatomo,10,6,16
+3857284,Japan,Takumi Minamino,1,5,6
+3857284,Japan,Ritsu Doan,2,4,6
+3857285,Netherlands,Andries Noppert,25,12,37
+3857285,Netherlands,Denzel Dumfries,25,33,58
+3857285,Netherlands,Frenkie de Jong,57,56,113
+3857285,Netherlands,Matthijs de Ligt,40,36,76
+3857285,Netherlands,Nathan Aké,57,58,115
+3857285,Netherlands,Steven Berghuis,38,36,74
+3857285,Netherlands,Teun Koopmeiners,4,4,8
+3857285,Netherlands,Virgil van Dijk,49,51,100
+3857285,Netherlands,Cody Mathès Gakpo,14,15,29
+3857285,Netherlands,Daley Blind,46,38,84
+3857285,Netherlands,Memphis Depay,10,18,28
+3857285,Netherlands,Vincent Janssen,9,12,21
+3857285,Netherlands,Davy Klaassen,3,2,5
+3857285,Netherlands,Steven Bergwijn,16,22,38
+3857285,Senegal,Abdou Diallo,13,20,33
+3857285,Senegal,Boulaye Dia,11,12,23
+3857285,Senegal,Cheikhou Kouyaté,21,19,40
+3857285,Senegal,Ismaïla Sarr,14,28,42
+3857285,Senegal,Krépin Diatta,32,37,69
+3857285,Senegal,Nampalys Mendy,38,37,75
+3857285,Senegal,Pape Abou Cissé,21,24,45
+3857285,Senegal,Idrissa Gana Gueye,36,32,68
+3857285,Senegal,Youssouf Sabaly,61,54,115
+3857285,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,2,4,6
+3857285,Senegal,Kalidou Koulibaly,40,35,75
+3857285,Senegal,Edouard Mendy,27,16,43
+3857285,Senegal,Pape Gueye,9,9,18
+3857285,Senegal,Ismail Jakobs,10,8,18
+3857285,Senegal,Nicolas Jackson,9,9,18
+3857286,Ecuador,Alan Steven Franco Palma,6,6,12
+3857286,Ecuador,Angelo Smit Preciado Quiñónez,42,31,73
+3857286,Ecuador,Gonzalo Jordy Plata Jiménez,27,34,61
+3857286,Ecuador,Jhegson Sebastián Méndez Carabalí,76,67,143
+3857286,Ecuador,José Adoni Cifuentes Charcopa,6,11,17
+3857286,Ecuador,Piero Martín Hincapié Reyna,68,66,134
+3857286,Ecuador,Enner Remberto Valencia Lastra,14,26,40
+3857286,Ecuador,Felix Eduardo Torres Caicedo,50,50,100
+3857286,Ecuador,Hernán Ismael Galíndez,10,7,17
+3857286,Ecuador,Jeremy Leonel Sarmiento Morante,6,6,12
+3857286,Ecuador,Michael Steveen Estrada Martínez,12,22,34
+3857286,Ecuador,Moisés Isaac Caicedo Corozo,44,40,84
+3857286,Ecuador,Romario Andrés Ibarra Mina,11,13,24
+3857286,Ecuador,Pervis Josué Estupiñán Tenorio,60,52,112
+3857286,Ecuador,Kevin José Rodríguez Cortez,0,1,1
+3857286,Qatar,Abdelkarim Hassan Al Haj Fadlalla,57,55,112
+3857286,Qatar,Abdulaziz Hatem Mohammed Abdullah,30,39,69
+3857286,Qatar,Akram Hassan Afif,33,37,70
+3857286,Qatar,Almoez Ali Zainalabiddin Abdulla,7,8,15
+3857286,Qatar,Bassam Hisham Al Rawi,48,45,93
+3857286,Qatar,Boualem Khoukhi,66,62,128
+3857286,Qatar,Hassan Khalid Al Heidos,22,30,52
+3857286,Qatar,Homam Alamin Ahmed,29,25,54
+3857286,Qatar,Karim Boudiaf,42,39,81
+3857286,Qatar,Pedro Miguel Correia,26,24,50
+3857286,Qatar,Saad Abdullah Al Sheeb,17,9,26
+3857286,Qatar,Mohammed Muntari,3,4,7
+3857286,Qatar,Mohammed Waed Abdulwahhab Al Bayati,2,5,7
+3857287,South Korea,Gue-Sung Cho,4,9,13
+3857287,South Korea,Heung-Min Son,19,32,51
+3857287,South Korea,In-Beom Hwang,46,48,94
+3857287,South Korea,Moon-Hwan Kim,52,36,88
+3857287,South Korea,Jae-Sung Lee,32,28,60
+3857287,South Korea,Jin-Su Kim,19,17,36
+3857287,South Korea,Jun-Ho Son,10,11,21
+3857287,South Korea,Min Jae Kim,44,40,84
+3857287,South Korea,Sang-Ho Na,13,24,37
+3857287,South Korea,Woo-Young Jung,46,41,87
+3857287,South Korea,Young-Gwon Kim,33,34,67
+3857287,South Korea,Kang-In Lee,8,9,17
+3857287,South Korea,Seung-Gyu Kim,19,12,31
+3857287,South Korea,Ui-Jo Hwang,6,10,16
+3857287,Uruguay,Darwin Gabriel Núñez Ribeiro,13,26,39
+3857287,Uruguay,Federico Santiago Valverde Dipetta,51,52,103
+3857287,Uruguay,José María Giménez de Vargas,67,68,135
+3857287,Uruguay,Luis Alberto Suárez Díaz,7,16,23
+3857287,Uruguay,Mathías Olivera Miramontes,40,28,68
+3857287,Uruguay,Matías Nicolás Viña Susperreguy,8,6,14
+3857287,Uruguay,Matías Vecino Falero,33,31,64
+3857287,Uruguay,Rodrigo Bentancur Colmán,68,67,135
+3857287,Uruguay,Sergio Rochet Álvarez,19,12,31
+3857287,Uruguay,Diego Nicolás De La Cruz Arcosa,10,13,23
+3857287,Uruguay,Diego Roberto Godín Leal,66,66,132
+3857287,Uruguay,Edinson Roberto Cavani Gómez,6,9,15
+3857287,Uruguay,José Martín Cáceres Silva,68,59,127
+3857287,Uruguay,Facundo Pellistri Rebollo,16,19,35
+3857287,Uruguay,Guillermo Varela Olivera,3,3,6
+3857288,Australia,Aaron Mooy,38,29,67
+3857288,Australia,Ajdin Hrustic,10,14,24
+3857288,Australia,Awer Denis Bul Mabil,1,2,3
+3857288,Australia,Aziz Eraltay Behich,28,29,57
+3857288,Australia,Craig Goodwin,21,30,51
+3857288,Australia,Harry Souttar,25,20,45
+3857288,Australia,Jackson Irvine,29,20,49
+3857288,Australia,Jamie MacLaren,5,8,13
+3857288,Australia,Mathew Leckie,20,30,50
+3857288,Australia,Mitchell Thomas Duke,10,21,31
+3857288,Australia,Riley McGree,14,19,33
+3857288,Australia,Kye Rowles,25,18,43
+3857288,Australia,Mathew Ryan,17,14,31
+3857288,Australia,Fran Karačić,23,15,38
+3857288,Australia,Keanu Baccus,3,3,6
+3857288,Australia,Miloš Degenek,5,2,7
+3857288,Tunisia,Ali Abdi,44,38,82
+3857288,Tunisia,Aymen Dahmen,15,13,28
+3857288,Tunisia,Aïssa Bilal Laïdouni,24,23,47
+3857288,Tunisia,Ellyes Joris Skhiri,49,41,90
+3857288,Tunisia,Ferjani Sassi,24,24,48
+3857288,Tunisia,Issam Jebali,11,13,24
+3857288,Tunisia,Mohamed Dräger,12,12,24
+3857288,Tunisia,Montassar Omar Talbi,52,42,94
+3857288,Tunisia,Naïm Sliti,23,32,55
+3857288,Tunisia,Wahbi Khazri,4,11,15
+3857288,Tunisia,Yassine Meriah,62,64,126
+3857288,Tunisia,Youssef Msakni,31,43,74
+3857288,Tunisia,Wajdi Kechrida,13,10,23
+3857288,Tunisia,Dylan Daniel Mahmoud Bronn,41,39,80
+3857288,Tunisia,Taha Yassine Khenissi,1,1,2
+3857289,Argentina,Alexis Mac Allister,34,36,70
+3857289,Argentina,Enzo Fernandez,23,20,43
+3857289,Argentina,Gonzalo Ariel Montiel,49,43,92
+3857289,Argentina,Guido Rodríguez,54,54,108
+3857289,Argentina,Lautaro Javier Martínez,3,9,12
+3857289,Argentina,Lionel Andrés Messi Cuccittini,38,46,84
+3857289,Argentina,Lisandro Martínez,48,49,97
+3857289,Argentina,Marcos Javier Acuña,28,25,53
+3857289,Argentina,Rodrigo Javier De Paul,59,59,118
+3857289,Argentina,Ángel Fabián Di María Hernández,21,34,55
+3857289,Argentina,Cristian Gabriel Romero,3,3,6
+3857289,Argentina,Damián Emiliano Martínez,18,12,30
+3857289,Argentina,Nicolás Hernán Otamendi,76,68,144
+3857289,Argentina,Exequiel Alejandro Palacios,6,3,9
+3857289,Argentina,Julián Álvarez,6,7,13
+3857289,Argentina,Nahuel Molina Lucero,10,8,18
+3857289,Mexico,Carlos Uriel Antuna Romero,3,8,11
+3857289,Mexico,Luis Gerardo Chávez Magallón,21,24,45
+3857289,Mexico,Néstor Alejandro Araújo Razo,47,38,85
+3857289,Mexico,Raúl Alonso Jiménez Rodríguez,8,10,18
+3857289,Mexico,César Jasib Montes Castro,49,49,98
+3857289,Mexico,Francisco Guillermo Ochoa Magaña,20,17,37
+3857289,Mexico,Héctor Alfredo Moreno Herrera,38,36,74
+3857289,Mexico,Héctor Miguel Herrera López,37,27,64
+3857289,Mexico,Jesús Daniel Gallardo Vasconcelos,19,17,36
+3857289,Mexico,Roberto Carlos Alvarado Hernández,5,11,16
+3857289,Mexico,Érick Gabriel Gutiérrez Galaviz,25,25,50
+3857289,Mexico,Ernesto Alexis Vega Rojas,3,6,9
+3857289,Mexico,Hirving Rodrigo Lozano Bahena,3,13,16
+3857289,Mexico,José Andrés Guardado Hernández,11,10,21
+3857289,Mexico,Kevin Nahin Álvarez Campos,15,13,28
+3857290,Cameroon,André Onana,44,38,82
+3857290,Cameroon,André-Frank Zambo Anguissa,56,58,114
+3857290,Cameroon,Bryan Mbeumo,31,41,72
+3857290,Cameroon,Gaël Ondoua,7,4,11
+3857290,Cameroon,Jean-Charles Castelletto,39,41,80
+3857290,Cameroon,Jean-Eric Maxim Choupo-Moting,15,17,32
+3857290,Cameroon,Karl Brillant Toko Ekambi,27,28,55
+3857290,Cameroon,Ngoran Suiru Fai Collins,40,44,84
+3857290,Cameroon,Nicolas Alexis Julio N'Koulou Ndoubena,52,51,103
+3857290,Cameroon,Nouhou Tolo,40,32,72
+3857290,Cameroon,Samuel Yves Oum Gwet,48,36,84
+3857290,Cameroon,Martin Hongla Yma II,30,32,62
+3857290,Cameroon,Vincent Paté Aboubakar,6,8,14
+3857290,Cameroon,Georges-Kévin Nkoudou Mbida,3,6,9
+3857290,Cameroon,Nicolas Moumi Ngamaleu,2,4,6
+3857290,Switzerland,Breel-Donald Embolo,14,24,38
+3857290,Switzerland,Djibril Sow,31,33,64
+3857290,Switzerland,Granit Xhaka,38,41,79
+3857290,Switzerland,Manuel Obafemi Akanji,58,53,111
+3857290,Switzerland,Remo Freuler,59,54,113
+3857290,Switzerland,Ruben Vargas,24,32,56
+3857290,Switzerland,Xherdan Shaqiri,24,33,57
+3857290,Switzerland,Nico Elvedi,65,53,118
+3857290,Switzerland,Ricardo Iván Rodríguez Araya,49,42,91
+3857290,Switzerland,Silvan Widmer,42,40,82
+3857290,Switzerland,Eray Ervin Cömert,2,2,4
+3857290,Switzerland,Noah Okafor,9,13,22
+3857290,Switzerland,Fabian Frei,7,9,16
+3857290,Switzerland,Fabian Rieder,5,6,11
+3857290,Switzerland,Haris Seferović,4,7,11
+3857290,Switzerland,Yann Sommer,30,19,49
+3857291,Costa Rica,Anthony Daniel Contreras Enríquez,4,6,10
+3857291,Costa Rica,Bryan Oviedo,12,14,26
+3857291,Costa Rica,Carlos Manuel Martínez Castro,10,6,16
+3857291,Costa Rica,Jewison Bennette,3,9,12
+3857291,Costa Rica,Yeltsin Ignacio Tejeda Valverde,12,9,21
+3857291,Costa Rica,Brandon Aguilera Zamora,6,6,12
+3857291,Costa Rica,Francisco Javier Calvo Quesada,18,16,34
+3857291,Costa Rica,Joel Nathaniel Campbell Samuels,17,24,41
+3857291,Costa Rica,Keysher Fuller Spence,10,12,22
+3857291,Costa Rica,Ronald Alberto Matarrita Ulate,9,9,18
+3857291,Costa Rica,Óscar Esau Duarte Gaitán,18,18,36
+3857291,Costa Rica,Bryan Ruiz González,8,10,18
+3857291,Costa Rica,Celso Borges Mora,16,11,27
+3857291,Costa Rica,Keylor Navas Gamboa,13,7,20
+3857291,Costa Rica,Kendall Jamaal Waston Manley,11,8,19
+3857291,Costa Rica,Álvaro José Zamora Mata,5,7,12
+3857291,Spain,Alejandro Balde Martínez,31,31,62
+3857291,Spain,Aymeric Laporte,143,135,278
+3857291,Spain,Carlos Soler Barragán,43,41,84
+3857291,Spain,Daniel Olmo Carvajal,59,70,129
+3857291,Spain,Jorge Resurrección Merodio,48,49,97
+3857291,Spain,Pablo Martín Páez Gavira,66,75,141
+3857291,Spain,Rodrigo Hernández Cascante,139,125,264
+3857291,Spain,Álvaro Borja Morata Martín,7,12,19
+3857291,Spain,César Azpilicueta Tanco,99,88,187
+3857291,Spain,Jordi Alba Ramos,110,100,210
+3857291,Spain,Marco Asensio Willemsen,32,45,77
+3857291,Spain,Pedro González López,85,84,169
+3857291,Spain,Sergio Busquets i Burgos,88,83,171
+3857291,Spain,Unai Simón Mendibil,33,31,64
+3857291,Spain,Ferrán Torres García,19,29,48
+3857291,Spain,Nicholas Williams Arthuer,7,11,18
+3857292,Costa Rica,Anthony Daniel Contreras Enríquez,5,5,10
+3857292,Costa Rica,Roan Roberto Wilson Gordon,6,6,12
+3857292,Costa Rica,Ronald Alberto Matarrita Ulate,11,13,24
+3857292,Costa Rica,Brandon Aguilera Zamora,14,16,30
+3857292,Costa Rica,Bryan Oviedo,25,18,43
+3857292,Costa Rica,Joel Nathaniel Campbell Samuels,50,69,119
+3857292,Costa Rica,Juan Pablo Vargas Campos,22,16,38
+3857292,Costa Rica,Keylor Navas Gamboa,21,9,30
+3857292,Costa Rica,Yeltsin Ignacio Tejeda Valverde,24,28,52
+3857292,Costa Rica,Johan Alberto Venegas Ulloa,11,13,24
+3857292,Costa Rica,Keysher Fuller Spence,15,17,32
+3857292,Costa Rica,Óscar Esau Duarte Gaitán,12,16,28
+3857292,Costa Rica,Celso Borges Mora,31,26,57
+3857292,Costa Rica,Jewison Bennette,6,11,17
+3857292,Costa Rica,Kendall Jamaal Waston Manley,16,15,31
+3857292,Costa Rica,Youstin Delfin Salas Gómez,15,6,21
+3857292,Germany,Antonio Rüdiger,80,67,147
+3857292,Germany,David Raum,58,49,107
+3857292,Germany,Jamal Musiala,39,60,99
+3857292,Germany,Joshua Kimmich,117,109,226
+3857292,Germany,Leroy Sané,41,48,89
+3857292,Germany,Lukas Klostermann,38,31,69
+3857292,Germany,Manuel Neuer,29,18,47
+3857292,Germany,Mario Götze,11,11,22
+3857292,Germany,Matthias Ginter,3,3,6
+3857292,Germany,Niclas Füllkrug,8,14,22
+3857292,Germany,Niklas Süle,97,90,187
+3857292,Germany,Serge Gnabry,34,42,76
+3857292,Germany,İlkay Gündoğan,71,68,139
+3857292,Germany,Leon Goretzka,20,23,43
+3857292,Germany,Thomas Müller,14,21,35
+3857292,Germany,Kai Havertz,9,15,24
+3857293,Ghana,Abdul Rahman Baba,43,34,77
+3857293,Ghana,André Ayew Pelé,6,11,17
+3857293,Ghana,Daniel-Kofi Kyereh,14,13,27
+3857293,Ghana,Jordan Ayew,6,8,14
+3857293,Ghana,Kamaldeen Sulemana,9,22,31
+3857293,Ghana,Mohamed Salisu,42,44,86
+3857293,Ghana,Mohammed Kudus,27,37,64
+3857293,Ghana,Salis Abdul Samed,46,48,94
+3857293,Ghana,Thomas Teye Partey,63,61,124
+3857293,Ghana,Alidu Seidu,41,32,73
+3857293,Ghana,Antoine Semenyo,1,2,3
+3857293,Ghana,Daniel Amartey,47,40,87
+3857293,Ghana,Iñaki Williams Arthuer,10,11,21
+3857293,Ghana,Lawrence Ati-Zigi,19,8,27
+3857293,Ghana,Osman Bukari,10,12,22
+3857293,Ghana,Abdul Fatawu Issahaku,0,1,1
+3857293,Uruguay,Agustín Canobbio Graviz,5,6,11
+3857293,Uruguay,Diego Nicolás De La Cruz Arcosa,10,10,20
+3857293,Uruguay,Edinson Roberto Cavani Gómez,10,11,21
+3857293,Uruguay,Guillermo Varela Olivera,36,41,77
+3857293,Uruguay,Matías Vecino Falero,38,35,73
+3857293,Uruguay,Maximiliano Gómez González,2,4,6
+3857293,Uruguay,Darwin Gabriel Núñez Ribeiro,12,19,31
+3857293,Uruguay,Facundo Pellistri Rebollo,10,17,27
+3857293,Uruguay,Federico Santiago Valverde Dipetta,63,62,125
+3857293,Uruguay,Luis Alberto Suárez Díaz,14,21,35
+3857293,Uruguay,Mathías Olivera Miramontes,41,31,72
+3857293,Uruguay,Giorgian Daniel De Arrascaeta Benedetti,14,28,42
+3857293,Uruguay,Sebastián Coates Nión,40,36,76
+3857293,Uruguay,José María Giménez de Vargas,33,23,56
+3857293,Uruguay,Rodrigo Bentancur Colmán,17,11,28
+3857293,Uruguay,Sergio Rochet Álvarez,19,9,28
+3857294,Netherlands,Andries Noppert,27,11,38
+3857294,Netherlands,Daley Blind,102,96,198
+3857294,Netherlands,Denzel Dumfries,48,47,95
+3857294,Netherlands,Frenkie de Jong,87,91,178
+3857294,Netherlands,Jurriën David Norman Timber,107,100,207
+3857294,Netherlands,Kenneth Taylor,9,8,17
+3857294,Netherlands,Marten de Roon,56,60,116
+3857294,Netherlands,Nathan Aké,97,89,186
+3857294,Netherlands,Teun Koopmeiners,14,15,29
+3857294,Netherlands,Virgil van Dijk,80,72,152
+3857294,Netherlands,Cody Mathès Gakpo,29,42,71
+3857294,Netherlands,Davy Klaassen,27,32,59
+3857294,Netherlands,Memphis Depay,27,39,66
+3857294,Netherlands,Steven Berghuis,28,32,60
+3857294,Netherlands,Vincent Janssen,7,10,17
+3857294,Netherlands,Wout Weghorst,2,3,5
+3857294,Qatar,Abdelkarim Hassan Al Haj Fadlalla,34,36,70
+3857294,Qatar,Akram Hassan Afif,68,68,136
+3857294,Qatar,Ali Assadalla Thaimn Qambar,22,22,44
+3857294,Qatar,Almoez Ali Zainalabiddin Abdulla,13,13,26
+3857294,Qatar,Assim Omer Al Haj Madibo,24,17,41
+3857294,Qatar,Boualem Khoukhi,44,46,90
+3857294,Qatar,Hassan Khalid Al Heidos,20,21,41
+3857294,Qatar,Homam Alamin Ahmed,24,21,45
+3857294,Qatar,Karim Boudiaf,21,19,40
+3857294,Qatar,Meshaal Aissa Barsham,17,15,32
+3857294,Qatar,Mohammed Muntari,12,14,26
+3857294,Qatar,Pedro Miguel Correia,34,37,71
+3857294,Qatar,Abdulaziz Hatem Mohammed Abdullah,35,38,73
+3857294,Qatar,Ismaeel Mohammad Mohammad,25,25,50
+3857294,Qatar,Ahmed Alaa Eldin Abdelmotaal,0,1,1
+3857294,Qatar,Mosaab Khoder Jibril,3,3,6
+3857295,Costa Rica,Anthony Daniel Contreras Enríquez,8,11,19
+3857295,Costa Rica,Bryan Oviedo,31,30,61
+3857295,Costa Rica,Celso Borges Mora,47,45,92
+3857295,Costa Rica,Joel Nathaniel Campbell Samuels,38,45,83
+3857295,Costa Rica,Keysher Fuller Spence,18,19,37
+3857295,Costa Rica,Brandon Aguilera Zamora,5,9,14
+3857295,Costa Rica,Óscar Esau Duarte Gaitán,38,36,74
+3857295,Costa Rica,Francisco Javier Calvo Quesada,67,59,126
+3857295,Costa Rica,Kendall Jamaal Waston Manley,38,38,76
+3857295,Costa Rica,Yeltsin Ignacio Tejeda Valverde,43,42,85
+3857295,Costa Rica,Gerson Torres Barrantes,17,19,36
+3857295,Costa Rica,Keylor Navas Gamboa,21,17,38
+3857295,Costa Rica,Daniel Alonso Chacón Salas,1,1,2
+3857295,Costa Rica,Jewison Bennette,2,3,5
+3857295,Japan,Ayase Ueda,7,16,23
+3857295,Japan,Daichi Kamada,26,37,63
+3857295,Japan,Hidemasa Morita,59,61,120
+3857295,Japan,Ritsu Doan,10,13,23
+3857295,Japan,Wataru Endo,72,77,149
+3857295,Japan,Yuki Soma,13,14,27
+3857295,Japan,Hiroki Ito,58,50,108
+3857295,Japan,Ko Itakura,64,62,126
+3857295,Japan,Maya Yoshida,112,104,216
+3857295,Japan,Miki Yamane,25,13,38
+3857295,Japan,Takumi Minamino,3,5,8
+3857295,Japan,Junya Ito,2,8,10
+3857295,Japan,Takuma Asano,5,8,13
+3857295,Japan,Yuto Nagatomo,41,34,75
+3857295,Japan,Kaoru Mitoma,11,14,25
+3857295,Japan,Shūichi Gonda,19,11,30
+3857296,Belgium,Axel Witsel,47,44,91
+3857296,Belgium,Jan Vertonghen,85,75,160
+3857296,Belgium,Jeremy Doku,8,14,22
+3857296,Belgium,Kevin De Bruyne,26,31,57
+3857296,Belgium,Leander Dendoncker,44,42,86
+3857296,Belgium,Leandro Trossard,22,31,53
+3857296,Belgium,Thomas Meunier,53,57,110
+3857296,Belgium,Timothy Castagne,77,68,145
+3857296,Belgium,Toby Alderweireld,81,81,162
+3857296,Belgium,Yannick Ferreira Carrasco,26,32,58
+3857296,Belgium,Youri Tielemans,10,8,18
+3857296,Belgium,Dries Mertens,13,18,31
+3857296,Belgium,Eden Hazard,1,2,3
+3857296,Belgium,Thibaut Courtois,33,21,54
+3857296,Belgium,Thorgan Hazard,11,10,21
+3857296,Belgium,Romelu Lukaku Menama,6,9,15
+3857296,Croatia,Andrej Kramarić,29,31,60
+3857296,Croatia,Borna Sosa,74,71,145
+3857296,Croatia,Dejan Lovren,40,41,81
+3857296,Croatia,Ivan Perišić,33,43,76
+3857296,Croatia,Josip Juranović,42,41,83
+3857296,Croatia,Luka Modrić,45,48,93
+3857296,Croatia,Marcelo Brozović,79,72,151
+3857296,Croatia,Marko Livaja,9,15,24
+3857296,Croatia,Mateo Kovačić,59,62,121
+3857296,Croatia,Bruno Petković,12,21,33
+3857296,Croatia,Joško Gvardiol,59,47,106
+3857296,Croatia,Mario Pašalić,4,4,8
+3857296,Croatia,Dominik Livaković,28,16,44
+3857296,Croatia,Lovro Majer,1,2,3
+3857297,Poland,Arkadiusz Milik,13,17,30
+3857297,Poland,Grzegorz Krychowiak,20,18,38
+3857297,Poland,Krystian Bielik,28,19,47
+3857297,Poland,Matty Cash,29,29,58
+3857297,Poland,Piotr Zieliński,16,18,34
+3857297,Poland,Przemysław Frankowski,20,22,42
+3857297,Poland,Robert Lewandowski,16,31,47
+3857297,Poland,Bartosz Bereszyński,22,19,41
+3857297,Poland,Jakub Piotr Kiwior,30,30,60
+3857297,Poland,Krzysztof Piątek,2,8,10
+3857297,Poland,Wojciech Szczęsny,26,17,43
+3857297,Poland,Jakub Kamiński,10,11,21
+3857297,Poland,Kamil Glik,27,20,47
+3857297,Saudi Arabia,Abdulelah Al Amri,52,44,96
+3857297,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,42,39,81
+3857297,Saudi Arabia,Ali Albulayhi,51,48,99
+3857297,Saudi Arabia,Firas Tariq Nasser Al Albirakan,22,28,50
+3857297,Saudi Arabia,Mohammed Al Burayk,38,37,75
+3857297,Saudi Arabia,Mohammed Kanoo,68,70,138
+3857297,Saudi Arabia,Mohammed Khalil Al Owais,19,10,29
+3857297,Saudi Arabia,Nasser Al Dawsari,10,10,20
+3857297,Saudi Arabia,Salem Mohammed Al Dawsari,60,70,130
+3857297,Saudi Arabia,Saud Abdullah Abdul Hamid,56,51,107
+3857297,Saudi Arabia,Sultan Abdullah Salim Al Ghannam,13,11,24
+3857297,Saudi Arabia,Nawaf Shaker Al Abid,28,33,61
+3857297,Saudi Arabia,Saleh Khalid Al Shehri,12,15,27
+3857297,Saudi Arabia,Sami Khalil Al Naji,15,15,30
+3857297,Saudi Arabia,Abdulrahman Al-Obood,2,7,9
+3857297,Saudi Arabia,Hattan Babhir,1,1,2
+3857298,Ghana,Abdul Rahman Baba,27,36,63
+3857298,Ghana,André Ayew Pelé,13,14,27
+3857298,Ghana,Antoine Semenyo,0,1,1
+3857298,Ghana,Daniel Amartey,46,42,88
+3857298,Ghana,Iñaki Williams Arthuer,14,16,30
+3857298,Ghana,Jordan Ayew,12,14,26
+3857298,Ghana,Mohamed Salisu,32,35,67
+3857298,Ghana,Mohammed Kudus,17,23,40
+3857298,Ghana,Osman Bukari,7,5,12
+3857298,Ghana,Salis Abdul Samed,47,42,89
+3857298,Ghana,Thomas Teye Partey,47,52,99
+3857298,Ghana,Alexander Djiku,23,17,40
+3857298,Ghana,Lawrence Ati-Zigi,20,9,29
+3857298,Ghana,Alidu Seidu,19,20,39
+3857298,Ghana,Tariq Lamptey,10,7,17
+3857298,Ghana,Daniel-Kofi Kyereh,2,3,5
+3857298,Portugal,Bernardo Mota Veiga de Carvalho e Silva,69,63,132
+3857298,Portugal,Bruno Miguel Borges Fernandes,49,55,104
+3857298,Portugal,Cristiano Ronaldo dos Santos Aveiro,14,23,37
+3857298,Portugal,Danilo Luís Hélio Pereira,72,69,141
+3857298,Portugal,Diogo Meireles Costa,25,10,35
+3857298,Portugal,João Félix Sequeira,22,36,58
+3857298,Portugal,João Pedro Cavaco Cancelo,59,62,121
+3857298,Portugal,Otávio Edmilson da Silva Monteiro,29,35,64
+3857298,Portugal,Raphaël Adelino José Guerreiro,69,68,137
+3857298,Portugal,Rúben Diogo Da Silva Neves,59,50,109
+3857298,Portugal,Rúben Santos Gato Alves Dias,63,59,122
+3857298,Portugal,William Silva de Carvalho,27,24,51
+3857298,Portugal,Rafael Alexandre Conceição Leão,7,12,19
+3857298,Portugal,Gonçalo Matias Ramos,6,6,12
+3857298,Portugal,João Mário Naval da Costa Eduardo,3,1,4
+3857298,Portugal,João Maria Lobo Alves Palhinha Gonçalves,3,3,6
+3857299,Ghana,André Ayew Pelé,12,15,27
+3857299,Ghana,Daniel Amartey,36,31,67
+3857299,Ghana,Gideon Mensah,35,28,63
+3857299,Ghana,Iñaki Williams Arthuer,9,13,22
+3857299,Ghana,Jordan Ayew,16,21,37
+3857299,Ghana,Mohamed Salisu,32,37,69
+3857299,Ghana,Mohammed Kudus,17,16,33
+3857299,Ghana,Tariq Lamptey,11,11,22
+3857299,Ghana,Thomas Teye Partey,43,42,85
+3857299,Ghana,Alexander Djiku,0,1,1
+3857299,Ghana,Salis Abdul Samed,37,36,73
+3857299,Ghana,Daniel-Kofi Kyereh,2,3,5
+3857299,Ghana,Kamaldeen Sulemana,2,4,6
+3857299,Ghana,Denis Odoi,2,1,3
+3857299,Ghana,Lawrence Ati-Zigi,12,7,19
+3857299,South Korea,Chang-Hoon Kwon,19,20,39
+3857299,South Korea,Gue-Sung Cho,12,25,37
+3857299,South Korea,Heung-Min Son,27,34,61
+3857299,South Korea,In-Beom Hwang,80,77,157
+3857299,South Korea,Jin-Su Kim,36,40,76
+3857299,South Korea,Moon-Hwan Kim,75,62,137
+3857299,South Korea,Sang-Ho Na,12,14,26
+3857299,South Korea,Woo-Yeong Jeong,13,15,28
+3857299,South Korea,Woo-Young Jung,53,55,108
+3857299,South Korea,Young-Gwon Kim,59,56,115
+3857299,South Korea,Kang-In Lee,24,23,47
+3857299,South Korea,Kyung-Won Kwon,8,7,15
+3857299,South Korea,Min Jae Kim,59,53,112
+3857299,South Korea,Ui-Jo Hwang,0,1,1
+3857299,South Korea,Seung-Gyu Kim,22,17,39
+3857300,Argentina,Alejandro Darío Gómez,20,26,46
+3857300,Argentina,Cristian Gabriel Romero,55,52,107
+3857300,Argentina,Leandro Daniel Paredes,55,52,107
+3857300,Argentina,Lionel Andrés Messi Cuccittini,33,47,80
+3857300,Argentina,Nahuel Molina Lucero,57,44,101
+3857300,Argentina,Nicolás Alejandro Tagliafico,27,24,51
+3857300,Argentina,Nicolás Hernán Otamendi,84,80,164
+3857300,Argentina,Ángel Fabián Di María Hernández,31,46,77
+3857300,Argentina,Rodrigo Javier De Paul,66,68,134
+3857300,Argentina,Damián Emiliano Martínez,21,12,33
+3857300,Argentina,Enzo Fernandez,33,34,67
+3857300,Argentina,Lautaro Javier Martínez,13,16,29
+3857300,Argentina,Lisandro Martínez,29,25,54
+3857300,Argentina,Julián Álvarez,0,8,8
+3857300,Argentina,Marcos Javier Acuña,18,8,26
+3857300,Saudi Arabia,Abdulelah Saad Hameed Al-Malki,29,24,53
+3857300,Saudi Arabia,Ali Albulayhi,10,11,21
+3857300,Saudi Arabia,Firas Tariq Nasser Al Albirakan,11,12,23
+3857300,Saudi Arabia,Hassan Mohammed Al-Tambakti,22,19,41
+3857300,Saudi Arabia,Mohammed Kanoo,29,27,56
+3857300,Saudi Arabia,Mohammed Khalil Al Owais,17,7,24
+3857300,Saudi Arabia,Salem Mohammed Al Dawsari,17,21,38
+3857300,Saudi Arabia,Salman Mohammed Al Faraj,10,11,21
+3857300,Saudi Arabia,Saud Abdullah Abdul Hamid,21,20,41
+3857300,Saudi Arabia,Yasir Gharsan Al Shahrani,12,15,27
+3857300,Saudi Arabia,Nawaf Shaker Al Abid,6,8,14
+3857300,Saudi Arabia,Saleh Khalid Al Shehri,10,15,25
+3857300,Saudi Arabia,Haitham Mohammed Asiri,1,2,3
+3857300,Saudi Arabia,Mohammed Al Burayk,1,1,2
+3857300,Saudi Arabia,Sultan Abdullah Salim Al Ghannam,1,4,5
+3857301,Qatar,Abdelkarim Hassan Al Haj Fadlalla,34,48,82
+3857301,Qatar,Abdulaziz Hatem Mohammed Abdullah,7,7,14
+3857301,Qatar,Akram Hassan Afif,40,38,78
+3857301,Qatar,Almoez Ali Zainalabiddin Abdulla,16,25,41
+3857301,Qatar,Assim Omer Al Haj Madibo,38,32,70
+3857301,Qatar,Boualem Khoukhi,57,47,104
+3857301,Qatar,Hassan Khalid Al Heidos,21,21,42
+3857301,Qatar,Homam Alamin Ahmed,24,24,48
+3857301,Qatar,Ismaeel Mohammad Mohammad,28,29,57
+3857301,Qatar,Karim Boudiaf,31,32,63
+3857301,Qatar,Meshaal Aissa Barsham,27,15,42
+3857301,Qatar,Mohammed Waed Abdulwahhab Al Bayati,7,8,15
+3857301,Qatar,Pedro Miguel Correia,23,25,48
+3857301,Qatar,Tarek Salman Salman,7,8,15
+3857301,Qatar,Mohammed Muntari,2,3,5
+3857301,Senegal,Abdou Diallo,66,60,126
+3857301,Senegal,Boulaye Dia,16,27,43
+3857301,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,3,6,9
+3857301,Senegal,Edouard Mendy,25,17,42
+3857301,Senegal,Famara Diedhiou,6,14,20
+3857301,Senegal,Idrissa Gana Gueye,48,48,96
+3857301,Senegal,Ismail Jakobs,49,41,90
+3857301,Senegal,Kalidou Koulibaly,60,54,114
+3857301,Senegal,Krépin Diatta,21,28,49
+3857301,Senegal,Nampalys Mendy,46,39,85
+3857301,Senegal,Pape Abou Cissé,9,11,20
+3857301,Senegal,Pathé Ismaël Ciss,11,11,22
+3857301,Senegal,Youssouf Sabaly,69,66,135
+3857301,Senegal,Ismaïla Sarr,11,20,31
+3857301,Senegal,Iliman Ndiaye,9,9,18
+3857301,Senegal,Pape Matar Sarr,13,11,24
+3869117,Netherlands,Andries Noppert,23,18,41
+3869117,Netherlands,Daley Blind,32,30,62
+3869117,Netherlands,Denzel Dumfries,27,43,70
+3869117,Netherlands,Frenkie de Jong,35,26,61
+3869117,Netherlands,Jurriën David Norman Timber,36,34,70
+3869117,Netherlands,Nathan Aké,30,25,55
+3869117,Netherlands,Teun Koopmeiners,16,16,32
+3869117,Netherlands,Virgil van Dijk,43,34,77
+3869117,Netherlands,Wout Weghorst,0,1,1
+3869117,Netherlands,Cody Mathès Gakpo,22,23,45
+3869117,Netherlands,Memphis Depay,23,31,54
+3869117,Netherlands,Steven Bergwijn,18,23,41
+3869117,Netherlands,Xavi Simons,6,8,14
+3869117,Netherlands,Davy Klaassen,9,11,20
+3869117,Netherlands,Marten de Roon,12,9,21
+3869117,United States,Antonee Robinson,57,52,109
+3869117,United States,Brenden Aaronson,8,11,19
+3869117,United States,Christian Pulisic,19,39,58
+3869117,United States,Giovanni Reyna,24,29,53
+3869117,United States,Jesus Ferreira,17,17,34
+3869117,United States,Tim Ream,72,57,129
+3869117,United States,Tyler Adams,79,61,140
+3869117,United States,Weston McKennie,30,40,70
+3869117,United States,Yunus Dimoara Musah,39,43,82
+3869117,United States,Haji Wright,8,8,16
+3869117,United States,Sergino Dest,33,38,71
+3869117,United States,Timothy Weah,21,22,43
+3869117,United States,DeAndre Yedlin,8,6,14
+3869117,United States,Walker Zimmerman,66,61,127
+3869117,United States,Matthew Charles Turner,18,14,32
+3869117,United States,Jordan Morris,0,1,1
+3869118,England,Bukayo Saka,24,26,50
+3869118,England,Declan Rice,53,46,99
+3869118,England,Harry Kane,17,33,50
+3869118,England,Harry Maguire,63,65,128
+3869118,England,John Stones,82,81,163
+3869118,England,Jordan Brian Henderson,41,46,87
+3869118,England,Jude Bellingham,32,32,64
+3869118,England,Kyle Walker,68,61,129
+3869118,England,Luke Shaw,60,49,109
+3869118,England,Philip Foden,27,30,57
+3869118,England,Eric Dier,11,11,22
+3869118,England,Jack Grealish,7,10,17
+3869118,England,Jordan Pickford,38,30,68
+3869118,England,Kalvin Phillips,3,4,7
+3869118,England,Marcus Rashford,7,11,18
+3869118,England,Mason Mount,3,1,4
+3869118,Senegal,Abdou Diallo,43,44,87
+3869118,Senegal,Boulaye Dia,7,11,18
+3869118,Senegal,Edouard Mendy,22,14,36
+3869118,Senegal,Famara Diedhiou,4,6,10
+3869118,Senegal,Ismail Jakobs,25,20,45
+3869118,Senegal,Ismaïla Sarr,17,25,42
+3869118,Senegal,Kalidou Koulibaly,32,36,68
+3869118,Senegal,Krépin Diatta,9,14,23
+3869118,Senegal,Nampalys Mendy,50,44,94
+3869118,Senegal,Pape Gueye,17,19,36
+3869118,Senegal,Pape Matar Sarr,27,27,54
+3869118,Senegal,Pathé Ismaël Ciss,18,16,34
+3869118,Senegal,Youssouf Sabaly,35,25,60
+3869118,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,3,6,9
+3869118,Senegal,Fodé Ballo Touré,6,6,12
+3869118,Senegal,Iliman Ndiaye,8,10,18
+3869151,Argentina,Alejandro Darío Gómez,32,33,65
+3869151,Argentina,Alexis Mac Allister,40,44,84
+3869151,Argentina,Cristian Gabriel Romero,72,63,135
+3869151,Argentina,Enzo Fernandez,94,86,180
+3869151,Argentina,Julián Álvarez,15,21,36
+3869151,Argentina,Lionel Andrés Messi Cuccittini,53,67,120
+3869151,Argentina,Marcos Javier Acuña,52,55,107
+3869151,Argentina,Nahuel Molina Lucero,55,49,104
+3869151,Argentina,Nicolás Hernán Otamendi,91,80,171
+3869151,Argentina,Rodrigo Javier De Paul,76,81,157
+3869151,Argentina,Lisandro Martínez,18,14,32
+3869151,Argentina,Nicolás Alejandro Tagliafico,10,6,16
+3869151,Argentina,Damián Emiliano Martínez,22,21,43
+3869151,Argentina,Lautaro Javier Martínez,7,16,23
+3869151,Argentina,Exequiel Alejandro Palacios,5,7,12
+3869151,Argentina,Gonzalo Ariel Montiel,4,3,7
+3869151,Australia,Aaron Mooy,52,46,98
+3869151,Australia,Aziz Eraltay Behich,42,40,82
+3869151,Australia,Craig Goodwin,6,9,15
+3869151,Australia,Fran Karačić,12,7,19
+3869151,Australia,Garang Kuol,1,4,5
+3869151,Australia,Harry Souttar,53,54,107
+3869151,Australia,Jackson Irvine,29,28,57
+3869151,Australia,Keanu Baccus,10,13,23
+3869151,Australia,Kye Rowles,65,59,124
+3869151,Australia,Mathew Leckie,10,17,27
+3869151,Australia,Mathew Ryan,45,36,81
+3869151,Australia,Miloš Degenek,32,28,60
+3869151,Australia,Mitchell Thomas Duke,6,15,21
+3869151,Australia,Riley McGree,14,13,27
+3869151,Australia,Ajdin Hrustic,7,12,19
+3869151,Australia,Jamie MacLaren,0,3,3
+3869152,France,Adrien Rabiot,52,52,104
+3869152,France,Antoine Griezmann,40,44,84
+3869152,France,Aurélien Djani Tchouaméni,65,68,133
+3869152,France,Dayotchanculle Upamecano,52,49,101
+3869152,France,Hugo Lloris,17,13,30
+3869152,France,Jules Koundé,64,53,117
+3869152,France,Kylian Mbappé Lottin,34,55,89
+3869152,France,Marcus Thuram,7,11,18
+3869152,France,Olivier Giroud,12,14,26
+3869152,France,Raphaël Varane,37,35,72
+3869152,France,Theo Bernard François Hernández,67,45,112
+3869152,France,Kingsley Coman,8,10,18
+3869152,France,Ousmane Dembélé,35,42,77
+3869152,France,Youssouf Fofana,12,11,23
+3869152,France,Axel Disasi,3,3,6
+3869152,Poland,Arkadiusz Milik,7,11,18
+3869152,Poland,Jakub Piotr Kiwior,67,69,136
+3869152,Poland,Krystian Bielik,20,18,38
+3869152,Poland,Nicola Zalewski,4,8,12
+3869152,Poland,Piotr Zieliński,60,57,117
+3869152,Poland,Bartosz Bereszyński,43,36,79
+3869152,Poland,Grzegorz Krychowiak,38,39,77
+3869152,Poland,Jan Bednarek,6,3,9
+3869152,Poland,Kamil Grosicki,4,6,10
+3869152,Poland,Przemysław Frankowski,16,22,38
+3869152,Poland,Robert Lewandowski,24,31,55
+3869152,Poland,Sebastian Szymański,11,10,21
+3869152,Poland,Wojciech Szczęsny,18,12,30
+3869152,Poland,Kamil Glik,38,30,68
+3869152,Poland,Matty Cash,38,36,74
+3869152,Poland,Jakub Kamiński,12,18,30
+3869219,Croatia,Andrej Kramarić,17,21,38
+3869219,Croatia,Bruno Petković,8,17,25
+3869219,Croatia,Dejan Lovren,93,83,176
+3869219,Croatia,Josip Juranović,82,76,158
+3869219,Croatia,Luka Modrić,64,66,130
+3869219,Croatia,Marcelo Brozović,116,120,236
+3869219,Croatia,Mateo Kovačić,53,52,105
+3869219,Croatia,Ante Budimir,4,7,11
+3869219,Croatia,Nikola Vlašić,8,9,17
+3869219,Croatia,Borna Barišić,50,43,93
+3869219,Croatia,Dominik Livaković,31,18,49
+3869219,Croatia,Ivan Perišić,22,39,61
+3869219,Croatia,Joško Gvardiol,76,65,141
+3869219,Croatia,Lovro Majer,17,17,34
+3869219,Croatia,Mario Pašalić,10,17,27
+3869219,Croatia,Mislav Oršić,3,5,8
+3869219,Croatia,Marko Livaja,3,2,5
+3869219,Japan,Ao Tanaka,7,8,15
+3869219,Japan,Takehiro Tomiyasu,54,54,108
+3869219,Japan,Takumi Minamino,10,13,23
+3869219,Japan,Wataru Endo,57,54,111
+3869219,Japan,Daichi Kamada,32,32,64
+3869219,Japan,Hidemasa Morita,43,47,90
+3869219,Japan,Junya Ito,34,34,68
+3869219,Japan,Maya Yoshida,40,37,77
+3869219,Japan,Ritsu Doan,23,28,51
+3869219,Japan,Shogo Taniguchi,50,45,95
+3869219,Japan,Yuto Nagatomo,23,22,45
+3869219,Japan,Daizen Maeda,3,6,9
+3869219,Japan,Hiroki Sakai,14,10,24
+3869219,Japan,Kaoru Mitoma,22,22,44
+3869219,Japan,Takuma Asano,8,12,20
+3869219,Japan,Shūichi Gonda,16,12,28
+3869220,Morocco,Abdelhamid Sabiri,4,8,12
+3869220,Morocco,Abdessamad Ezzalzouli,7,10,17
+3869220,Morocco,Jawad El Yamiq,1,3,4
+3869220,Morocco,Sofyan Amrabat,28,22,50
+3869220,Morocco,Yahia Attiyat allah,4,2,6
+3869220,Morocco,Azzedine Ounahi,34,38,72
+3869220,Morocco,Noussair Mazraoui,20,15,35
+3869220,Morocco,Walid Cheddira,3,7,10
+3869220,Morocco,Achraf Hakimi Mouh,38,30,68
+3869220,Morocco,Hakim Ziyech,26,32,58
+3869220,Morocco,Nayef Aguerd,19,16,35
+3869220,Morocco,Selim Amallah,8,8,16
+3869220,Morocco,Yassine Bounou,19,18,37
+3869220,Morocco,Romain Saïss,23,15,38
+3869220,Morocco,Sofiane Boufal,8,16,24
+3869220,Morocco,Youssef En-Nesyri,8,10,18
+3869220,Spain,Alejandro Balde Martínez,14,14,28
+3869220,Spain,Anssumane Fati,7,9,16
+3869220,Spain,Aymeric Laporte,172,167,339
+3869220,Spain,Marcos Llorente Moreno,94,76,170
+3869220,Spain,Pedro González López,135,134,269
+3869220,Spain,Álvaro Borja Morata Martín,5,12,17
+3869220,Spain,Carlos Soler Barragán,35,36,71
+3869220,Spain,Sergio Busquets i Burgos,67,64,131
+3869220,Spain,Daniel Olmo Carvajal,32,40,72
+3869220,Spain,Jordi Alba Ramos,99,96,195
+3869220,Spain,Marco Asensio Willemsen,11,21,32
+3869220,Spain,Nicholas Williams Arthuer,15,23,38
+3869220,Spain,Pablo Martín Páez Gavira,18,27,45
+3869220,Spain,Rodrigo Hernández Cascante,204,190,394
+3869220,Spain,Unai Simón Mendibil,31,15,46
+3869220,Spain,Ferrán Torres García,19,33,52
+3869220,Spain,Pablo Sarabia García,2,3,5
+3869253,Brazil,Alisson Ramsés Becker,20,13,33
+3869253,Brazil,Daniel Alves da Silva,17,16,33
+3869253,Brazil,Danilo Luiz da Silva,67,66,133
+3869253,Brazil,Marcos Aoás Corrêa,66,63,129
+3869253,Brazil,Thiago Emiliano da Silva,82,77,159
+3869253,Brazil,Carlos Henrique Casimiro,65,61,126
+3869253,Brazil,Gabriel Teodoro Martinelli Silva,10,12,22
+3869253,Brazil,Gleison Bremer Silva Nascimento,17,14,31
+3869253,Brazil,Lucas Tolentino Coelho de Lima,53,54,107
+3869253,Brazil,Neymar da Silva Santos Junior,37,45,82
+3869253,Brazil,Raphael Dias Belloli,36,46,82
+3869253,Brazil,Rodrygo Silva de Goes,5,7,12
+3869253,Brazil,Vinícius José Paixão de Oliveira Júnior,23,32,55
+3869253,Brazil,Éder Gabriel Militão,47,35,82
+3869253,Brazil,Richarlison de Andrade,17,23,40
+3869253,Brazil,Weverton Pereira da Silva,4,2,6
+3869253,South Korea,Chul Hong,17,15,32
+3869253,South Korea,Gue-Sung Cho,10,13,23
+3869253,South Korea,Hee-Chan Hwang,43,56,99
+3869253,South Korea,Heung-Min Son,22,29,51
+3869253,South Korea,In-Beom Hwang,40,47,87
+3869253,South Korea,Jae-Sung Lee,40,43,83
+3869253,South Korea,Jun-Ho Son,39,31,70
+3869253,South Korea,Kang-In Lee,7,7,14
+3869253,South Korea,Moon-Hwan Kim,47,42,89
+3869253,South Korea,Young-Gwon Kim,55,52,107
+3869253,South Korea,Min Jae Kim,62,60,122
+3869253,South Korea,Jin-Su Kim,21,19,40
+3869253,South Korea,Seung-Ho Paik,19,19,38
+3869253,South Korea,Woo-Young Jung,32,30,62
+3869253,South Korea,Seung-Gyu Kim,22,13,35
+3869254,Portugal,Bernardo Mota Veiga de Carvalho e Silva,40,39,79
+3869254,Portugal,Bruno Miguel Borges Fernandes,32,35,67
+3869254,Portugal,Diogo Meireles Costa,19,24,43
+3869254,Portugal,José Diogo Dalot Teixeira,30,19,49
+3869254,Portugal,João Félix Sequeira,28,33,61
+3869254,Portugal,Kléper Laveran Lima Ferreira,40,49,89
+3869254,Portugal,Otávio Edmilson da Silva Monteiro,32,33,65
+3869254,Portugal,Raphaël Adelino José Guerreiro,46,28,74
+3869254,Portugal,Rúben Santos Gato Alves Dias,38,34,72
+3869254,Portugal,Vitor Machado Ferreira,10,9,19
+3869254,Portugal,William Silva de Carvalho,54,53,107
+3869254,Portugal,Cristiano Ronaldo dos Santos Aveiro,4,4,8
+3869254,Portugal,Gonçalo Matias Ramos,7,19,26
+3869254,Portugal,Ricardo Jorge Luz Horta,9,10,19
+3869254,Portugal,Rúben Diogo Da Silva Neves,13,11,24
+3869254,Portugal,Rafael Alexandre Conceição Leão,2,4,6
+3869254,Switzerland,Ardon Jashari,5,5,10
+3869254,Switzerland,Granit Xhaka,62,63,125
+3869254,Switzerland,Manuel Obafemi Akanji,58,49,107
+3869254,Switzerland,Ricardo Iván Rodríguez Araya,51,49,100
+3869254,Switzerland,Breel-Donald Embolo,14,18,32
+3869254,Switzerland,Denis Lemi Zakaria Lako Lado,11,14,25
+3869254,Switzerland,Djibril Sow,15,13,28
+3869254,Switzerland,Edimilson Fernandes,42,36,78
+3869254,Switzerland,Xherdan Shaqiri,28,40,68
+3869254,Switzerland,Haris Seferović,4,5,9
+3869254,Switzerland,Noah Okafor,8,11,19
+3869254,Switzerland,Fabian Lukas Schär,29,27,56
+3869254,Switzerland,Remo Freuler,18,20,38
+3869254,Switzerland,Ruben Vargas,27,30,57
+3869254,Switzerland,Eray Ervin Cömert,35,33,68
+3869254,Switzerland,Yann Sommer,31,25,56
+3869321,Argentina,Alexis Mac Allister,43,46,89
+3869321,Argentina,Cristian Gabriel Romero,44,39,83
+3869321,Argentina,Enzo Fernandez,60,66,126
+3869321,Argentina,Germán Alejandro Pezzella,28,25,53
+3869321,Argentina,Gonzalo Ariel Montiel,10,11,21
+3869321,Argentina,Julián Álvarez,12,18,30
+3869321,Argentina,Lautaro Javier Martínez,8,17,25
+3869321,Argentina,Leandro Daniel Paredes,44,39,83
+3869321,Argentina,Lionel Andrés Messi Cuccittini,40,49,89
+3869321,Argentina,Lisandro Martínez,29,27,56
+3869321,Argentina,Marcos Javier Acuña,18,21,39
+3869321,Argentina,Nahuel Molina Lucero,36,31,67
+3869321,Argentina,Nicolás Alejandro Tagliafico,10,6,16
+3869321,Argentina,Nicolás Hernán Otamendi,80,65,145
+3869321,Argentina,Rodrigo Javier De Paul,41,49,90
+3869321,Argentina,Ángel Fabián Di María Hernández,9,9,18
+3869321,Argentina,Damián Emiliano Martínez,19,13,32
+3869321,Netherlands,Andries Noppert,46,30,76
+3869321,Netherlands,Cody Mathès Gakpo,21,34,55
+3869321,Netherlands,Denzel Dumfries,29,31,60
+3869321,Netherlands,Frenkie de Jong,81,77,158
+3869321,Netherlands,Jurriën David Norman Timber,87,77,164
+3869321,Netherlands,Luuk de Jong,8,13,21
+3869321,Netherlands,Marten de Roon,24,24,48
+3869321,Netherlands,Nathan Aké,62,57,119
+3869321,Netherlands,Noa Lang,0,1,1
+3869321,Netherlands,Steven Berghuis,24,31,55
+3869321,Netherlands,Teun Koopmeiners,32,30,62
+3869321,Netherlands,Virgil van Dijk,85,76,161
+3869321,Netherlands,Wout Weghorst,6,11,17
+3869321,Netherlands,Memphis Depay,27,44,71
+3869321,Netherlands,Steven Bergwijn,16,16,32
+3869321,Netherlands,Daley Blind,24,20,44
+3869354,England,Bukayo Saka,18,29,47
+3869354,England,Declan Rice,60,57,117
+3869354,England,Harry Kane,14,23,37
+3869354,England,John Stones,70,65,135
+3869354,England,Jordan Brian Henderson,41,41,82
+3869354,England,Jude Bellingham,36,39,75
+3869354,England,Kyle Walker,41,29,70
+3869354,England,Philip Foden,22,26,48
+3869354,England,Harry Maguire,79,86,165
+3869354,England,Luke Shaw,55,52,107
+3869354,England,Marcus Rashford,3,3,6
+3869354,England,Raheem Sterling,4,6,10
+3869354,England,Jordan Pickford,20,8,28
+3869354,England,Mason Mount,2,1,3
+3869354,France,Adrien Rabiot,35,35,70
+3869354,France,Antoine Griezmann,39,35,74
+3869354,France,Aurélien Djani Tchouaméni,39,38,77
+3869354,France,Dayotchanculle Upamecano,36,36,72
+3869354,France,Jules Koundé,39,27,66
+3869354,France,Kylian Mbappé Lottin,26,30,56
+3869354,France,Olivier Giroud,6,16,22
+3869354,France,Ousmane Dembélé,30,39,69
+3869354,France,Raphaël Varane,31,29,60
+3869354,France,Theo Bernard François Hernández,34,33,67
+3869354,France,Hugo Lloris,13,9,22
+3869354,France,Kingsley Coman,0,1,1
+3869420,Brazil,Alex Sandro Lobo Silva,4,3,7
+3869420,Brazil,Marcos Aoás Corrêa,93,88,181
+3869420,Brazil,Rodrygo Silva de Goes,29,32,61
+3869420,Brazil,Alisson Ramsés Becker,29,16,45
+3869420,Brazil,Carlos Henrique Casimiro,55,63,118
+3869420,Brazil,Danilo Luiz da Silva,93,83,176
+3869420,Brazil,Pedro Guilherme Abreu dos Santos,7,9,16
+3869420,Brazil,Thiago Emiliano da Silva,92,77,169
+3869420,Brazil,Éder Gabriel Militão,79,69,148
+3869420,Brazil,Antony Matheus dos Santos,29,35,64
+3869420,Brazil,Lucas Tolentino Coelho de Lima,56,53,109
+3869420,Brazil,Neymar da Silva Santos Junior,50,69,119
+3869420,Brazil,Richarlison de Andrade,7,13,20
+3869420,Brazil,Raphael Dias Belloli,19,24,43
+3869420,Brazil,Vinícius José Paixão de Oliveira Júnior,8,16,24
+3869420,Brazil,Frederico Rodrigues Santos,2,2,4
+3869420,Croatia,Andrej Kramarić,21,29,50
+3869420,Croatia,Borna Sosa,30,32,62
+3869420,Croatia,Dejan Lovren,82,74,156
+3869420,Croatia,Ivan Perišić,18,33,51
+3869420,Croatia,Josip Juranović,69,61,130
+3869420,Croatia,Luka Modrić,102,105,207
+3869420,Croatia,Marcelo Brozović,98,90,188
+3869420,Croatia,Mateo Kovačić,67,68,135
+3869420,Croatia,Bruno Petković,6,11,17
+3869420,Croatia,Dominik Livaković,34,20,54
+3869420,Croatia,Joško Gvardiol,60,53,113
+3869420,Croatia,Nikola Vlašić,8,12,20
+3869420,Croatia,Lovro Majer,15,19,34
+3869420,Croatia,Mario Pašalić,28,31,59
+3869420,Croatia,Mislav Oršić,1,1,2
+3869486,Morocco,Achraf Dari,4,3,7
+3869486,Morocco,Achraf Hakimi Mouh,28,26,54
+3869486,Morocco,Hakim Ziyech,17,25,42
+3869486,Morocco,Walid Cheddira,2,6,8
+3869486,Morocco,Yassine Bounou,24,11,35
+3869486,Morocco,Azzedine Ounahi,20,24,44
+3869486,Morocco,Jawad El Yamiq,18,13,31
+3869486,Morocco,Romain Saïss,12,8,20
+3869486,Morocco,Selim Amallah,8,10,18
+3869486,Morocco,Yahia Attiyat allah,16,14,30
+3869486,Morocco,Youssef En-Nesyri,5,14,19
+3869486,Morocco,Sofiane Boufal,17,19,36
+3869486,Morocco,Sofyan Amrabat,13,9,22
+3869486,Morocco,Zakaria Aboukhlal,0,2,2
+3869486,Portugal,Bernardo Mota Veiga de Carvalho e Silva,88,84,172
+3869486,Portugal,Bruno Miguel Borges Fernandes,57,53,110
+3869486,Portugal,Gonçalo Matias Ramos,6,10,16
+3869486,Portugal,José Diogo Dalot Teixeira,32,31,63
+3869486,Portugal,João Félix Sequeira,14,26,40
+3869486,Portugal,João Pedro Cavaco Cancelo,37,37,74
+3869486,Portugal,Kléper Laveran Lima Ferreira,94,89,183
+3869486,Portugal,Otávio Edmilson da Silva Monteiro,40,48,88
+3869486,Portugal,Rafael Alexandre Conceição Leão,8,14,22
+3869486,Portugal,Raphaël Adelino José Guerreiro,24,23,47
+3869486,Portugal,Ricardo Jorge Luz Horta,9,9,18
+3869486,Portugal,Rúben Diogo Da Silva Neves,60,62,122
+3869486,Portugal,Rúben Santos Gato Alves Dias,88,80,168
+3869486,Portugal,Vitor Machado Ferreira,33,33,66
+3869486,Portugal,Cristiano Ronaldo dos Santos Aveiro,4,10,14
+3869486,Portugal,Diogo Meireles Costa,22,7,29
+3869519,Argentina,Alexis Mac Allister,30,40,70
+3869519,Argentina,Cristian Gabriel Romero,29,25,54
+3869519,Argentina,Enzo Fernandez,41,44,85
+3869519,Argentina,Exequiel Alejandro Palacios,13,13,26
+3869519,Argentina,Julián Álvarez,14,19,33
+3869519,Argentina,Leandro Daniel Paredes,36,30,66
+3869519,Argentina,Lionel Andrés Messi Cuccittini,34,42,76
+3869519,Argentina,Lisandro Martínez,8,8,16
+3869519,Argentina,Nahuel Molina Lucero,28,28,56
+3869519,Argentina,Nicolás Alejandro Tagliafico,24,19,43
+3869519,Argentina,Nicolás Hernán Otamendi,39,31,70
+3869519,Argentina,Rodrigo Javier De Paul,34,35,69
+3869519,Argentina,Damián Emiliano Martínez,13,5,18
+3869519,Argentina,Paulo Bruno Exequiel Dybala,8,11,19
+3869519,Argentina,Juan Marcos Foyth,3,3,6
+3869519,Argentina,Ángel Martín Correa,4,5,9
+3869519,Croatia,Andrej Kramarić,34,33,67
+3869519,Croatia,Borna Sosa,26,32,58
+3869519,Croatia,Dejan Lovren,67,67,134
+3869519,Croatia,Ivan Perišić,41,38,79
+3869519,Croatia,Josip Juranović,51,45,96
+3869519,Croatia,Joško Gvardiol,61,54,115
+3869519,Croatia,Luka Modrić,66,60,126
+3869519,Croatia,Marcelo Brozović,47,48,95
+3869519,Croatia,Mario Pašalić,9,10,19
+3869519,Croatia,Mateo Kovačić,84,85,169
+3869519,Croatia,Mislav Oršić,12,17,29
+3869519,Croatia,Dominik Livaković,27,21,48
+3869519,Croatia,Bruno Petković,8,13,21
+3869519,Croatia,Lovro Majer,11,14,25
+3869519,Croatia,Nikola Vlašić,11,16,27
+3869519,Croatia,Marko Livaja,4,6,10
+3869552,France,Antoine Griezmann,23,27,50
+3869552,France,Aurélien Djani Tchouaméni,41,33,74
+3869552,France,Ibrahima Konaté,44,41,85
+3869552,France,Jules Koundé,43,33,76
+3869552,France,Kylian Mbappé Lottin,12,25,37
+3869552,France,Marcus Thuram,6,14,20
+3869552,France,Olivier Giroud,8,19,27
+3869552,France,Ousmane Dembélé,14,18,32
+3869552,France,Randal Kolo Muani,2,3,5
+3869552,France,Raphaël Varane,52,52,104
+3869552,France,Theo Bernard François Hernández,25,17,42
+3869552,France,Youssouf Fofana,27,24,51
+3869552,France,Hugo Lloris,19,10,29
+3869552,Morocco,Abderrazak Hamdallah,2,2,4
+3869552,Morocco,Sofyan Amrabat,69,70,139
+3869552,Morocco,Zakaria Aboukhlal,2,5,7
+3869552,Morocco,Abdessamad Ezzalzouli,4,4,8
+3869552,Morocco,Azzedine Ounahi,68,77,145
+3869552,Morocco,Jawad El Yamiq,90,80,170
+3869552,Morocco,Yahia Attiyat allah,19,19,38
+3869552,Morocco,Achraf Dari,63,54,117
+3869552,Morocco,Achraf Hakimi Mouh,63,60,123
+3869552,Morocco,Hakim Ziyech,50,61,111
+3869552,Morocco,Noussair Mazraoui,20,18,38
+3869552,Morocco,Romain Saïss,16,17,33
+3869552,Morocco,Selim Amallah,16,20,36
+3869552,Morocco,Sofiane Boufal,14,23,37
+3869552,Morocco,Yassine Bounou,30,17,47
+3869552,Morocco,Youssef En-Nesyri,3,2,5
+3869684,Croatia,Andrej Kramarić,12,16,28
+3869684,Croatia,Ivan Perišić,41,34,75
+3869684,Croatia,Josip Stanišić,36,32,68
+3869684,Croatia,Josip Šutalo,62,61,123
+3869684,Croatia,Lovro Majer,25,29,54
+3869684,Croatia,Luka Modrić,64,57,121
+3869684,Croatia,Marko Livaja,8,13,21
+3869684,Croatia,Mateo Kovačić,63,63,126
+3869684,Croatia,Mislav Oršić,22,31,53
+3869684,Croatia,Bruno Petković,4,15,19
+3869684,Croatia,Dominik Livaković,29,12,41
+3869684,Croatia,Joško Gvardiol,61,61,122
+3869684,Croatia,Nikola Vlašić,5,8,13
+3869684,Croatia,Mario Pašalić,7,7,14
+3869684,Morocco,Abdelhamid Sabiri,9,15,24
+3869684,Morocco,Achraf Hakimi Mouh,63,53,116
+3869684,Morocco,Hakim Ziyech,50,59,109
+3869684,Morocco,Sofiane Boufal,18,24,42
+3869684,Morocco,Sofyan Amrabat,45,42,87
+3869684,Morocco,Yahia Attiyat allah,40,41,81
+3869684,Morocco,Achraf Dari,29,26,55
+3869684,Morocco,Bilal El Khannous,20,24,44
+3869684,Morocco,Ilias Chair,13,15,28
+3869684,Morocco,Jawad El Yamiq,31,28,59
+3869684,Morocco,Yassine Bounou,38,23,61
+3869684,Morocco,Azzedine Ounahi,24,26,50
+3869684,Morocco,Badr Banoun,21,20,41
+3869684,Morocco,Selim Amallah,11,14,25
+3869684,Morocco,Youssef En-Nesyri,9,12,21
+3869684,Morocco,Anass Zaroury,10,9,19
+3869685,Argentina,Alexis Mac Allister,45,46,91
+3869685,Argentina,Enzo Fernandez,79,84,163
+3869685,Argentina,Julián Álvarez,26,28,54
+3869685,Argentina,Lautaro Javier Martínez,5,9,14
+3869685,Argentina,Leandro Daniel Paredes,15,9,24
+3869685,Argentina,Lionel Andrés Messi Cuccittini,49,60,109
+3869685,Argentina,Marcos Javier Acuña,19,27,46
+3869685,Argentina,Nicolás Alejandro Tagliafico,44,32,76
+3869685,Argentina,Nicolás Hernán Otamendi,69,60,129
+3869685,Argentina,Rodrigo Javier De Paul,57,66,123
+3869685,Argentina,Ángel Fabián Di María Hernández,25,31,56
+3869685,Argentina,Cristian Gabriel Romero,60,44,104
+3869685,Argentina,Damián Emiliano Martínez,18,15,33
+3869685,Argentina,Gonzalo Ariel Montiel,8,12,20
+3869685,Argentina,Nahuel Molina Lucero,39,33,72
+3869685,Argentina,Paulo Bruno Exequiel Dybala,1,3,4
+3869685,Argentina,Germán Alejandro Pezzella,1,1,2
+3869685,France,Adrien Rabiot,43,39,82
+3869685,France,Antoine Griezmann,21,23,44
+3869685,France,Aurélien Djani Tchouaméni,56,44,100
+3869685,France,Dayotchanculle Upamecano,51,55,106
+3869685,France,Eduardo Camavinga,21,15,36
+3869685,France,Jules Koundé,52,47,99
+3869685,France,Kingsley Coman,5,8,13
+3869685,France,Kylian Mbappé Lottin,19,29,48
+3869685,France,Marcus Thuram,15,23,38
+3869685,France,Ousmane Dembélé,9,12,21
+3869685,France,Randal Kolo Muani,11,20,31
+3869685,France,Raphaël Varane,55,51,106
+3869685,France,Theo Bernard François Hernández,38,37,75
+3869685,France,Olivier Giroud,5,8,13
+3869685,France,Hugo Lloris,23,15,38
+3869685,France,Youssouf Fofana,9,7,16
+3869685,France,Ibrahima Konaté,1,1,2
