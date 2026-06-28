@@ -1,0 +1,65 @@
+tournament_year,team,reached_qf,stage_reached,predicted_qf_probability,qf_advancement_profile_score,rank
+2018,France,1,Final,0.482,87.5,1
+2018,Brazil,1,Quarter-final,0.449,81.2,2
+2018,Spain,0,Round of 16,0.395,70.8,3
+2018,Belgium,1,3rd Place,0.384,68.7,4
+2018,Argentina,0,Round of 16,0.381,68.1,5
+2018,Germany,0,Group Stage,0.363,64.7,6
+2018,Colombia,0,Round of 16,0.356,63.3,7
+2018,Japan,0,Round of 16,0.337,59.7,8
+2018,Portugal,0,Round of 16,0.335,59.3,9
+2018,Russia,1,Quarter-final,0.321,56.5,10
+2018,Egypt,0,Group Stage,0.31,54.4,11
+2018,Denmark,0,Round of 16,0.302,52.8,12
+2018,Switzerland,0,Round of 16,0.269,46.6,13
+2018,Sweden,1,Quarter-final,0.264,45.5,14
+2018,Uruguay,1,Quarter-final,0.25,42.9,15
+2018,Peru,0,Group Stage,0.243,41.5,16
+2018,England,1,3rd Place,0.238,40.6,17
+2018,Mexico,0,Round of 16,0.237,40.3,18
+2018,Poland,0,Group Stage,0.234,39.9,19
+2018,Panama,0,Group Stage,0.205,34.1,20
+2018,Morocco,0,Group Stage,0.201,33.3,21
+2018,Serbia,0,Group Stage,0.181,29.7,22
+2018,Tunisia,0,Group Stage,0.18,29.4,23
+2018,Senegal,0,Group Stage,0.17,27.5,24
+2018,Croatia,1,Final,0.149,23.4,25
+2018,Costa Rica,0,Group Stage,0.146,22.8,26
+2018,Nigeria,0,Group Stage,0.138,21.3,27
+2018,South Korea,0,Group Stage,0.138,21.3,27
+2018,Iran,0,Group Stage,0.124,18.6,29
+2018,Australia,0,Group Stage,0.104,14.7,30
+2018,Iceland,0,Group Stage,0.058,6.0,31
+2018,Saudi Arabia,0,Group Stage,0.056,5.6,32
+2022,Portugal,1,Quarter-final,0.547,100.0,1
+2022,Netherlands,1,Quarter-final,0.485,88.2,2
+2022,Spain,0,Round of 16,0.474,85.9,3
+2022,England,1,Quarter-final,0.452,81.7,4
+2022,Uruguay,0,Group Stage,0.399,71.6,5
+2022,France,1,Final,0.397,71.1,6
+2022,Australia,0,Round of 16,0.376,67.2,7
+2022,Denmark,0,Group Stage,0.361,64.3,8
+2022,United States,0,Round of 16,0.358,63.6,9
+2022,South Korea,0,Round of 16,0.353,62.7,10
+2022,Serbia,0,Group Stage,0.337,59.7,11
+2022,Brazil,1,Quarter-final,0.329,58.0,12
+2022,Belgium,0,Group Stage,0.317,55.7,13
+2022,Qatar,0,Group Stage,0.31,54.3,14
+2022,Canada,0,Group Stage,0.278,48.3,15
+2022,Wales,0,Group Stage,0.264,45.5,16
+2022,Ghana,0,Group Stage,0.241,41.0,17
+2022,Germany,0,Group Stage,0.23,38.9,18
+2022,Cameroon,0,Group Stage,0.223,37.7,19
+2022,Switzerland,0,Round of 16,0.218,36.6,20
+2022,Saudi Arabia,0,Group Stage,0.202,33.6,21
+2022,Japan,0,Round of 16,0.186,30.5,22
+2022,Argentina,1,Final,0.183,30.0,23
+2022,Senegal,0,Round of 16,0.182,29.7,24
+2022,Croatia,1,3rd Place,0.135,20.7,25
+2022,Iran,0,Group Stage,0.131,20.0,26
+2022,Costa Rica,0,Group Stage,0.125,18.8,27
+2022,Mexico,0,Group Stage,0.102,14.4,28
+2022,Morocco,1,3rd Place,0.078,9.8,29
+2022,Tunisia,0,Group Stage,0.071,8.3,30
+2022,Poland,0,Round of 16,0.065,7.3,31
+2022,Ecuador,0,Group Stage,0.027,0.0,32

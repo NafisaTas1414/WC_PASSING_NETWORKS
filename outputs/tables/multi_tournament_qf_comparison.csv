@@ -1,0 +1,8 @@
+metric,qf_mean,non_qf_mean,mean_diff_pct,qf_median,non_qf_median
+avg_completed_passes,469.146,384.049,22.2,495.0,367.833
+avg_network_density,0.586,0.56,4.6,0.593,0.558
+avg_final_third_entries,37.021,31.264,18.4,40.0,30.333
+avg_final_third_entries_per_100_passes,7.947,8.236,-3.5,7.87,8.245
+avg_connections_per_100_passes,26.388,31.391,-15.9,23.916,31.413
+avg_passes_per_connection,3.993,3.472,15.0,4.258,3.244
+avg_top_player_reliance,0.146,0.149,-1.5,0.147,0.146

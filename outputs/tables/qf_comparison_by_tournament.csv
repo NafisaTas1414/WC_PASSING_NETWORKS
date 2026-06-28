@@ -1,0 +1,15 @@
+tournament_year,metric,qf_mean,non_qf_mean,mean_diff_pct
+2018,avg_completed_passes,415.75,374.014,11.2
+2018,avg_network_density,0.605,0.589,2.7
+2018,avg_final_third_entries,35.875,32.444,10.6
+2018,avg_final_third_entries_per_100_passes,8.792,8.833,-0.5
+2018,avg_connections_per_100_passes,27.97,30.754,-9.1
+2018,avg_passes_per_connection,3.835,3.568,7.5
+2018,avg_top_player_reliance,0.146,0.147,-0.7
+2022,avg_completed_passes,522.542,394.083,32.6
+2022,avg_network_density,0.567,0.532,6.7
+2022,avg_final_third_entries,38.167,30.083,26.9
+2022,avg_final_third_entries_per_100_passes,7.101,7.639,-7.0
+2022,avg_connections_per_100_passes,24.806,32.027,-22.5
+2022,avg_passes_per_connection,4.15,3.377,22.9
+2022,avg_top_player_reliance,0.146,0.15,-2.4
