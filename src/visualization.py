@@ -47,12 +47,30 @@ def plot_pass_network(
     edge_scale: float = 2.0,
     figsize: Tuple[int, int] = (12, 8),
     save_path: Optional[Path] = None,
+    max_out_degree_ref: Optional[float] = None,
+    max_edge_weight_ref: Optional[float] = None,
+    highlight_players: Optional[List[str]] = None,
+    node_positions: Optional[Dict[str, Tuple[float, float]]] = None,
 ) -> plt.Figure:
     """
     Draw a directed passing network overlaid on a pitch.
 
     Node size  ∝ total passes made.
     Edge width ∝ pass count between the pair.
+
+    `max_out_degree_ref` / `max_edge_weight_ref`: pass in the ORIGINAL
+    network's max values when plotting a before/after comparison (e.g. a
+    player-removal case study), so node size and edge width stay on a fixed
+    scale across both plots. Without these, each plot self-normalizes, which
+    silently rescales after a removal and makes the "damage" harder to read.
+
+    `node_positions`: pass in a shared player -> (x, y) dict for the same
+    reason — after removing a node, its former neighbors' *positions* are
+    unaffected (avg pass-start x/y is per-player), but passing an explicit
+    dict guarantees identical layout across panels regardless.
+
+    `highlight_players`: optional list of player names to ring in red (e.g.
+    the player about to be removed in a "before" panel).
     """
     G = network.graph
     nt = network.node_table
@@ -71,10 +89,13 @@ def plot_pass_network(
         _draw_pitch(ax)
 
     # Node positions
-    pos = {}
-    for _, row in nt.iterrows():
-        if pd.notna(row.get("avg_x")) and pd.notna(row.get("avg_y")):
-            pos[row["player"]] = (row["avg_x"], row["avg_y"])
+    if node_positions is not None:
+        pos = node_positions
+    else:
+        pos = {}
+        for _, row in nt.iterrows():
+            if pd.notna(row.get("avg_x")) and pd.notna(row.get("avg_y")):
+                pos[row["player"]] = (row["avg_x"], row["avg_y"])
 
     if not pos:
         ax.text(60, 40, "No location data", color="white",
@@ -83,14 +104,24 @@ def plot_pass_network(
 
     # Nodes
     out_degree = dict(G.out_degree(weight="weight"))
+    node_norm = max_out_degree_ref if max_out_degree_ref else max(out_degree.values(), default=1)
+    highlight = set(highlight_players or [])
     for player, (x, y) in pos.items():
+        if player not in G.nodes:
+            continue
         size = out_degree.get(player, 1)
-        ax.scatter(x, y, s=size * node_scale / max(out_degree.values(), default=1),
-                   c="white", edgecolors="#333333", linewidths=0.5, zorder=5)
+        is_highlighted = player in highlight
+        ax.scatter(x, y, s=size * node_scale / node_norm,
+                   c="#d62728" if is_highlighted else "white",
+                   edgecolors="#ffcc00" if is_highlighted else "#333333",
+                   linewidths=2.0 if is_highlighted else 0.5, zorder=5)
         ax.text(x, y - 3, player.split()[-1], color="white",
                 fontsize=6, ha="center", va="top", zorder=6)
 
     # Edges
+    edge_norm = max_edge_weight_ref if max_edge_weight_ref else (
+        et["weight"].max() if not et.empty else 1
+    )
     for _, erow in et.iterrows():
         if erow["weight"] < min_edge_weight:
             continue
@@ -98,13 +129,13 @@ def plot_pass_network(
             continue
         x1, y1 = pos[erow["passer"]]
         x2, y2 = pos[erow["recipient"]]
-        alpha = min(0.9, 0.2 + erow["weight"] / et["weight"].max())
+        alpha = min(0.9, 0.2 + erow["weight"] / edge_norm)
         ax.annotate(
             "", xy=(x2, y2), xytext=(x1, y1),
             arrowprops=dict(
                 arrowstyle="-|>",
                 color="white",
-                lw=erow["weight"] * edge_scale / et["weight"].max(),
+                lw=erow["weight"] * edge_scale / edge_norm,
                 alpha=alpha,
             ),
             zorder=4,

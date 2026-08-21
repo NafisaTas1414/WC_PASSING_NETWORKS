@@ -385,11 +385,15 @@ function renderBoth(m){
   fillIns('ins-home',hNet&&hNet.metrics);
   fillIns('ins-away',aNet&&aNet.metrics);
   if(hNet) syncBtns(hNet);
-  renderNet('sv-home',m.match_id,m.home_team);
-  renderNet('sv-away',m.match_id,m.away_team);
+  const hVulnInfo=getVulnInfo(m.match_id,m.home_team);
+  const aVulnInfo=getVulnInfo(m.match_id,m.away_team);
+  renderNet('sv-home',m.match_id,m.home_team,vulnRemoved.home&&hVulnInfo?hVulnInfo.critical_player:null);
+  renderNet('sv-away',m.match_id,m.away_team,vulnRemoved.away&&aVulnInfo?aVulnInfo.critical_player:null);
+  renderVulnPanel('home',m.match_id,m.home_team);
+  renderVulnPanel('away',m.match_id,m.away_team);
 }
 
-function renderNet(svgId,matchId,team){
+function renderNet(svgId,matchId,team,removedPlayer){
   const net=CUR.networks[`${matchId}_${team}`];
   const svg=document.getElementById(svgId);
   while(svg.firstChild) svg.removeChild(svg.firstChild);
@@ -414,10 +418,17 @@ function renderNet(svgId,matchId,team){
   ].forEach(l=>svg.appendChild(l));
   svg.appendChild(mk('circle',{cx:tx(60),cy:ty(40),r:tx(9.15)-tx(0),fill:'none',stroke:lc,'stroke-width':1}));
   const nm={}; net.nodes.forEach(n=>{nm[n.id]=n;});
+  const vinfo=getVulnInfo(matchId,team);
+  const criticalId=vinfo?vinfo.critical_player:null;
+  // Fixed scale refs: always computed from the FULL original network, so
+  // removing the critical player never rescales the remaining nodes/edges.
   const maxS=Math.max(...net.nodes.map(n=>n.sent),1);
   const nR=n=>4+14*(n.sent/maxS);
-  const vis=net.edges.map(e=>({...e,_w:ew(e)})).filter(e=>e._w>=minW&&nm[e.s]&&nm[e.t]&&nm[e.s].x);
-  const maxVW=Math.max(...vis.map(e=>e._w),1);
+  const nodesToRender=removedPlayer?net.nodes.filter(n=>n.id!==removedPlayer):net.nodes;
+  const edgesSource=removedPlayer?net.edges.filter(e=>e.s!==removedPlayer&&e.t!==removedPlayer):net.edges;
+  const scaleVis=net.edges.map(e=>({...e,_w:ew(e)})).filter(e=>e._w>=minW&&nm[e.s]&&nm[e.t]&&nm[e.s].x);
+  const maxVW=Math.max(...scaleVis.map(e=>e._w),1);
+  const vis=edgesSource.map(e=>({...e,_w:ew(e)})).filter(e=>e._w>=minW&&nm[e.s]&&nm[e.t]&&nm[e.s].x);
   const topE=vis.reduce((b,e)=>e._w>(b?b._w:-1)?e:b,null);
   const totP=mx.completed_passes||1;
   vis.forEach(ed=>{
@@ -443,13 +454,15 @@ function renderNet(svgId,matchId,team){
     hit.addEventListener('mouseleave',hideTip);
     svg.appendChild(hit);
   });
-  net.nodes.forEach(n=>{
+  nodesToRender.forEach(n=>{
     if(!n.x||!n.y) return;
     const cx=tx(n.x),cy=ty(n.y),r=nR(n);
     const isTop=n.id===mx.most_involved;
+    const isCritical=!removedPlayer&&n.id===criticalId;
     const g=mk('g',{transform:`translate(${cx},${cy})`,style:'cursor:default'});
     if(isTop) g.appendChild(mk('circle',{r:r+5,fill:'none',stroke:'rgba(255,255,255,0.3)','stroke-width':1.5,'stroke-dasharray':'3,2'}));
-    g.appendChild(mk('circle',{r,fill:'#f0a500',stroke:isTop?'white':'rgba(255,255,255,0.5)','stroke-width':isTop?'2.5':'1.5'}));
+    if(isCritical) g.appendChild(mk('circle',{r:r+7,fill:'none',stroke:'#f85149','stroke-width':2}));
+    g.appendChild(mk('circle',{r,fill:'#f0a500',stroke:isCritical?'#ffcc00':(isTop?'white':'rgba(255,255,255,0.5)'),'stroke-width':isCritical?'2.5':(isTop?'2.5':'1.5')}));
     const nd=n,pt=topPartner(net.edges,n.id);
     g.addEventListener('mouseenter',evt=>{
       const ptRow=pt?`<tr><td style="color:#7d8590">Top partner</td><td><b>${sn(pt.name)}</b> (${pt.count})</td></tr>`:'';
@@ -491,3 +504,42 @@ function switchTournament(yr){
 }
 
 buildSidebar();
+
+/* ── Vulnerability widget (critical-player removal) ─ */
+let vulnRemoved={home:false,away:false};
+function vulnKey(matchId,team){return `${matchId}_${team}`;}
+function getVulnInfo(matchId,team){return (typeof VULN_DATA!=='undefined'&&VULN_DATA[vulnKey(matchId,team)])||null;}
+
+function renderVulnPanel(side,matchId,team){
+  const el=document.getElementById('vuln-'+side);
+  if(!el) return;
+  const info=getVulnInfo(matchId,team);
+  if(!info){ el.innerHTML=''; el.style.display='none'; return; }
+  el.style.display='block';
+  const removed=vulnRemoved[side];
+  const notObvious=info.pass_involvement_rank>1||(info.betweenness_rank&&info.betweenness_rank>1);
+  let html=`<div class="vuln-head"><span class="vuln-icon">\ud83c\udfaf</span> Most Critical Player: <b>${sn(info.critical_player)}</b></div>`;
+  if(notObvious){
+    const btRank=info.betweenness_rank?`#${info.betweenness_rank}`:'n/a';
+    html+=`<div class="vuln-rank-contrast">Structural-damage rank <b>#1</b> \u00b7 Pass involvement <b>#${info.pass_involvement_rank}</b> \u00b7 Betweenness <b>${btRank}</b></div>`;
+  }
+  html+=`<button class="vuln-btn ${removed?'restore':'remove'}" id="vuln-btn-${side}">${removed?'Restore Original Network':'Remove Critical Player'}</button>`;
+  if(removed){
+    html+=`<table class="vuln-table"><tr><th></th><th>Original</th><th>Without</th><th>Change</th></tr>`+
+      `<tr><td>Network efficiency</td><td>${info.original_efficiency.toFixed(3)}</td><td>${info.removed_efficiency.toFixed(3)}</td><td class="vd">-${(info.efficiency_damage*100).toFixed(1)}%</td></tr>`+
+      `<tr><td>Passing connections</td><td>${info.original_connections}</td><td>${info.removed_connections}</td><td class="vd">-${(info.edge_damage*100).toFixed(1)}%</td></tr>`+
+      `<tr><td>Progressive-passing capacity</td><td>${info.original_progressive}</td><td>${info.removed_progressive}</td><td class="vd">-${(info.progressive_capacity_damage*100).toFixed(1)}%</td></tr>`+
+      `</table>`+
+      `<div class="vuln-note">This simulation removes the player's observed passing connections to show how dependent the recorded network was on their structural role. It does not predict how the team would tactically reorganize without them.</div>`;
+  }
+  el.innerHTML=html;
+  const btn=document.getElementById('vuln-btn-'+side);
+  if(btn) btn.addEventListener('click',()=>toggleVulnRemoval(side,matchId,team));
+}
+
+function toggleVulnRemoval(side,matchId,team){
+  vulnRemoved[side]=!vulnRemoved[side];
+  const info=getVulnInfo(matchId,team);
+  renderNet(side==='home'?'sv-home':'sv-away',matchId,team,vulnRemoved[side]&&info?info.critical_player:null);
+  renderVulnPanel(side,matchId,team);
+}
