@@ -33,7 +33,8 @@ wc_passing_networks/
 │   ├── network_export.py        # Dashboard JSON export helpers
 │   ├── insights_builder.py      # Dominance/defensive insights for the dashboard
 │   ├── pipeline.py              # Multi-tournament data pipeline
-│   └── visualization.py         # Pitch plots, distributions, network diagrams
+│   ├── visualization.py         # Pitch plots, distributions, network diagrams
+│   └── pass_direction_analysis.py # Exploratory — pass-direction classifier, not yet wired into a notebook
 ├── outputs/
 │   ├── figures/
 │   ├── tables/
@@ -46,10 +47,16 @@ wc_passing_networks/
 ## Setup
 
 ```bash
-pip install statsbombpy networkx pandas numpy scikit-learn scipy shap matplotlib mplsoccer
+pip install statsbombpy networkx pandas numpy scikit-learn scipy shap matplotlib mplsoccer jupyter nbconvert
 ```
 
 Event data downloads automatically from StatsBomb on first run and is cached to `data/raw/` as parquet files. Subsequent runs are fast.
+
+Notebooks can be run interactively in Jupyter, or regenerated + executed from the repo root via the matching `build_*.py` script, e.g.:
+```bash
+python3 build_case_studies_notebook.py
+jupyter nbconvert --to notebook --execute --inplace notebooks/15_tactical_case_studies.ipynb
+```
 
 ---
 
@@ -60,11 +67,11 @@ Run in order — each stage caches its output to `data/processed/`, so later not
 **Pipeline**
 | # | Notebook | Produces |
 |---|---|---|
-| 01 | `data_exploration` | Initial StatsBomb data exploration |
-| 02 | `network_feature_engineering` | Directed weighted passing networks per team-match |
-| 03 | `team_match_features` | Team-match feature table (128 rows, 2022) |
-| 04 | `normalized_network_analysis` | Rate-based/normalized features — feeds nearly everything downstream |
-| 06 | `multi_tournament_pipeline` | Extends the pipeline to 2018, combined 2018+2022 dataset |
+| 01 | `data_exploration` | `pass_summary.csv` — initial StatsBomb data exploration |
+| 02 | `network_feature_engineering` | `pass_network_edges.csv` / `pass_network_nodes.csv` — directed weighted passing networks per team-match |
+| 03 | `team_match_features` | `team_match_network_features.csv` — team-match feature table (128 rows, 2022) |
+| 04 | `normalized_network_analysis` | `team_match_network_features_normalized.csv` — rate-based/normalized features, feeds nearly everything downstream |
+| 06 | `multi_tournament_pipeline` | `2018_match_features.csv` + group-stage team profiles — extends the pipeline to 2018, combined 2018+2022 dataset |
 
 **Association & predictive analysis**
 | # | Notebook | Finding |
