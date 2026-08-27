@@ -19,7 +19,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .match-score{font-size:14px;color:#7d8590;margin-top:4px}
 .match-item.active .match-teams{color:#f0a500}
 #main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
-#topbar{padding:9px 16px;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0}
+#topbar{padding:9px 16px;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;position:relative}
 #topbar h1{font-size:18px;font-weight:700}
 #topbar p{font-size:13px;color:#7d8590;margin-top:2px}
 #panels{flex:1;display:flex;overflow:hidden;position:relative;min-height:0}
@@ -220,7 +220,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 #match-takeaway b{color:#c9d1d9}
 
 /* ── Help button ── */
-#help-btn{background:transparent;border:1px solid #30363d;color:#7d8590;padding:3px 10px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:10px;transition:background .1s,color .1s}
+#help-btn{background:transparent;border:1px solid #30363d;color:#7d8590;padding:3px 10px;border-radius:4px;cursor:pointer;font-size:12px;transition:background .1s,color .1s;position:absolute;top:9px;right:16px}
 #help-btn:hover{background:#21262d;color:#c9d1d9}
 
 #tt{display:flex;gap:4px;margin-top:7px}
@@ -229,22 +229,25 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .ttb:hover:not(.active){background:#30363d;color:#e6edf3}
 
 
-.vuln-panel{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:#0d1117;border-top:1px solid #21262d;display:none;overflow-y:auto;max-height:60%;z-index:6}
-.vuln-head{font-size:11px;font-weight:700;color:#c9d1d9;margin-bottom:6px;display:flex;align-items:center;gap:5px}
-.vuln-icon{font-size:12px}
-.vuln-rank-contrast{font-size:10px;color:#8b949e;background:#161b22;border-left:3px solid #f0a500;padding:6px 8px;border-radius:4px;margin-bottom:8px;line-height:1.5}
-.vuln-btn{width:100%;padding:6px 0;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;border:1px solid;transition:background .12s}
+.vuln-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;height:100%}
+.vuln-col{display:flex;flex-direction:column}
+.vuln-explainer{font-size:14px;color:#c9d1d9;background:#161b22;border:1px solid #30363d;border-radius:6px;padding:14px 16px;margin-bottom:18px;line-height:1.6}
+.vuln-explainer b{color:#f0a500}
+.vuln-head{font-size:16px;font-weight:700;color:#c9d1d9;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.vuln-icon{font-size:17px}
+.vuln-rank-contrast{font-size:13px;color:#8b949e;background:#161b22;border-left:3px solid #f0a500;padding:9px 11px;border-radius:4px;margin-bottom:12px;line-height:1.6}
+.vuln-btn{width:100%;padding:10px 0;border-radius:5px;font-size:14px;font-weight:700;cursor:pointer;border:1px solid;transition:background .12s}
 .vuln-btn.remove{background:rgba(248,81,73,0.12);border-color:#f85149;color:#f85149}
 .vuln-btn.remove:hover{background:rgba(248,81,73,0.22)}
 .vuln-btn.restore{background:rgba(63,185,80,0.12);border-color:#3fb950;color:#3fb950}
 .vuln-btn.restore:hover{background:rgba(63,185,80,0.22)}
-.vuln-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:10px}
-.vuln-table th{text-align:right;color:#7d8590;font-weight:600;padding:3px 4px;border-bottom:1px solid #21262d}
+.vuln-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13px}
+.vuln-table th{text-align:right;color:#7d8590;font-weight:600;padding:5px 6px;border-bottom:1px solid #21262d}
 .vuln-table th:first-child{text-align:left}
-.vuln-table td{text-align:right;color:#c9d1d9;padding:3px 4px;border-bottom:1px solid #161b22}
+.vuln-table td{text-align:right;color:#c9d1d9;padding:5px 6px;border-bottom:1px solid #161b22}
 .vuln-table td:first-child{text-align:left;color:#8b949e}
 .vuln-table td.vd{color:#f85149;font-weight:700}
-.vuln-note{font-size:9.5px;color:#7d8590;margin-top:8px;line-height:1.5;font-style:italic}
+.vuln-note{font-size:12px;color:#7d8590;margin-top:10px;line-height:1.6;font-style:italic}
 </style>
 </head>
 <body>
@@ -365,7 +368,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
   <div id="topbar">
     <h1 id="main-title">FIFA World Cup 2022 — Passing Networks</h1>
     <p id="desc">Select a match — explore networks, dominance, and defensive resistance</p>
-    <button id="help-btn" onclick="openLanding()" title="Reopen the guide">? Help</button>
+    <button id="help-btn" onclick="openLanding()" title="Reopen the guide">Help</button>
   </div>
   <div id="match-takeaway"></div>
   <div id="story-bar">
@@ -382,7 +385,6 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
       <div class="sc" id="sc-home"></div>
       <svg class="panel-svg" id="sv-home"></svg>
       <div class="ins" id="ins-home"></div>
-      <div class="vuln-panel" id="vuln-home"></div>
       <div class="zoom-ctrls">
         <button class="zoom-btn" onclick="doZoom('sv-home',0.7)" title="Zoom in">+</button>
         <button class="zoom-btn" onclick="doZoom('sv-home',1.43)" title="Zoom out">−</button>
@@ -394,7 +396,6 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
       <div class="sc" id="sc-away"></div>
       <svg class="panel-svg" id="sv-away"></svg>
       <div class="ins" id="ins-away"></div>
-      <div class="vuln-panel" id="vuln-away"></div>
       <div class="zoom-ctrls">
         <button class="zoom-btn" onclick="doZoom('sv-away',0.7)" title="Zoom in">+</button>
         <button class="zoom-btn" onclick="doZoom('sv-away',1.43)" title="Zoom out">−</button>
@@ -406,6 +407,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
         <button class="dt on" data-t="metrics">Metrics</button>
         <button class="dt" data-t="defense">Defense</button>
         <button class="dt" data-t="explore">Explore</button>
+        <button class="dt" data-t="vulnerability">Remove Critical Player</button>
         <button id="drawer-close">▼</button>
       </div>
       <div id="drawer-body"></div>
@@ -413,7 +415,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
   </div>
   <div id="drawer-handle">
     <span class="dh-arrow">▲</span>
-    <span id="dh-label">Metrics · Defense · Explore</span>
+    <span id="dh-label">Metrics · Defense · Remove Critical Player · Explore</span>
   </div>
   <div id="ctrl">
     <label>Min passes:</label>
@@ -720,7 +722,7 @@ function fillStats(id,mx){
     `<div class="si" title="Number of two-way passing links between teammates"><div class="sv">${mx.unique_pairs}</div><div class="sl">Passing links</div></div>`+
     `<div class="si"><div class="sv">${mx.num_players}</div><div class="sl">Players</div></div>`+
     `<div class="si" title="Network connectedness — how many players were actively involved in passing routes"><div class="sv">${dn}</div><div class="sl">Connectedness</div></div>`+
-    `<div class="si" title="Most central player — appeared most often as a link between teammates"><div class="sv hi">${sn2}</div><div class="sl">Central player</div></div>`+
+    `<div class="si" title="Player with the most total passes (sent + received) — pure volume, not the same as structural importance"><div class="sv hi">${sn2}</div><div class="sl">Top passer</div></div>`+
     `<div class="si" title="Share of passing through one player — high means the team depended heavily on this passer"><div class="sv">${pct}</div><div class="sl">Hub reliance</div></div>`;
 }
 
@@ -729,7 +731,7 @@ function fillIns(id,mx){
   if(!mx||!mx.most_involved){ el.innerHTML=''; return; }
   const mi=mx.most_involved.split(' ').pop();
   const pair=mx.top_pair?`<span class="te" title="Strongest passing link — the most frequent combination of two players">Top link: <b>${mx.top_pair}</b> (${mx.top_pair_count} passes)</span>`:'';
-  el.innerHTML=`<span title="Most central player — appeared most often as a link between teammates">Most central: <b>${mi}</b></span>${pair}`;
+  el.innerHTML=`<span title="Player with the most total passes (sent + received)">Top passer: <b>${mi}</b></span>${pair}`;
 }
 
 /* ── Drawer ────────────────────────────────────── */
@@ -739,6 +741,7 @@ function renderDrawer(m){
   if(!ins){ body.innerHTML=''; return; }
   if(drawerTab==='metrics') body.innerHTML=renderMetricsTab(m,ins);
   else if(drawerTab==='defense') body.innerHTML=renderDefenseTab(m,ins);
+  else if(drawerTab==='vulnerability') body.innerHTML=renderVulnerabilityTab(m,ins);
   else body.innerHTML=renderExploreTab(m,ins);
 }
 
@@ -781,7 +784,7 @@ function renderDefenseTab(m,ins){
   ['home','away'].forEach(side=>{
     const team=side==='home'?m.home_team:m.away_team;
     const d=ins.defensive[side];
-    html+=`<div class="def-col"><div class="def-col-title">${team} — Defensive Leaders</div>`;
+    html+=`<div class="def-col"><div class="def-col-title">${team} — Top Defensive Players of the Match</div>`;
     if(!d.leaders.length) html+='<div class="def-empty">No defender data available</div>';
     else d.leaders.forEach(p=>{
       html+=`<div class="def-player"><b>${p.player}</b><span class="def-pos">${p.position}</span>`+
@@ -925,8 +928,6 @@ function renderBoth(m){
   const aVulnInfo=getVulnInfo(m.match_id,m.away_team);
   renderNet('sv-home',m.match_id,m.home_team,vulnRemoved.home&&hVulnInfo?hVulnInfo.critical_player:null);
   renderNet('sv-away',m.match_id,m.away_team,vulnRemoved.away&&aVulnInfo?aVulnInfo.critical_player:null);
-  renderVulnPanel('home',m.match_id,m.home_team);
-  renderVulnPanel('away',m.match_id,m.away_team);
 }
 
 function renderNet(svgId,matchId,team,removedPlayer){
@@ -1123,38 +1124,53 @@ let vulnRemoved={home:false,away:false};
 function vulnKey(matchId,team){return `${matchId}_${team}`;}
 function getVulnInfo(matchId,team){return (typeof VULN_DATA!=='undefined'&&VULN_DATA[vulnKey(matchId,team)])||null;}
 
-function renderVulnPanel(side,matchId,team){
-  const el=document.getElementById('vuln-'+side);
-  if(!el) return;
-  const info=getVulnInfo(matchId,team);
-  if(!info){ el.innerHTML=''; el.style.display='none'; return; }
-  el.style.display='block';
-  const removed=vulnRemoved[side];
-  const notObvious=info.pass_involvement_rank>1||(info.betweenness_rank&&info.betweenness_rank>1);
-  let html=`<div class="vuln-head"><span class="vuln-icon">\ud83c\udfaf</span> Most Critical Player: <b>${sn(info.critical_player)}</b></div>`;
-  if(notObvious){
-    const btRank=info.betweenness_rank?`#${info.betweenness_rank}`:'n/a';
-    html+=`<div class="vuln-rank-contrast">Structural-damage rank <b>#1</b> \u00b7 Pass involvement <b>#${info.pass_involvement_rank}</b> \u00b7 Betweenness <b>${btRank}</b></div>`;
-  }
-  html+=`<button class="vuln-btn ${removed?'restore':'remove'}" id="vuln-btn-${side}">${removed?'Restore Original Network':'Remove Critical Player'}</button>`;
-  if(removed){
-    html+=`<table class="vuln-table"><tr><th></th><th>Original</th><th>Without</th><th>Change</th></tr>`+
-      `<tr><td>Network efficiency</td><td>${info.original_efficiency.toFixed(3)}</td><td>${info.removed_efficiency.toFixed(3)}</td><td class="vd">-${(info.efficiency_damage*100).toFixed(1)}%</td></tr>`+
-      `<tr><td>Passing connections</td><td>${info.original_connections}</td><td>${info.removed_connections}</td><td class="vd">-${(info.edge_damage*100).toFixed(1)}%</td></tr>`+
-      `<tr><td>Progressive-passing capacity</td><td>${info.original_progressive}</td><td>${info.removed_progressive}</td><td class="vd">-${(info.progressive_capacity_damage*100).toFixed(1)}%</td></tr>`+
-      `</table>`+
-      `<div class="vuln-note">This simulation removes the player's observed passing connections to show how dependent the recorded network was on their structural role. It does not predict how the team would tactically reorganize without them.</div>`;
-  }
-  el.innerHTML=html;
-  const btn=document.getElementById('vuln-btn-'+side);
-  if(btn) btn.addEventListener('click',()=>toggleVulnRemoval(side,matchId,team));
+function renderVulnerabilityTab(m,ins){
+  let html='<div class="vuln-explainer"><b>What is the "Most Critical Player"?</b> We test every player on the roster by imagining they were removed from the match — along with every pass they made or received — and check how much harder it becomes for the rest of the team to move the ball around. Whoever\'s removal hurts that flow the most is the Most Critical Player. It\'s not about who touches the ball the most, or who\'s considered the star — it\'s about who the team\'s passing structure would miss most if they were gone. (Players with only a handful of touches are left out of this test, since removing them can\'t meaningfully change anything.)</div>';
+  html+='<div class="vuln-cols">';
+  ['home','away'].forEach(side=>{
+    const team=side==='home'?m.home_team:m.away_team;
+    const info=getVulnInfo(m.match_id,team);
+    html+=`<div class="vuln-col"><div class="def-col-title">${team}</div>`;
+    if(!info){
+      html+='<div class="def-empty">No vulnerability data available</div>';
+    } else {
+      const removed=vulnRemoved[side];
+      const notObvious=info.pass_involvement_rank>1||(info.betweenness_rank&&info.betweenness_rank>1);
+      html+=`<div class="vuln-head" title="Player whose removal causes the largest drop in network efficiency — not necessarily the player who passes the most"><span class="vuln-icon">\ud83c\udfaf</span> Most Critical Player: <b>${sn(info.critical_player)}</b></div>`;
+      if(notObvious){
+        const btRank=info.betweenness_rank?`#${info.betweenness_rank}`:'n/a';
+        html+=`<div class="vuln-rank-contrast">Structural-damage rank <b>#1</b> \u00b7 Pass involvement <b>#${info.pass_involvement_rank}</b> \u00b7 Betweenness <b>${btRank}</b></div>`;
+      }
+      html+=`<button class="vuln-btn ${removed?'restore':'remove'}" id="vuln-btn-${side}">${removed?'Restore Original Network':'Remove Critical Player'}</button>`;
+      if(removed){
+        html+=`<table class="vuln-table"><tr><th></th><th>Original</th><th>Without</th><th>Change</th></tr>`+
+          `<tr><td>Network efficiency</td><td>${info.original_efficiency.toFixed(3)}</td><td>${info.removed_efficiency.toFixed(3)}</td><td class="vd">-${(info.efficiency_damage*100).toFixed(1)}%</td></tr>`+
+          `<tr><td>Passing connections</td><td>${info.original_connections}</td><td>${info.removed_connections}</td><td class="vd">-${(info.edge_damage*100).toFixed(1)}%</td></tr>`+
+          `<tr><td>Progressive-passing capacity</td><td>${info.original_progressive}</td><td>${info.removed_progressive}</td><td class="vd">-${(info.progressive_capacity_damage*100).toFixed(1)}%</td></tr>`+
+          `</table>`+
+          `<div class="vuln-note">This simulation removes the player's observed passing connections to show how dependent the recorded network was on their structural role. It does not predict how the team would tactically reorganize without them.</div>`;
+      }
+    }
+    html+='</div>';
+  });
+  html+='</div>';
+  setTimeout(()=>{
+    ['home','away'].forEach(side=>{
+      const btn=document.getElementById('vuln-btn-'+side);
+      if(btn){
+        const team=side==='home'?m.home_team:m.away_team;
+        btn.addEventListener('click',()=>toggleVulnRemoval(side,m.match_id,team));
+      }
+    });
+  },0);
+  return html;
 }
 
 function toggleVulnRemoval(side,matchId,team){
   vulnRemoved[side]=!vulnRemoved[side];
   const info=getVulnInfo(matchId,team);
   renderNet(side==='home'?'sv-home':'sv-away',matchId,team,vulnRemoved[side]&&info?info.critical_player:null);
-  renderVulnPanel(side,matchId,team);
+  if(curMatch) renderDrawer(curMatch);
 }
 </script>
 </body>
