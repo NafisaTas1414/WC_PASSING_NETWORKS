@@ -62,6 +62,13 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 #tip td{padding:0 10px 1px 0;vertical-align:top}
 
 
+#defBtn{margin:0 12px 8px;background:#21262d;border:1px solid #30363d;color:#8b949e;padding:6px 10px;border-radius:5px;cursor:pointer;font-size:12px;font-weight:700}
+#defBtn:hover{background:#30363d;color:#c9d1d9}
+#defBtn.on{border-color:#f0a500;color:#f0a500}
+#def-panel{display:none;margin:0 12px 10px;padding:12px 14px;background:#161b22;border:1px solid #30363d;border-radius:6px;font-size:12px;color:#c9d1d9;line-height:1.6}
+#def-panel div{margin-bottom:8px}
+#def-panel div:last-child{margin-bottom:0}
+#def-panel b{color:#f0a500}
 #sidebar-filters{display:flex;gap:4px;padding:10px 12px;border-bottom:1px solid #30363d;flex-wrap:wrap}
 .sf{flex:1;min-width:46px;padding:7px 0;background:#21262d;border:1px solid #30363d;color:#8b949e;border-radius:4px;cursor:pointer;font-size:13px;font-weight:700}
 .sf.on{background:#1f6feb;border-color:#1f6feb;color:#fff}
@@ -90,7 +97,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 #drawer{position:absolute;bottom:0;left:0;right:0;height:0;overflow:hidden;transition:height .3s ease;background:#0d1117;border-top:1px solid #30363d;z-index:10}
 #drawer.open{height:100%}
 #drawer-tabs{display:flex;gap:0;border-bottom:1px solid #21262d;align-items:center}
-.dt{padding:7px 14px;background:transparent;border:none;color:#7d8590;font-size:10px;font-weight:700;cursor:pointer;border-bottom:2px solid transparent}
+.dt{padding:9px 16px;background:transparent;border:none;color:#7d8590;font-size:14px;font-weight:700;cursor:pointer;border-bottom:2px solid transparent}
 .dt.on{color:#f0a500;border-bottom-color:#f0a500}
 .dt:hover:not(.on){color:#c9d1d9}
 #drawer-close{margin-left:auto;padding:4px 10px;background:transparent;border:none;color:#7d8590;font-size:16px;cursor:pointer;line-height:1}
@@ -124,7 +131,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .def-col-title{font-weight:800;color:#f0a500;margin-bottom:14px;font-size:15px;border-bottom:2px solid #21262d;padding-bottom:8px;flex-shrink:0}
 .def-player{padding:14px 0;border-bottom:1px solid #21262d;flex:1}
 .def-player b{font-size:15px;color:#e6edf3}
-.def-pos{font-size:11px;color:#7d8590;margin-left:8px;font-weight:400}
+.def-pos{font-size:14px;color:#7d8590;margin-left:8px;font-weight:400}
 .def-stats{display:flex;gap:8px;margin-top:9px;flex-wrap:wrap}
 .def-stat-chip{background:#21262d;border-radius:5px;padding:5px 12px;font-size:12px;color:#c9d1d9;font-weight:700}
 .def-totals{font-size:13px;color:#58a6ff;margin-top:14px;font-weight:700;flex-shrink:0}
@@ -233,9 +240,12 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .vuln-col{display:flex;flex-direction:column}
 .vuln-explainer{font-size:14px;color:#c9d1d9;background:#161b22;border:1px solid #30363d;border-radius:6px;padding:14px 16px;margin-bottom:18px;line-height:1.6}
 .vuln-explainer b{color:#f0a500}
+.vuln-explainer-title{font-size:16px;font-weight:700;color:#f0a500;margin-bottom:10px}
+.vuln-explainer p{margin-bottom:10px}
+.vuln-explainer p:last-child{margin-bottom:0}
 .vuln-head{font-size:16px;font-weight:700;color:#c9d1d9;margin-bottom:10px;display:flex;align-items:center;gap:7px}
 .vuln-icon{font-size:17px}
-.vuln-rank-contrast{font-size:13px;color:#8b949e;background:#161b22;border-left:3px solid #f0a500;padding:9px 11px;border-radius:4px;margin-bottom:12px;line-height:1.6}
+.vuln-rank-contrast{font-size:15px;color:#8b949e;background:#161b22;border-left:3px solid #f0a500;padding:10px 12px;border-radius:4px;margin-bottom:12px;line-height:1.6}
 .vuln-btn{width:100%;padding:10px 0;border-radius:5px;font-size:14px;font-weight:700;cursor:pointer;border:1px solid;transition:background .12s}
 .vuln-btn.remove{background:rgba(248,81,73,0.12);border-color:#f85149;color:#f85149}
 .vuln-btn.remove:hover{background:rgba(248,81,73,0.22)}
@@ -355,6 +365,12 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
       <button class="ttb" id="btn18" onclick="switchTournament(2018)">2018</button>
     </div>
   </div>
+  <button id="defBtn" onclick="toggleDefinitions()">Definitions</button>
+  <div id="def-panel">
+    <div><b>Dom. wins</b> — the team that completed more raw passes also won the match.</div>
+    <div><b>Upset</b> — the team that completed more raw passes lost the match; passing more didn't translate into winning.</div>
+    <div><b>Close</b> — the composite passing score (blending pass volume, density, progressive passes, final-third entries, and key passes) was nearly even between the two teams (45–55%) — no clear passing-quality edge either way.</div>
+  </div>
   <div id="sidebar-filters">
     <button class="sf on" data-f="all">All</button>
     <button class="sf" data-f="upsets">Upsets ⚡</button>
@@ -430,7 +446,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
     <button class="fb" data-f="h1">1st half</button>
     <button class="fb" data-f="h2">2nd half</button>
     <div class="sep"></div>
-    <button id="lblBtn">Show all labels</button>
+    <button id="lblBtn">Show all players</button>
     <button id="mapToggle" title="Highlights matches where the passing-dominant team lost">Upset map</button>
     <span id="upset-desc" style="font-size:12px;color:#7d8590;display:none">— shows matches where the dominant team lost</span>
     <div class="leg">
@@ -614,7 +630,7 @@ document.querySelectorAll('.fb').forEach(b=>{
   });
 });
 document.getElementById('lblBtn').addEventListener('click',function(){
-  allLbls=!allLbls; this.textContent=allLbls?'Top 3 labels only':'Show all labels';
+  allLbls=!allLbls; this.textContent=allLbls?'Top 3 players only':'Show all players';
   this.classList.toggle('on',allLbls); if(curMatch) renderBoth(curMatch);
 });
 document.querySelectorAll('.dt').forEach(b=>{
@@ -1044,6 +1060,14 @@ function switchTournament(yr){
   buildSidebar();
 }
 
+function toggleDefinitions(){
+  const panel=document.getElementById('def-panel');
+  const btn=document.getElementById('defBtn');
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  btn.classList.toggle('on',!open);
+}
+
 buildSidebar();
 
 /* ── Landing page toggle ─────────────────────── */
@@ -1125,7 +1149,13 @@ function vulnKey(matchId,team){return `${matchId}_${team}`;}
 function getVulnInfo(matchId,team){return (typeof VULN_DATA!=='undefined'&&VULN_DATA[vulnKey(matchId,team)])||null;}
 
 function renderVulnerabilityTab(m,ins){
-  let html='<div class="vuln-explainer"><b>What is the "Most Critical Player"?</b> We test every player on the roster by imagining they were removed from the match — along with every pass they made or received — and check how much harder it becomes for the rest of the team to move the ball around. Whoever\'s removal hurts that flow the most is the Most Critical Player. It\'s not about who touches the ball the most, or who\'s considered the star — it\'s about who the team\'s passing structure would miss most if they were gone. (Players with only a handful of touches are left out of this test, since removing them can\'t meaningfully change anything.)</div>';
+  let html=`<div class="vuln-explainer">
+    <div class="vuln-explainer-title">What is the "Most Critical Player"?</div>
+    <p>I build the team's passing network, where players are nodes and completed passes are connections, and calculate its <b>network efficiency</b>, a graph theory measure of how efficiently players are connected through passing paths.</p>
+    <p>Then, one at a time, I remove each eligible player from the network, including their node and every pass connection they were involved in, and recalculate the network efficiency. The percentage drop from the original network becomes that player's <b>"damage" score</b>.</p>
+    <p>The <b>Most Critical Player</b> is the player whose removal causes the largest drop in network efficiency.</p>
+    <p>To avoid evaluating players with very limited involvement, a player is included if they have <b>at least 5 total pass involvements OR account for at least 2% of the team's passing involvement</b>. Players who meet neither threshold are excluded.</p>
+  </div>`;
   html+='<div class="vuln-cols">';
   ['home','away'].forEach(side=>{
     const team=side==='home'?m.home_team:m.away_team;
