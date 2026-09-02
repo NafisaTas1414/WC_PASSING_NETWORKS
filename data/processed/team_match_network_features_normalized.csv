@@ -1,129 +1,129 @@
-tournament_year,match_id,match_name,date,stage,team,opponent,goals_for,goals_against,match_result,completed_passes,unique_passing_pairs,num_players,network_density,top_player_reliance,top_connection_count,final_third_entries,progressive_passes,key_passes,goal_assists,through_balls,crosses,final_third_entry_share,final_third_entries_per_100_passes,connections_per_100_passes,passes_per_connection,advanced_from_group,reached_qf,stage_reached,most_involved_player,top_connection
-2022,3857276,Canada vs Morocco,2022-12-01,group,Canada,Morocco,1,2,L,480,140,16,0.5833,0.1656,20,43,128,4,0,0,2,0.0896,8.96,29.17,3.43,0,0,Group Stage,Kamal Miller,Vitoria → Miller
-2022,3857276,Canada vs Morocco,2022-12-01,group,Morocco,Canada,2,1,W,310,100,15,0.4762,0.1472,13,12,88,2,1,1,1,0.0387,3.87,32.26,3.1,1,1,3rd Place,Achraf Hakimi Mouh,Ziyech → Mouh
-2022,3857271,England vs Iran,2022-11-21,group,England,Iran,6,2,W,746,142,16,0.5917,0.1535,29,55,191,4,5,0,4,0.0737,7.37,19.03,5.25,1,1,Quarter-final,John Stones,Trippier → Stones
-2022,3857271,England vs Iran,2022-11-21,group,Iran,England,2,6,L,163,95,16,0.3958,0.1138,5,14,49,5,1,1,2,0.0859,8.59,58.28,1.72,0,0,Group Stage,Mehdi Taremi,Moharrami → Nourollahi
-2022,3857296,Croatia vs Belgium,2022-12-01,group,Croatia,Belgium,0,0,D,514,108,14,0.5934,0.1469,22,36,147,9,0,0,8,0.07,7.0,21.01,4.76,1,1,3rd Place,Marcelo Brozović,Kovačić → Brozović
-2022,3857296,Croatia vs Belgium,2022-12-01,group,Belgium,Croatia,0,0,D,543,140,16,0.5833,0.1492,27,38,138,11,0,2,5,0.07,7.0,25.78,3.88,0,0,Group Stage,Toby Alderweireld,Alderweireld → Meunier
-2022,3857274,Netherlands vs Ecuador,2022-11-25,group,Netherlands,Ecuador,1,1,D,457,110,15,0.5238,0.1521,26,29,125,1,1,0,0,0.0635,6.35,24.07,4.15,1,1,Quarter-final,Nathan Aké,Aké → Blind
-2022,3857274,Netherlands vs Ecuador,2022-11-25,group,Ecuador,Netherlands,1,1,D,359,97,12,0.7348,0.1427,13,20,94,8,0,0,6,0.0557,5.57,27.02,3.7,0,0,Group Stage,Felix Eduardo Torres Caicedo,Carabalí → Caicedo
-2022,3857255,Japan vs Spain,2022-12-01,group,Japan,Spain,2,1,W,177,89,15,0.4238,0.1441,9,7,61,3,2,0,2,0.0395,3.95,50.28,1.99,1,0,Round of 16,Hidemasa Morita,Taniguchi → Morita
-2022,3857255,Japan vs Spain,2022-12-01,group,Spain,Japan,1,2,L,993,128,16,0.5333,0.2009,69,79,195,8,1,1,2,0.0796,7.96,12.89,7.76,1,0,Round of 16,Rodrigo Hernández Cascante,Cascante → Torres
-2022,3857272,England vs United States,2022-11-25,group,England,United States,0,0,D,500,113,14,0.6209,0.171,35,38,144,6,0,0,3,0.076,7.6,22.6,4.42,1,1,Quarter-final,John Stones,Maguire → Stones
-2022,3857272,England vs United States,2022-11-25,group,United States,England,0,0,D,377,106,15,0.5048,0.1578,23,23,105,9,0,0,4,0.061,6.1,28.12,3.56,1,0,Round of 16,Walker Zimmerman,Ream → Zimmerman
-2022,3857278,Iran vs United States,2022-11-29,group,Iran,United States,0,1,L,402,130,16,0.5417,0.148,19,34,130,4,0,1,3,0.0846,8.46,32.34,3.09,0,0,Group Stage,Morteza Pouraliganji,Hosseini → Pouraliganji
-2022,3857278,Iran vs United States,2022-11-29,group,United States,Iran,1,0,W,426,123,16,0.5125,0.1315,15,40,132,8,1,2,2,0.0939,9.39,28.87,3.46,1,0,Round of 16,Tyler Adams,Adams → McKennie
-2022,3857277,Morocco vs Croatia,2022-11-23,group,Morocco,Croatia,0,0,D,301,96,13,0.6154,0.1441,14,18,84,5,0,0,0,0.0598,5.98,31.89,3.14,1,1,3rd Place,Romain Saïss,Mouh → Ziyech
-2022,3857277,Morocco vs Croatia,2022-11-23,group,Croatia,Morocco,0,0,D,577,126,15,0.6,0.1759,36,28,139,1,0,0,2,0.0485,4.85,21.84,4.58,1,1,3rd Place,Joško Gvardiol,Lovren → Gvardiol
-2022,3857273,Wales vs Iran,2022-11-25,group,Wales,Iran,0,2,L,438,112,15,0.5333,0.1404,18,36,133,7,0,1,5,0.0822,8.22,25.57,3.91,0,0,Group Stage,Ben Davies,Rodon → Davies
-2022,3857273,Wales vs Iran,2022-11-25,group,Iran,Wales,2,0,W,227,101,16,0.4208,0.141,11,21,88,12,1,2,2,0.0925,9.25,44.49,2.25,0,0,Group Stage,Ramin Rezaeian,Gholizadeh → Rezaeian
-2022,3857275,Tunisia vs France,2022-11-30,group,Tunisia,France,1,0,W,275,87,14,0.478,0.1345,11,30,96,2,1,0,5,0.1091,10.91,31.64,3.16,0,0,Group Stage,Ali Maâloul,Maâloul → Laïdouni
-2022,3857275,Tunisia vs France,2022-11-30,group,France,Tunisia,0,1,L,564,150,16,0.625,0.1543,17,42,146,7,0,0,3,0.0745,7.45,26.6,3.76,1,1,Final,Aurélien Djani Tchouaméni,Tchouaméni → Konaté
-2022,3857261,Wales vs England,2022-11-29,group,Wales,England,0,3,L,274,114,16,0.475,0.1642,10,8,70,5,0,0,1,0.0292,2.92,41.61,2.4,0,0,Group Stage,Chris Mepham,Ampadu → Mepham
-2022,3857261,Wales vs England,2022-11-29,group,England,Wales,3,0,W,553,138,16,0.575,0.1438,21,27,129,10,2,3,3,0.0488,4.88,24.95,4.01,1,1,Quarter-final,Harry Maguire,Maguire → Stones
-2022,3857290,Switzerland vs Cameroon,2022-11-24,group,Switzerland,Cameroon,1,0,W,461,130,16,0.5417,0.128,16,37,125,6,1,2,3,0.0803,8.03,28.2,3.55,1,0,Round of 16,Nico Elvedi,Elvedi → Araya
-2022,3857290,Switzerland vs Cameroon,2022-11-24,group,Cameroon,Switzerland,0,1,L,440,121,15,0.5762,0.1295,20,38,122,5,0,1,2,0.0864,8.64,27.5,3.64,0,0,Group Stage,André-Frank Zambo Anguissa,Onana → Ndoubena
-2022,3857298,Portugal vs Ghana,2022-11-24,group,Portugal,Ghana,3,2,W,576,131,16,0.5458,0.1224,21,39,156,6,2,2,3,0.0677,6.77,22.74,4.4,1,1,Quarter-final,Danilo Luís Hélio Pereira,Pereira → Guerreiro
-2022,3857298,Portugal vs Ghana,2022-11-24,group,Ghana,Portugal,2,3,L,336,114,15,0.5429,0.1475,15,22,86,6,0,0,1,0.0655,6.55,33.93,2.95,0,0,Group Stage,Thomas Teye Partey,Amartey → Partey
-2022,3857285,Senegal vs Netherlands,2022-11-21,group,Senegal,Netherlands,0,2,L,344,112,15,0.5333,0.1672,12,18,86,13,0,0,7,0.0523,5.23,32.56,3.07,1,0,Round of 16,Youssouf Sabaly,Sabaly → Koulibaly
-2022,3857285,Senegal vs Netherlands,2022-11-21,group,Netherlands,Senegal,2,0,W,393,101,14,0.5549,0.1463,19,29,107,7,1,1,6,0.0738,7.38,25.7,3.89,1,1,Quarter-final,Nathan Aké,Aké → Dijk
-2022,3857282,United States vs Wales,2022-11-21,group,United States,Wales,1,1,D,520,133,16,0.5542,0.1519,28,38,143,4,1,1,3,0.0731,7.31,25.58,3.91,1,0,Round of 16,Walker Zimmerman,Zimmerman → Dest
-2022,3857282,United States vs Wales,2022-11-21,group,Wales,United States,1,1,D,339,111,15,0.5286,0.1563,22,24,107,5,0,0,4,0.0708,7.08,32.74,3.05,0,0,Group Stage,Joe Rodon,Rodon → Mepham
-2022,3857297,Poland vs Saudi Arabia,2022-11-26,group,Poland,Saudi Arabia,2,0,W,259,101,13,0.6474,0.1158,12,27,77,6,1,0,7,0.1042,10.42,39.0,2.56,1,0,Round of 16,Jakub Piotr Kiwior,Glik → Kiwior
-2022,3857297,Poland vs Saudi Arabia,2022-11-26,group,Saudi Arabia,Poland,0,2,L,489,134,16,0.5583,0.1411,16,38,133,10,0,0,4,0.0777,7.77,27.4,3.65,0,0,Group Stage,Mohammed Kanoo,Hamid → Dawsari
-2022,3857294,Netherlands vs Qatar,2022-11-29,group,Netherlands,Qatar,2,0,W,747,141,16,0.5875,0.1386,34,72,178,7,1,1,1,0.0964,9.64,18.88,5.3,1,1,Quarter-final,Jurriën David Norman Timber,Aké → Blind
-2022,3857294,Netherlands vs Qatar,2022-11-29,group,Qatar,Netherlands,0,2,L,396,124,15,0.5905,0.1719,11,20,86,3,0,0,3,0.0505,5.05,31.31,3.19,0,0,Group Stage,Akram Hassan Afif,Barsham → Khoukhi
-2022,3857266,France vs Denmark,2022-11-26,group,France,Denmark,2,1,W,464,118,15,0.5619,0.1379,23,36,137,17,2,0,11,0.0776,7.76,25.43,3.93,1,1,Final,Aurélien Djani Tchouaméni,Hernández → Lottin
-2022,3857266,France vs Denmark,2022-11-26,group,Denmark,France,1,2,L,479,115,15,0.5476,0.142,24,45,135,6,0,1,2,0.0939,9.39,24.01,4.17,0,0,Group Stage,Andreas Christensen,Nelsson → Christensen
-2022,3857284,Germany vs Japan,2022-11-23,group,Germany,Japan,1,2,L,723,125,16,0.5208,0.1452,32,42,192,19,0,1,7,0.0581,5.81,17.29,5.78,0,0,Group Stage,Antonio Rüdiger,Schlotterbeck → Rüdiger
-2022,3857284,Germany vs Japan,2022-11-23,group,Japan,Germany,2,1,W,215,93,16,0.3875,0.1488,8,12,72,8,1,1,3,0.0558,5.58,43.26,2.31,1,0,Round of 16,Maya Yoshida,Sakai → Ito
-2022,3857254,Denmark vs Tunisia,2022-11-22,group,Denmark,Tunisia,0,0,D,544,124,15,0.5905,0.1388,16,45,161,9,0,0,4,0.0827,8.27,22.79,4.39,0,0,Group Stage,Andreas Christensen,Eriksen → Højbjerg
-2022,3857254,Denmark vs Tunisia,2022-11-22,group,Tunisia,Denmark,0,0,D,315,97,16,0.4042,0.1444,15,17,90,8,0,1,1,0.054,5.4,30.79,3.25,0,0,Group Stage,Yassine Meriah,Bronn → Meriah
-2022,3857265,Mexico vs Poland,2022-11-22,group,Mexico,Poland,0,0,D,437,114,14,0.6264,0.167,18,42,130,9,0,0,6,0.0961,9.61,26.09,3.83,0,0,Group Stage,Héctor Alfredo Moreno Herrera,Magaña → Herrera
-2022,3857265,Mexico vs Poland,2022-11-22,group,Poland,Mexico,0,0,D,259,98,14,0.5385,0.1293,14,36,73,4,0,1,0,0.139,13.9,37.84,2.64,1,0,Round of 16,Jakub Piotr Kiwior,Szczęsny → Lewandowski
-2022,3857301,Qatar vs Senegal,2022-11-25,group,Qatar,Senegal,1,3,L,362,120,15,0.5714,0.1436,14,23,112,7,1,0,7,0.0635,6.35,33.15,3.02,0,0,Group Stage,Boualem Khoukhi,Khoukhi → Madibo
-2022,3857301,Qatar vs Senegal,2022-11-25,group,Senegal,Qatar,3,1,W,462,120,16,0.5,0.1461,22,43,134,7,2,0,2,0.0931,9.31,25.97,3.85,1,0,Round of 16,Youssouf Sabaly,Sabaly → Koulibaly
-2022,3857268,Belgium vs Canada,2022-11-23,group,Belgium,Canada,1,0,W,451,119,15,0.5667,0.1552,25,19,121,7,1,1,4,0.0421,4.21,26.39,3.79,0,0,Group Stage,Leander Dendoncker,Dendoncker → Alderweireld
-2022,3857268,Belgium vs Canada,2022-11-23,group,Canada,Belgium,0,1,L,401,129,16,0.5375,0.1409,10,42,126,18,0,0,9,0.1047,10.47,32.17,3.11,0,0,Group Stage,Stephen Antunes Eustáquio,Eustáquio → Davies
-2022,3857269,Brazil vs Switzerland,2022-11-28,group,Brazil,Switzerland,1,0,W,507,135,16,0.5625,0.1706,31,40,119,9,1,0,2,0.0789,7.89,26.63,3.76,1,1,Quarter-final,Marcos Aoás Corrêa,Silva → Corrêa
-2022,3857269,Brazil vs Switzerland,2022-11-28,group,Switzerland,Brazil,0,1,L,428,116,16,0.4833,0.16,22,24,101,5,0,0,0,0.0561,5.61,27.1,3.69,1,0,Round of 16,Manuel Obafemi Akanji,Sommer → Akanji
-2022,3869321,Netherlands vs Argentina,2022-12-09,QF,Netherlands,Argentina,2,2,D,572,144,15,0.6857,0.1435,26,50,197,4,2,0,2,0.0874,8.74,25.17,3.97,1,1,Quarter-final,Jurriën David Norman Timber,Timber → Dijk
-2022,3869321,Netherlands vs Argentina,2022-12-09,QF,Argentina,Netherlands,2,2,D,531,147,17,0.5404,0.1365,19,21,134,10,1,1,2,0.0395,3.95,27.68,3.61,1,1,Final,Nicolás Hernán Otamendi,Otamendi → Romero
-2022,3857292,Costa Rica vs Germany,2022-12-01,group,Costa Rica,Germany,2,4,L,284,110,16,0.4583,0.2095,11,13,96,4,0,0,3,0.0458,4.58,38.73,2.58,0,0,Group Stage,Joel Nathaniel Campbell Samuels,Mora → Samuels
-2022,3857292,Costa Rica vs Germany,2022-12-01,group,Germany,Costa Rica,4,2,W,669,146,16,0.6083,0.1689,28,79,205,21,4,2,10,0.1181,11.81,21.82,4.58,0,0,Group Stage,Joshua Kimmich,Kimmich → Süle
-2022,3857295,Japan vs Costa Rica,2022-11-27,group,Japan,Costa Rica,0,1,L,527,117,16,0.4875,0.2049,29,49,137,7,0,0,1,0.093,9.3,22.2,4.5,1,0,Round of 16,Maya Yoshida,Itakura → Yoshida
-2022,3857295,Japan vs Costa Rica,2022-11-27,group,Costa Rica,Japan,1,0,W,374,98,14,0.5385,0.1684,16,12,85,1,1,0,0,0.0321,3.21,26.2,3.82,0,0,Group Stage,Francisco Javier Calvo Quesada,Quesada → Manley
-2022,3869685,Argentina vs France,2022-12-18,Final,Argentina,France,3,3,D,560,129,17,0.4743,0.1455,18,36,164,14,1,1,6,0.0643,6.43,23.04,4.34,1,1,Final,Enzo Fernandez,Otamendi → Romero
-2022,3869685,Argentina vs France,2022-12-18,Final,France,Argentina,3,3,D,434,143,17,0.5257,0.1221,16,34,126,3,1,0,1,0.0783,7.83,32.95,3.03,1,1,Final,Raphaël Varane,Varane → Upamecano
-2022,3869684,Croatia vs Morocco,2022-12-17,3rd,Croatia,Morocco,2,1,W,439,112,14,0.6154,0.1435,16,36,133,6,2,0,2,0.082,8.2,25.51,3.92,1,1,3rd Place,Mateo Kovačić,Šutalo → Gvardiol
-2022,3869684,Croatia vs Morocco,2022-12-17,3rd,Morocco,Croatia,1,2,L,431,144,16,0.6,0.1346,21,27,117,7,0,0,4,0.0626,6.26,33.41,2.99,1,1,3rd Place,Achraf Hakimi Mouh,Mouh → Ziyech
-2022,3857256,Serbia vs Switzerland,2022-12-02,group,Serbia,Switzerland,2,3,L,407,125,16,0.5208,0.1609,17,35,118,8,1,1,5,0.086,8.6,30.71,3.26,0,0,Group Stage,Strahinja Pavlović,Milenković → Lukić
-2022,3857256,Serbia vs Switzerland,2022-12-02,group,Switzerland,Serbia,3,2,W,346,108,14,0.5934,0.1404,13,30,112,7,3,1,4,0.0867,8.67,31.21,3.2,1,0,Round of 16,Granit Xhaka,Akanji → Xhaka
-2022,3869151,Argentina vs Australia,2022-12-03,R16,Argentina,Australia,2,1,W,646,133,16,0.5542,0.1393,21,45,126,9,1,3,1,0.0697,6.97,20.59,4.86,1,1,Final,Enzo Fernandez,Otamendi → Acuña
-2022,3869151,Argentina vs Australia,2022-12-03,R16,Australia,Argentina,1,2,L,384,115,15,0.5476,0.1621,17,23,108,3,0,0,3,0.0599,5.99,29.95,3.34,1,0,Round of 16,Kye Rowles,Rowles → Souttar
-2022,3857257,Australia vs Denmark,2022-11-30,group,Australia,Denmark,1,0,W,219,92,15,0.4381,0.121,8,22,85,6,1,1,1,0.1005,10.05,42.01,2.38,1,0,Round of 16,Aziz Eraltay Behich,Goodwin → Behich
-2022,3857257,Australia vs Denmark,2022-11-30,group,Denmark,Australia,0,1,L,590,145,16,0.6042,0.1653,27,53,163,11,0,0,3,0.0898,8.98,24.58,4.07,0,0,Group Stage,Joachim Andersen,Christensen → Andersen
-2022,3857258,Brazil vs Serbia,2022-11-24,group,Brazil,Serbia,2,0,W,539,125,16,0.5208,0.141,19,52,151,12,1,3,2,0.0965,9.65,23.19,4.31,1,1,Quarter-final,Alex Sandro Lobo Silva,Silva → Silva
-2022,3857258,Brazil vs Serbia,2022-11-24,group,Serbia,Brazil,0,2,L,351,135,16,0.5625,0.1125,13,25,90,3,0,0,1,0.0712,7.12,38.46,2.6,0,0,Group Stage,Milos Veljkovic,Veljkovic → Milenković
-2022,3857288,Tunisia vs Australia,2022-11-26,group,Tunisia,Australia,0,1,L,406,128,15,0.6095,0.1552,21,30,123,10,0,0,5,0.0739,7.39,31.53,3.17,0,0,Group Stage,Yassine Meriah,Bronn → Meriah
-2022,3857288,Tunisia vs Australia,2022-11-26,group,Australia,Tunisia,1,0,W,274,103,16,0.4292,0.1223,12,29,96,5,0,0,3,0.1058,10.58,37.59,2.66,1,0,Round of 16,Aaron Mooy,Irvine → Mooy
-2022,3857267,Ecuador vs Senegal,2022-11-29,group,Ecuador,Senegal,1,2,L,362,101,15,0.481,0.2058,24,23,108,5,0,0,4,0.0635,6.35,27.9,3.58,0,0,Group Stage,Piero Martín Hincapié Reyna,Caicedo → Reyna
-2022,3857267,Ecuador vs Senegal,2022-11-29,group,Senegal,Ecuador,2,1,W,213,98,13,0.6282,0.1221,7,24,79,6,0,1,5,0.1127,11.27,46.01,2.17,1,0,Round of 16,Youssouf Sabaly,Jakobs → Sarr
-2022,3857287,Uruguay vs South Korea,2022-11-24,group,Uruguay,South Korea,0,0,D,475,115,15,0.5476,0.1421,23,44,121,8,0,0,5,0.0926,9.26,24.21,4.13,0,0,Group Stage,Rodrigo Bentancur Colmán,Silva → Leal
-2022,3857287,Uruguay vs South Korea,2022-11-24,group,South Korea,Uruguay,0,0,D,351,109,14,0.5989,0.1339,11,29,92,7,0,0,1,0.0826,8.26,31.05,3.22,1,0,Round of 16,In-Beom Hwang,Kim → Hwang
-2022,3869486,Morocco vs Portugal,2022-12-10,QF,Morocco,Portugal,1,0,W,184,85,13,0.5449,0.1475,12,9,67,7,1,0,2,0.0489,4.89,46.2,2.16,1,1,3rd Place,Achraf Hakimi Mouh,Mouh → Ziyech
-2022,3869486,Morocco vs Portugal,2022-12-10,QF,Portugal,Morocco,0,1,L,616,128,16,0.5333,0.1485,22,63,163,10,0,0,5,0.1023,10.23,20.78,4.81,1,1,Quarter-final,Kléper Laveran Lima Ferreira,Dias → Ferreira
-2022,3857260,Saudi Arabia vs Mexico,2022-11-30,group,Saudi Arabia,Mexico,1,2,L,194,99,15,0.4714,0.1186,8,18,77,6,1,1,2,0.0928,9.28,51.03,1.96,0,0,Group Stage,Mohammed Kanoo,Amri → Ghannam
-2022,3857260,Saudi Arabia vs Mexico,2022-11-30,group,Mexico,Saudi Arabia,2,1,W,367,110,15,0.5238,0.1528,16,37,126,14,1,1,3,0.1008,10.08,29.97,3.34,0,0,Group Stage,César Jasib Montes Castro,Herrera → Castro
-2022,3857264,Poland vs Argentina,2022-11-30,group,Poland,Argentina,0,2,L,267,106,16,0.4417,0.1423,11,9,67,4,0,0,3,0.0337,3.37,39.7,2.52,1,0,Round of 16,Jakub Piotr Kiwior,Kiwior → Glik
-2022,3857264,Poland vs Argentina,2022-11-30,group,Argentina,Poland,2,0,W,826,154,16,0.6417,0.1695,27,75,189,14,2,1,4,0.0908,9.08,18.64,5.36,1,1,Final,Rodrigo Javier De Paul,Lucero → Paul
-2022,3857289,Argentina vs Mexico,2022-11-26,group,Argentina,Mexico,2,0,W,476,125,16,0.5208,0.1513,18,27,122,2,2,0,3,0.0567,5.67,26.26,3.81,1,1,Final,Nicolás Hernán Otamendi,Otamendi → Montiel
-2022,3857289,Argentina vs Mexico,2022-11-26,group,Mexico,Argentina,0,2,L,304,99,15,0.4714,0.1612,19,17,78,2,0,0,4,0.0559,5.59,32.57,3.07,0,0,Group Stage,César Jasib Montes Castro,Razo → Castro
-2022,3869254,Portugal vs Switzerland,2022-12-06,R16,Portugal,Switzerland,6,1,W,404,138,16,0.575,0.1324,13,20,104,7,5,2,3,0.0495,4.95,34.16,2.93,1,1,Quarter-final,William Silva de Carvalho,Carvalho → Ferreira
-2022,3869254,Portugal vs Switzerland,2022-12-06,R16,Switzerland,Portugal,1,6,L,438,134,16,0.5583,0.1427,16,27,113,6,0,0,0,0.0616,6.16,30.59,3.27,1,0,Round of 16,Granit Xhaka,Fernandes → Shaqiri
-2022,3869118,England vs Senegal,2022-12-04,R16,England,Senegal,3,0,W,536,129,16,0.5375,0.1521,22,37,140,5,2,0,4,0.069,6.9,24.07,4.16,1,1,Quarter-final,John Stones,Walker → Stones
-2022,3869118,England vs Senegal,2022-12-04,R16,Senegal,England,0,3,L,323,119,16,0.4958,0.1455,10,16,90,6,0,0,3,0.0495,4.95,36.84,2.71,1,0,Round of 16,Nampalys Mendy,Jakobs → Sarr
-2022,3869519,Argentina vs Croatia,2022-12-13,SF,Argentina,Croatia,3,0,W,358,121,16,0.5042,0.1187,11,22,79,6,1,2,1,0.0615,6.15,33.8,2.96,1,1,Final,Enzo Fernandez,Otamendi → Fernandez
-2022,3869519,Argentina vs Croatia,2022-12-13,SF,Croatia,Argentina,0,3,L,559,140,16,0.5833,0.1512,22,38,135,10,0,0,3,0.068,6.8,25.04,3.99,1,1,3rd Place,Mateo Kovačić,Kovačić → Modrić
-2022,3869354,England vs France,2022-12-10,QF,England,France,1,2,L,465,102,14,0.5604,0.1774,28,29,116,11,0,0,2,0.0624,6.24,21.94,4.56,1,1,Quarter-final,Harry Maguire,Maguire → Stones
-2022,3869354,England vs France,2022-12-10,QF,France,England,2,1,W,328,87,11,0.7909,0.1176,13,36,87,6,2,0,6,0.1098,10.98,26.52,3.77,1,1,Final,Aurélien Djani Tchouaméni,Koundé → Dembélé
-2022,3869552,France vs Morocco,2022-12-14,SF,France,Morocco,2,0,W,316,97,13,0.6218,0.1646,20,20,87,11,0,0,1,0.0633,6.33,30.7,3.26,1,1,Final,Raphaël Varane,Konaté → Varane
-2022,3869552,France vs Morocco,2022-12-14,SF,Morocco,France,0,2,L,529,117,16,0.4875,0.1607,23,37,159,6,0,0,2,0.0699,6.99,22.12,4.52,1,1,3rd Place,Jawad El Yamiq,Ziyech → Mouh
-2022,3869420,Croatia vs Brazil,2022-12-09,QF,Croatia,Brazil,1,1,D,639,121,15,0.5762,0.162,27,49,174,8,1,0,5,0.0767,7.67,18.94,5.28,1,1,3rd Place,Luka Modrić,Brozović → Modrić
-2022,3869420,Croatia vs Brazil,2022-12-09,QF,Brazil,Croatia,1,1,D,652,129,16,0.5375,0.1388,27,57,173,14,1,1,5,0.0874,8.74,19.79,5.05,1,1,Quarter-final,Marcos Aoás Corrêa,Corrêa → Silva
-2022,3869220,Morocco vs Spain,2022-12-06,R16,Morocco,Spain,0,0,D,250,101,16,0.4208,0.144,12,19,89,4,0,0,4,0.076,7.6,40.4,2.48,1,1,3rd Place,Azzedine Ounahi,Mouh → Ounahi
-2022,3869220,Morocco vs Spain,2022-12-06,R16,Spain,Morocco,0,0,D,960,142,17,0.5221,0.2052,68,101,220,8,0,1,5,0.1052,10.52,14.79,6.76,1,0,Round of 16,Rodrigo Hernández Cascante,Cascante → Laporte
-2022,3869219,Japan vs Croatia,2022-12-05,R16,Japan,Croatia,1,1,D,436,131,16,0.5458,0.1273,14,37,116,7,0,0,3,0.0849,8.49,30.05,3.33,1,0,Round of 16,Wataru Endo,Tomiyasu → Endo
-2022,3869219,Japan vs Croatia,2022-12-05,R16,Croatia,Japan,1,1,D,657,136,17,0.5,0.1796,26,55,184,8,1,0,8,0.0837,8.37,20.7,4.83,1,1,3rd Place,Marcelo Brozović,Gvardiol → Lovren
-2022,3869253,Brazil vs South Korea,2022-12-05,R16,Brazil,South Korea,4,1,W,566,129,16,0.5375,0.1405,28,40,140,10,2,2,4,0.0707,7.07,22.79,4.39,1,1,Quarter-final,Thiago Emiliano da Silva,Silva → Silva
-2022,3869253,Brazil vs South Korea,2022-12-05,R16,South Korea,Brazil,1,4,L,476,142,15,0.6762,0.1282,14,37,120,5,0,0,1,0.0777,7.77,29.83,3.35,1,0,Round of 16,Min Jae Kim,Kim → Kim
-2022,3869152,France vs Poland,2022-12-04,R16,France,Poland,3,1,W,505,123,15,0.5857,0.1317,18,44,127,8,3,1,4,0.0871,8.71,24.36,4.11,1,1,Final,Aurélien Djani Tchouaméni,Koundé → Dembélé
-2022,3869152,France vs Poland,2022-12-04,R16,Poland,France,1,3,L,406,111,16,0.4625,0.1675,18,29,109,5,0,0,7,0.0714,7.14,27.34,3.66,1,0,Round of 16,Jakub Piotr Kiwior,Glik → Kiwior
-2022,3869117,Netherlands vs United States,2022-12-03,R16,Netherlands,United States,3,1,W,332,111,14,0.6099,0.1161,11,20,108,7,3,1,4,0.0602,6.02,33.43,2.99,1,1,Quarter-final,Virgil van Dijk,Timber → Dumfries
-2022,3869117,Netherlands vs United States,2022-12-03,R16,United States,Netherlands,1,3,L,499,134,15,0.6381,0.1404,27,38,137,13,1,0,4,0.0762,7.62,26.85,3.72,1,0,Round of 16,Tyler Adams,Ream → Zimmerman
-2022,3857270,Portugal vs Uruguay,2022-11-28,group,Portugal,Uruguay,2,0,W,525,136,16,0.5667,0.1086,16,29,122,11,1,0,5,0.0552,5.52,25.9,3.86,1,1,Quarter-final,William Silva de Carvalho,Cancelo → Fernandes
-2022,3857270,Portugal vs Uruguay,2022-11-28,group,Uruguay,Portugal,0,2,L,324,130,16,0.5417,0.1389,10,23,91,10,0,0,4,0.071,7.1,40.12,2.49,0,0,Group Stage,Rodrigo Bentancur Colmán,Colmán → Dipetta
-2022,3857263,Spain vs Germany,2022-11-27,group,Spain,Germany,1,1,D,578,126,15,0.6,0.1574,32,28,140,6,1,2,4,0.0484,4.84,21.8,4.59,1,0,Round of 16,Rodrigo Hernández Cascante,Cascante → Ramos
-2022,3857263,Spain vs Germany,2022-11-27,group,Germany,Spain,1,1,D,291,107,16,0.4458,0.1392,10,20,82,7,0,3,1,0.0687,6.87,36.77,2.72,0,0,Group Stage,Antonio Rüdiger,Rüdiger → Neuer
-2022,3857259,Cameroon vs Serbia,2022-11-28,group,Cameroon,Serbia,3,3,D,276,116,16,0.4833,0.1467,12,17,88,7,2,1,2,0.0616,6.16,42.03,2.38,0,0,Group Stage,Ngoran Suiru Fai Collins,Tolo → Ndoubena
-2022,3857259,Cameroon vs Serbia,2022-11-28,group,Serbia,Cameroon,3,3,D,428,136,16,0.5667,0.1425,14,36,130,7,3,1,5,0.0841,8.41,31.78,3.15,0,0,Group Stage,Saša Lukić,Tadić → Kostić
-2022,3857283,Belgium vs Morocco,2022-11-27,group,Belgium,Morocco,0,2,L,604,124,16,0.5167,0.1565,34,30,164,8,0,0,1,0.0497,4.97,20.53,4.87,0,0,Group Stage,Toby Alderweireld,Vertonghen → Alderweireld
-2022,3857283,Belgium vs Morocco,2022-11-27,group,Morocco,Belgium,2,0,W,287,107,16,0.4458,0.1272,11,18,82,8,2,1,4,0.0627,6.27,37.28,2.68,1,1,3rd Place,Nayef Aguerd,Mouh → Amallah
-2022,3857286,Qatar vs Ecuador,2022-11-20,group,Qatar,Ecuador,0,2,L,382,93,13,0.5962,0.1675,24,25,93,5,0,0,3,0.0654,6.54,24.35,4.11,0,0,Group Stage,Boualem Khoukhi,Khoukhi → Fadlalla
-2022,3857286,Qatar vs Ecuador,2022-11-20,group,Ecuador,Qatar,2,0,W,432,108,14,0.5934,0.1657,25,19,101,3,1,1,3,0.044,4.4,25.0,4.0,0,0,Group Stage,Jhegson Sebastián Méndez Carabalí,Carabalí → Reyna
-2022,3857300,Argentina vs Saudi Arabia,2022-11-22,group,Argentina,Saudi Arabia,1,2,L,542,124,14,0.6813,0.1524,18,35,130,10,0,4,7,0.0646,6.46,22.88,4.37,1,1,Final,Nicolás Hernán Otamendi,Otamendi → Romero
-2022,3857300,Argentina vs Saudi Arabia,2022-11-22,group,Saudi Arabia,Argentina,2,1,W,197,89,15,0.4238,0.1421,6,13,52,0,1,0,1,0.066,6.6,45.18,2.21,0,0,Group Stage,Mohammed Kanoo,Al-Tambakti → Al-Malki
-2022,3857299,South Korea vs Ghana,2022-11-28,group,South Korea,Ghana,2,3,L,499,119,14,0.6538,0.1575,21,50,149,12,2,0,13,0.1002,10.02,23.85,4.19,1,0,Round of 16,In-Beom Hwang,Kim → Hwang
-2022,3857299,South Korea vs Ghana,2022-11-28,group,Ghana,South Korea,3,2,W,266,87,14,0.478,0.1601,14,15,64,2,1,0,3,0.0564,5.64,32.71,3.06,0,0,Group Stage,Thomas Teye Partey,Amartey → Partey
-2022,3857293,Ghana vs Uruguay,2022-12-02,group,Ghana,Uruguay,0,2,L,384,111,15,0.5286,0.1617,14,36,122,5,0,0,1,0.0938,9.38,28.91,3.46,0,0,Group Stage,Thomas Teye Partey,Partey → Samed
-2022,3857293,Ghana vs Uruguay,2022-12-02,group,Uruguay,Ghana,2,0,W,364,126,16,0.525,0.1717,13,38,114,8,1,3,3,0.1044,10.44,34.62,2.89,0,0,Group Stage,Federico Santiago Valverde Dipetta,Dipetta → Olivera
-2022,3857291,Spain vs Costa Rica,2022-11-23,group,Spain,Costa Rica,7,0,W,1009,148,16,0.6167,0.1378,40,64,239,9,3,2,3,0.0634,6.34,14.67,6.82,1,0,Round of 16,Aymeric Laporte,Cascante → Laporte
-2022,3857291,Spain vs Costa Rica,2022-11-23,group,Costa Rica,Spain,0,7,L,172,106,16,0.4417,0.1192,6,11,59,0,0,0,1,0.064,6.4,61.63,1.62,0,0,Group Stage,Joel Nathaniel Campbell Samuels,Mora → Samuels
-2022,3857281,Croatia vs Canada,2022-11-27,group,Croatia,Canada,4,1,W,411,108,16,0.45,0.1314,17,31,113,8,4,1,6,0.0754,7.54,26.28,3.81,1,1,3rd Place,Marcelo Brozović,Modrić → Brozović
-2022,3857281,Croatia vs Canada,2022-11-27,group,Canada,Croatia,1,4,L,437,145,16,0.6042,0.1384,12,42,130,3,1,0,4,0.0961,9.61,33.18,3.01,0,0,Group Stage,Kamal Miller,Vitoria → Johnston
-2022,3857280,Cameroon vs Brazil,2022-12-02,group,Cameroon,Brazil,1,0,W,254,90,14,0.4945,0.1614,9,31,85,6,1,1,2,0.122,12.2,35.43,2.82,0,0,Group Stage,André-Frank Zambo Anguissa,Mboka → Ebosse
-2022,3857280,Cameroon vs Brazil,2022-12-02,group,Brazil,Cameroon,0,1,L,512,138,16,0.575,0.1299,27,33,146,16,0,0,8,0.0645,6.45,26.95,3.71,1,1,Quarter-final,Éder Gabriel Militão,Nascimento → Militão
-2022,3857279,France vs Australia,2022-11-22,group,France,Australia,4,1,W,680,127,15,0.6048,0.1581,24,63,146,15,4,4,14,0.0926,9.26,18.68,5.35,1,1,Final,Dayotchanculle Upamecano,Konaté → Upamecano
-2022,3857279,France vs Australia,2022-11-22,group,Australia,France,1,4,L,394,115,16,0.4792,0.1497,20,21,101,1,1,0,3,0.0533,5.33,29.19,3.43,1,0,Round of 16,Aaron Mooy,Behich → Rowles
-2022,3857262,South Korea vs Portugal,2022-12-02,group,South Korea,Portugal,2,1,W,309,110,14,0.6044,0.1537,11,24,90,6,1,1,2,0.0777,7.77,35.6,2.81,1,0,Round of 16,Woo-Young Jung,Kim → Kim
-2022,3857262,South Korea vs Portugal,2022-12-02,group,Portugal,South Korea,1,2,L,534,137,16,0.5708,0.1339,18,52,132,7,1,1,5,0.0974,9.74,25.66,3.9,1,1,Quarter-final,João Pedro Cavaco Cancelo,Cancelo → Ferreira
+match_id,match_name,date,stage,team,opponent,goals_for,goals_against,match_result,completed_passes,unique_passing_pairs,num_players,network_density,most_involved_player,top_player_reliance,top_connection,top_connection_count,final_third_entries,advanced_from_group,reached_qf,stage_reached,final_third_entry_share,final_third_entries_per_100_passes,connections_per_100_passes,passes_per_connection
+3857276,Canada vs Morocco,2022-12-01,group,Canada,Morocco,1,2,L,480,140,16,0.5833,Kamal Miller,0.1656,Vitoria → Miller,20,43,0,0,Group Stage,0.0896,8.96,29.17,3.43
+3857276,Canada vs Morocco,2022-12-01,group,Morocco,Canada,2,1,W,310,100,15,0.4762,Achraf Hakimi Mouh,0.1472,Ziyech → Mouh,13,12,1,1,3rd Place,0.0387,3.87,32.26,3.1
+3857271,England vs Iran,2022-11-21,group,England,Iran,6,2,W,746,142,16,0.5917,John Stones,0.1535,Trippier → Stones,29,55,1,1,Quarter-final,0.0737,7.37,19.03,5.25
+3857271,England vs Iran,2022-11-21,group,Iran,England,2,6,L,163,95,16,0.3958,Mehdi Taremi,0.1138,Moharrami → Nourollahi,5,14,0,0,Group Stage,0.0859,8.59,58.28,1.72
+3857296,Croatia vs Belgium,2022-12-01,group,Croatia,Belgium,0,0,D,514,108,14,0.5934,Marcelo Brozović,0.1469,Kovačić → Brozović,22,36,1,1,3rd Place,0.07,7.0,21.01,4.76
+3857296,Croatia vs Belgium,2022-12-01,group,Belgium,Croatia,0,0,D,543,140,16,0.5833,Toby Alderweireld,0.1492,Alderweireld → Meunier,27,38,0,0,Group Stage,0.07,7.0,25.78,3.88
+3857274,Netherlands vs Ecuador,2022-11-25,group,Netherlands,Ecuador,1,1,D,457,110,15,0.5238,Nathan Aké,0.1521,Aké → Blind,26,29,1,1,Quarter-final,0.0635,6.35,24.07,4.15
+3857274,Netherlands vs Ecuador,2022-11-25,group,Ecuador,Netherlands,1,1,D,359,97,12,0.7348,Felix Eduardo Torres Caicedo,0.1427,Carabalí → Caicedo,13,20,0,0,Group Stage,0.0557,5.57,27.02,3.7
+3857255,Japan vs Spain,2022-12-01,group,Japan,Spain,2,1,W,177,89,15,0.4238,Hidemasa Morita,0.1441,Taniguchi → Morita,9,7,1,0,Round of 16,0.0395,3.95,50.28,1.99
+3857255,Japan vs Spain,2022-12-01,group,Spain,Japan,1,2,L,993,128,16,0.5333,Rodrigo Hernández Cascante,0.2009,Cascante → Torres,69,79,1,0,Round of 16,0.0796,7.96,12.89,7.76
+3857272,England vs United States,2022-11-25,group,England,United States,0,0,D,500,113,14,0.6209,John Stones,0.171,Maguire → Stones,35,38,1,1,Quarter-final,0.076,7.6,22.6,4.42
+3857272,England vs United States,2022-11-25,group,United States,England,0,0,D,377,106,15,0.5048,Walker Zimmerman,0.1578,Ream → Zimmerman,23,23,1,0,Round of 16,0.061,6.1,28.12,3.56
+3857278,Iran vs United States,2022-11-29,group,Iran,United States,0,1,L,402,130,16,0.5417,Morteza Pouraliganji,0.148,Hosseini → Pouraliganji,19,34,0,0,Group Stage,0.0846,8.46,32.34,3.09
+3857278,Iran vs United States,2022-11-29,group,United States,Iran,1,0,W,426,123,16,0.5125,Tyler Adams,0.1315,Adams → McKennie,15,40,1,0,Round of 16,0.0939,9.39,28.87,3.46
+3857277,Morocco vs Croatia,2022-11-23,group,Morocco,Croatia,0,0,D,301,96,13,0.6154,Romain Saïss,0.1441,Mouh → Ziyech,14,18,1,1,3rd Place,0.0598,5.98,31.89,3.14
+3857277,Morocco vs Croatia,2022-11-23,group,Croatia,Morocco,0,0,D,577,126,15,0.6,Joško Gvardiol,0.1759,Lovren → Gvardiol,36,28,1,1,3rd Place,0.0485,4.85,21.84,4.58
+3857273,Wales vs Iran,2022-11-25,group,Wales,Iran,0,2,L,438,112,15,0.5333,Ben Davies,0.1404,Rodon → Davies,18,36,0,0,Group Stage,0.0822,8.22,25.57,3.91
+3857273,Wales vs Iran,2022-11-25,group,Iran,Wales,2,0,W,227,101,16,0.4208,Ramin Rezaeian,0.141,Gholizadeh → Rezaeian,11,21,0,0,Group Stage,0.0925,9.25,44.49,2.25
+3857275,Tunisia vs France,2022-11-30,group,Tunisia,France,1,0,W,275,87,14,0.478,Ali Maâloul,0.1345,Maâloul → Laïdouni,11,30,0,0,Group Stage,0.1091,10.91,31.64,3.16
+3857275,Tunisia vs France,2022-11-30,group,France,Tunisia,0,1,L,564,150,16,0.625,Aurélien Djani Tchouaméni,0.1543,Tchouaméni → Konaté,17,42,1,1,Final,0.0745,7.45,26.6,3.76
+3857261,Wales vs England,2022-11-29,group,Wales,England,0,3,L,274,114,16,0.475,Chris Mepham,0.1642,Ampadu → Mepham,10,8,0,0,Group Stage,0.0292,2.92,41.61,2.4
+3857261,Wales vs England,2022-11-29,group,England,Wales,3,0,W,553,138,16,0.575,Harry Maguire,0.1438,Maguire → Stones,21,27,1,1,Quarter-final,0.0488,4.88,24.95,4.01
+3857290,Switzerland vs Cameroon,2022-11-24,group,Switzerland,Cameroon,1,0,W,461,130,16,0.5417,Nico Elvedi,0.128,Elvedi → Araya,16,37,1,0,Round of 16,0.0803,8.03,28.2,3.55
+3857290,Switzerland vs Cameroon,2022-11-24,group,Cameroon,Switzerland,0,1,L,440,121,15,0.5762,André-Frank Zambo Anguissa,0.1295,Onana → Ndoubena,20,38,0,0,Group Stage,0.0864,8.64,27.5,3.64
+3857298,Portugal vs Ghana,2022-11-24,group,Portugal,Ghana,3,2,W,576,131,16,0.5458,Danilo Luís Hélio Pereira,0.1224,Pereira → Guerreiro,21,39,1,1,Quarter-final,0.0677,6.77,22.74,4.4
+3857298,Portugal vs Ghana,2022-11-24,group,Ghana,Portugal,2,3,L,336,114,15,0.5429,Thomas Teye Partey,0.1475,Amartey → Partey,15,22,0,0,Group Stage,0.0655,6.55,33.93,2.95
+3857285,Senegal vs Netherlands,2022-11-21,group,Senegal,Netherlands,0,2,L,344,112,15,0.5333,Youssouf Sabaly,0.1672,Sabaly → Koulibaly,12,18,1,0,Round of 16,0.0523,5.23,32.56,3.07
+3857285,Senegal vs Netherlands,2022-11-21,group,Netherlands,Senegal,2,0,W,393,101,14,0.5549,Nathan Aké,0.1463,Aké → Dijk,19,29,1,1,Quarter-final,0.0738,7.38,25.7,3.89
+3857282,United States vs Wales,2022-11-21,group,United States,Wales,1,1,D,520,133,16,0.5542,Walker Zimmerman,0.1519,Zimmerman → Dest,28,38,1,0,Round of 16,0.0731,7.31,25.58,3.91
+3857282,United States vs Wales,2022-11-21,group,Wales,United States,1,1,D,339,111,15,0.5286,Joe Rodon,0.1563,Rodon → Mepham,22,24,0,0,Group Stage,0.0708,7.08,32.74,3.05
+3857297,Poland vs Saudi Arabia,2022-11-26,group,Poland,Saudi Arabia,2,0,W,259,101,13,0.6474,Jakub Piotr Kiwior,0.1158,Glik → Kiwior,12,27,1,0,Round of 16,0.1042,10.42,39.0,2.56
+3857297,Poland vs Saudi Arabia,2022-11-26,group,Saudi Arabia,Poland,0,2,L,489,134,16,0.5583,Mohammed Kanoo,0.1411,Hamid → Dawsari,16,38,0,0,Group Stage,0.0777,7.77,27.4,3.65
+3857294,Netherlands vs Qatar,2022-11-29,group,Netherlands,Qatar,2,0,W,747,141,16,0.5875,Jurriën David Norman Timber,0.1386,Aké → Blind,34,72,1,1,Quarter-final,0.0964,9.64,18.88,5.3
+3857294,Netherlands vs Qatar,2022-11-29,group,Qatar,Netherlands,0,2,L,396,124,15,0.5905,Akram Hassan Afif,0.1719,Barsham → Khoukhi,11,20,0,0,Group Stage,0.0505,5.05,31.31,3.19
+3857266,France vs Denmark,2022-11-26,group,France,Denmark,2,1,W,464,118,15,0.5619,Aurélien Djani Tchouaméni,0.1379,Hernández → Lottin,23,36,1,1,Final,0.0776,7.76,25.43,3.93
+3857266,France vs Denmark,2022-11-26,group,Denmark,France,1,2,L,479,115,15,0.5476,Andreas Christensen,0.142,Nelsson → Christensen,24,45,0,0,Group Stage,0.0939,9.39,24.01,4.17
+3857284,Germany vs Japan,2022-11-23,group,Germany,Japan,1,2,L,723,125,16,0.5208,Antonio Rüdiger,0.1452,Schlotterbeck → Rüdiger,32,42,0,0,Group Stage,0.0581,5.81,17.29,5.78
+3857284,Germany vs Japan,2022-11-23,group,Japan,Germany,2,1,W,215,93,16,0.3875,Maya Yoshida,0.1488,Sakai → Ito,8,12,1,0,Round of 16,0.0558,5.58,43.26,2.31
+3857254,Denmark vs Tunisia,2022-11-22,group,Denmark,Tunisia,0,0,D,544,124,15,0.5905,Andreas Christensen,0.1388,Eriksen → Højbjerg,16,45,0,0,Group Stage,0.0827,8.27,22.79,4.39
+3857254,Denmark vs Tunisia,2022-11-22,group,Tunisia,Denmark,0,0,D,315,97,16,0.4042,Yassine Meriah,0.1444,Bronn → Meriah,15,17,0,0,Group Stage,0.054,5.4,30.79,3.25
+3857265,Mexico vs Poland,2022-11-22,group,Mexico,Poland,0,0,D,437,114,14,0.6264,Héctor Alfredo Moreno Herrera,0.167,Magaña → Herrera,18,42,0,0,Group Stage,0.0961,9.61,26.09,3.83
+3857265,Mexico vs Poland,2022-11-22,group,Poland,Mexico,0,0,D,259,98,14,0.5385,Jakub Piotr Kiwior,0.1293,Szczęsny → Lewandowski,14,36,1,0,Round of 16,0.139,13.9,37.84,2.64
+3857301,Qatar vs Senegal,2022-11-25,group,Qatar,Senegal,1,3,L,362,120,15,0.5714,Boualem Khoukhi,0.1436,Khoukhi → Madibo,14,23,0,0,Group Stage,0.0635,6.35,33.15,3.02
+3857301,Qatar vs Senegal,2022-11-25,group,Senegal,Qatar,3,1,W,462,120,16,0.5,Youssouf Sabaly,0.1461,Sabaly → Koulibaly,22,43,1,0,Round of 16,0.0931,9.31,25.97,3.85
+3857268,Belgium vs Canada,2022-11-23,group,Belgium,Canada,1,0,W,451,119,15,0.5667,Leander Dendoncker,0.1552,Dendoncker → Alderweireld,25,19,0,0,Group Stage,0.0421,4.21,26.39,3.79
+3857268,Belgium vs Canada,2022-11-23,group,Canada,Belgium,0,1,L,401,129,16,0.5375,Stephen Antunes Eustáquio,0.1409,Eustáquio → Davies,10,42,0,0,Group Stage,0.1047,10.47,32.17,3.11
+3857269,Brazil vs Switzerland,2022-11-28,group,Brazil,Switzerland,1,0,W,507,135,16,0.5625,Marcos Aoás Corrêa,0.1706,Silva → Corrêa,31,40,1,1,Quarter-final,0.0789,7.89,26.63,3.76
+3857269,Brazil vs Switzerland,2022-11-28,group,Switzerland,Brazil,0,1,L,428,116,16,0.4833,Manuel Obafemi Akanji,0.16,Sommer → Akanji,22,24,1,0,Round of 16,0.0561,5.61,27.1,3.69
+3869321,Netherlands vs Argentina,2022-12-09,QF,Netherlands,Argentina,2,2,D,572,144,15,0.6857,Jurriën David Norman Timber,0.1435,Timber → Dijk,26,50,1,1,Quarter-final,0.0874,8.74,25.17,3.97
+3869321,Netherlands vs Argentina,2022-12-09,QF,Argentina,Netherlands,2,2,D,531,147,17,0.5404,Nicolás Hernán Otamendi,0.1365,Otamendi → Romero,19,21,1,1,Final,0.0395,3.95,27.68,3.61
+3857292,Costa Rica vs Germany,2022-12-01,group,Costa Rica,Germany,2,4,L,284,110,16,0.4583,Joel Nathaniel Campbell Samuels,0.2095,Mora → Samuels,11,13,0,0,Group Stage,0.0458,4.58,38.73,2.58
+3857292,Costa Rica vs Germany,2022-12-01,group,Germany,Costa Rica,4,2,W,669,146,16,0.6083,Joshua Kimmich,0.1689,Kimmich → Süle,28,79,0,0,Group Stage,0.1181,11.81,21.82,4.58
+3857295,Japan vs Costa Rica,2022-11-27,group,Japan,Costa Rica,0,1,L,527,117,16,0.4875,Maya Yoshida,0.2049,Itakura → Yoshida,29,49,1,0,Round of 16,0.093,9.3,22.2,4.5
+3857295,Japan vs Costa Rica,2022-11-27,group,Costa Rica,Japan,1,0,W,374,98,14,0.5385,Francisco Javier Calvo Quesada,0.1684,Quesada → Manley,16,12,0,0,Group Stage,0.0321,3.21,26.2,3.82
+3869685,Argentina vs France,2022-12-18,Final,Argentina,France,3,3,D,560,129,17,0.4743,Enzo Fernandez,0.1455,Otamendi → Romero,18,36,1,1,Final,0.0643,6.43,23.04,4.34
+3869685,Argentina vs France,2022-12-18,Final,France,Argentina,3,3,D,434,143,17,0.5257,Raphaël Varane,0.1221,Varane → Upamecano,16,34,1,1,Final,0.0783,7.83,32.95,3.03
+3869684,Croatia vs Morocco,2022-12-17,3rd Place Final,Croatia,Morocco,2,1,W,439,112,14,0.6154,Mateo Kovačić,0.1435,Šutalo → Gvardiol,16,36,1,1,3rd Place,0.082,8.2,25.51,3.92
+3869684,Croatia vs Morocco,2022-12-17,3rd Place Final,Morocco,Croatia,1,2,L,431,144,16,0.6,Achraf Hakimi Mouh,0.1346,Mouh → Ziyech,21,27,1,1,3rd Place,0.0626,6.26,33.41,2.99
+3857256,Serbia vs Switzerland,2022-12-02,group,Serbia,Switzerland,2,3,L,407,125,16,0.5208,Strahinja Pavlović,0.1609,Milenković → Lukić,17,35,0,0,Group Stage,0.086,8.6,30.71,3.26
+3857256,Serbia vs Switzerland,2022-12-02,group,Switzerland,Serbia,3,2,W,346,108,14,0.5934,Granit Xhaka,0.1404,Akanji → Xhaka,13,30,1,0,Round of 16,0.0867,8.67,31.21,3.2
+3869151,Argentina vs Australia,2022-12-03,R16,Argentina,Australia,2,1,W,646,133,16,0.5542,Enzo Fernandez,0.1393,Otamendi → Acuña,21,45,1,1,Final,0.0697,6.97,20.59,4.86
+3869151,Argentina vs Australia,2022-12-03,R16,Australia,Argentina,1,2,L,384,115,15,0.5476,Kye Rowles,0.1621,Rowles → Souttar,17,23,1,0,Round of 16,0.0599,5.99,29.95,3.34
+3857257,Australia vs Denmark,2022-11-30,group,Australia,Denmark,1,0,W,219,92,15,0.4381,Aziz Eraltay Behich,0.121,Goodwin → Behich,8,22,1,0,Round of 16,0.1005,10.05,42.01,2.38
+3857257,Australia vs Denmark,2022-11-30,group,Denmark,Australia,0,1,L,590,145,16,0.6042,Joachim Andersen,0.1653,Christensen → Andersen,27,53,0,0,Group Stage,0.0898,8.98,24.58,4.07
+3857258,Brazil vs Serbia,2022-11-24,group,Brazil,Serbia,2,0,W,539,125,16,0.5208,Alex Sandro Lobo Silva,0.141,Silva → Silva,19,52,1,1,Quarter-final,0.0965,9.65,23.19,4.31
+3857258,Brazil vs Serbia,2022-11-24,group,Serbia,Brazil,0,2,L,351,135,16,0.5625,Milos Veljkovic,0.1125,Veljkovic → Milenković,13,25,0,0,Group Stage,0.0712,7.12,38.46,2.6
+3857288,Tunisia vs Australia,2022-11-26,group,Tunisia,Australia,0,1,L,406,128,15,0.6095,Yassine Meriah,0.1552,Bronn → Meriah,21,30,0,0,Group Stage,0.0739,7.39,31.53,3.17
+3857288,Tunisia vs Australia,2022-11-26,group,Australia,Tunisia,1,0,W,274,103,16,0.4292,Aaron Mooy,0.1223,Irvine → Mooy,12,29,1,0,Round of 16,0.1058,10.58,37.59,2.66
+3857267,Ecuador vs Senegal,2022-11-29,group,Ecuador,Senegal,1,2,L,362,101,15,0.481,Piero Martín Hincapié Reyna,0.2058,Caicedo → Reyna,24,23,0,0,Group Stage,0.0635,6.35,27.9,3.58
+3857267,Ecuador vs Senegal,2022-11-29,group,Senegal,Ecuador,2,1,W,213,98,13,0.6282,Youssouf Sabaly,0.1221,Jakobs → Sarr,7,24,1,0,Round of 16,0.1127,11.27,46.01,2.17
+3857287,Uruguay vs South Korea,2022-11-24,group,Uruguay,South Korea,0,0,D,475,115,15,0.5476,Rodrigo Bentancur Colmán,0.1421,Silva → Leal,23,44,0,0,Group Stage,0.0926,9.26,24.21,4.13
+3857287,Uruguay vs South Korea,2022-11-24,group,South Korea,Uruguay,0,0,D,351,109,14,0.5989,In-Beom Hwang,0.1339,Kim → Hwang,11,29,1,0,Round of 16,0.0826,8.26,31.05,3.22
+3869486,Morocco vs Portugal,2022-12-10,QF,Morocco,Portugal,1,0,W,184,85,13,0.5449,Achraf Hakimi Mouh,0.1475,Mouh → Ziyech,12,9,1,1,3rd Place,0.0489,4.89,46.2,2.16
+3869486,Morocco vs Portugal,2022-12-10,QF,Portugal,Morocco,0,1,L,616,128,16,0.5333,Kléper Laveran Lima Ferreira,0.1485,Dias → Ferreira,22,63,1,1,Quarter-final,0.1023,10.23,20.78,4.81
+3857260,Saudi Arabia vs Mexico,2022-11-30,group,Saudi Arabia,Mexico,1,2,L,194,99,15,0.4714,Mohammed Kanoo,0.1186,Amri → Ghannam,8,18,0,0,Group Stage,0.0928,9.28,51.03,1.96
+3857260,Saudi Arabia vs Mexico,2022-11-30,group,Mexico,Saudi Arabia,2,1,W,367,110,15,0.5238,César Jasib Montes Castro,0.1528,Herrera → Castro,16,37,0,0,Group Stage,0.1008,10.08,29.97,3.34
+3857264,Poland vs Argentina,2022-11-30,group,Poland,Argentina,0,2,L,267,106,16,0.4417,Jakub Piotr Kiwior,0.1423,Kiwior → Glik,11,9,1,0,Round of 16,0.0337,3.37,39.7,2.52
+3857264,Poland vs Argentina,2022-11-30,group,Argentina,Poland,2,0,W,826,154,16,0.6417,Rodrigo Javier De Paul,0.1695,Lucero → Paul,27,75,1,1,Final,0.0908,9.08,18.64,5.36
+3857289,Argentina vs Mexico,2022-11-26,group,Argentina,Mexico,2,0,W,476,125,16,0.5208,Nicolás Hernán Otamendi,0.1513,Otamendi → Montiel,18,27,1,1,Final,0.0567,5.67,26.26,3.81
+3857289,Argentina vs Mexico,2022-11-26,group,Mexico,Argentina,0,2,L,304,99,15,0.4714,César Jasib Montes Castro,0.1612,Razo → Castro,19,17,0,0,Group Stage,0.0559,5.59,32.57,3.07
+3869254,Portugal vs Switzerland,2022-12-06,R16,Portugal,Switzerland,6,1,W,404,138,16,0.575,William Silva de Carvalho,0.1324,Carvalho → Ferreira,13,20,1,1,Quarter-final,0.0495,4.95,34.16,2.93
+3869254,Portugal vs Switzerland,2022-12-06,R16,Switzerland,Portugal,1,6,L,438,134,16,0.5583,Granit Xhaka,0.1427,Fernandes → Shaqiri,16,27,1,0,Round of 16,0.0616,6.16,30.59,3.27
+3869118,England vs Senegal,2022-12-04,R16,England,Senegal,3,0,W,536,129,16,0.5375,John Stones,0.1521,Walker → Stones,22,37,1,1,Quarter-final,0.069,6.9,24.07,4.16
+3869118,England vs Senegal,2022-12-04,R16,Senegal,England,0,3,L,323,119,16,0.4958,Nampalys Mendy,0.1455,Jakobs → Sarr,10,16,1,0,Round of 16,0.0495,4.95,36.84,2.71
+3869519,Argentina vs Croatia,2022-12-13,SF,Argentina,Croatia,3,0,W,358,121,16,0.5042,Enzo Fernandez,0.1187,Otamendi → Fernandez,11,22,1,1,Final,0.0615,6.15,33.8,2.96
+3869519,Argentina vs Croatia,2022-12-13,SF,Croatia,Argentina,0,3,L,559,140,16,0.5833,Mateo Kovačić,0.1512,Kovačić → Modrić,22,38,1,1,3rd Place,0.068,6.8,25.04,3.99
+3869354,England vs France,2022-12-10,QF,England,France,1,2,L,465,102,14,0.5604,Harry Maguire,0.1774,Maguire → Stones,28,29,1,1,Quarter-final,0.0624,6.24,21.94,4.56
+3869354,England vs France,2022-12-10,QF,France,England,2,1,W,328,87,11,0.7909,Aurélien Djani Tchouaméni,0.1176,Koundé → Dembélé,13,36,1,1,Final,0.1098,10.98,26.52,3.77
+3869552,France vs Morocco,2022-12-14,SF,France,Morocco,2,0,W,316,97,13,0.6218,Raphaël Varane,0.1646,Konaté → Varane,20,20,1,1,Final,0.0633,6.33,30.7,3.26
+3869552,France vs Morocco,2022-12-14,SF,Morocco,France,0,2,L,529,117,16,0.4875,Jawad El Yamiq,0.1607,Ziyech → Mouh,23,37,1,1,3rd Place,0.0699,6.99,22.12,4.52
+3869420,Croatia vs Brazil,2022-12-09,QF,Croatia,Brazil,1,1,D,639,121,15,0.5762,Luka Modrić,0.162,Brozović → Modrić,27,49,1,1,3rd Place,0.0767,7.67,18.94,5.28
+3869420,Croatia vs Brazil,2022-12-09,QF,Brazil,Croatia,1,1,D,652,129,16,0.5375,Marcos Aoás Corrêa,0.1388,Corrêa → Silva,27,57,1,1,Quarter-final,0.0874,8.74,19.79,5.05
+3869220,Morocco vs Spain,2022-12-06,R16,Morocco,Spain,0,0,D,250,101,16,0.4208,Azzedine Ounahi,0.144,Mouh → Ounahi,12,19,1,1,3rd Place,0.076,7.6,40.4,2.48
+3869220,Morocco vs Spain,2022-12-06,R16,Spain,Morocco,0,0,D,960,142,17,0.5221,Rodrigo Hernández Cascante,0.2052,Cascante → Laporte,68,101,1,0,Round of 16,0.1052,10.52,14.79,6.76
+3869219,Japan vs Croatia,2022-12-05,R16,Japan,Croatia,1,1,D,436,131,16,0.5458,Wataru Endo,0.1273,Tomiyasu → Endo,14,37,1,0,Round of 16,0.0849,8.49,30.05,3.33
+3869219,Japan vs Croatia,2022-12-05,R16,Croatia,Japan,1,1,D,657,136,17,0.5,Marcelo Brozović,0.1796,Gvardiol → Lovren,26,55,1,1,3rd Place,0.0837,8.37,20.7,4.83
+3869253,Brazil vs South Korea,2022-12-05,R16,Brazil,South Korea,4,1,W,566,129,16,0.5375,Thiago Emiliano da Silva,0.1405,Silva → Silva,28,40,1,1,Quarter-final,0.0707,7.07,22.79,4.39
+3869253,Brazil vs South Korea,2022-12-05,R16,South Korea,Brazil,1,4,L,476,142,15,0.6762,Min Jae Kim,0.1282,Kim → Kim,14,37,1,0,Round of 16,0.0777,7.77,29.83,3.35
+3869152,France vs Poland,2022-12-04,R16,France,Poland,3,1,W,505,123,15,0.5857,Aurélien Djani Tchouaméni,0.1317,Koundé → Dembélé,18,44,1,1,Final,0.0871,8.71,24.36,4.11
+3869152,France vs Poland,2022-12-04,R16,Poland,France,1,3,L,406,111,16,0.4625,Jakub Piotr Kiwior,0.1675,Glik → Kiwior,18,29,1,0,Round of 16,0.0714,7.14,27.34,3.66
+3869117,Netherlands vs United States,2022-12-03,R16,Netherlands,United States,3,1,W,332,111,14,0.6099,Virgil van Dijk,0.1161,Timber → Dumfries,11,20,1,1,Quarter-final,0.0602,6.02,33.43,2.99
+3869117,Netherlands vs United States,2022-12-03,R16,United States,Netherlands,1,3,L,499,134,15,0.6381,Tyler Adams,0.1404,Ream → Zimmerman,27,38,1,0,Round of 16,0.0762,7.62,26.85,3.72
+3857270,Portugal vs Uruguay,2022-11-28,group,Portugal,Uruguay,2,0,W,525,136,16,0.5667,William Silva de Carvalho,0.1086,Cancelo → Fernandes,16,29,1,1,Quarter-final,0.0552,5.52,25.9,3.86
+3857270,Portugal vs Uruguay,2022-11-28,group,Uruguay,Portugal,0,2,L,324,130,16,0.5417,Rodrigo Bentancur Colmán,0.1389,Colmán → Dipetta,10,23,0,0,Group Stage,0.071,7.1,40.12,2.49
+3857263,Spain vs Germany,2022-11-27,group,Spain,Germany,1,1,D,578,126,15,0.6,Rodrigo Hernández Cascante,0.1574,Cascante → Ramos,32,28,1,0,Round of 16,0.0484,4.84,21.8,4.59
+3857263,Spain vs Germany,2022-11-27,group,Germany,Spain,1,1,D,291,107,16,0.4458,Antonio Rüdiger,0.1392,Rüdiger → Neuer,10,20,0,0,Group Stage,0.0687,6.87,36.77,2.72
+3857259,Cameroon vs Serbia,2022-11-28,group,Cameroon,Serbia,3,3,D,276,116,16,0.4833,Ngoran Suiru Fai Collins,0.1467,Tolo → Ndoubena,12,17,0,0,Group Stage,0.0616,6.16,42.03,2.38
+3857259,Cameroon vs Serbia,2022-11-28,group,Serbia,Cameroon,3,3,D,428,136,16,0.5667,Saša Lukić,0.1425,Tadić → Kostić,14,36,0,0,Group Stage,0.0841,8.41,31.78,3.15
+3857283,Belgium vs Morocco,2022-11-27,group,Belgium,Morocco,0,2,L,604,124,16,0.5167,Toby Alderweireld,0.1565,Vertonghen → Alderweireld,34,30,0,0,Group Stage,0.0497,4.97,20.53,4.87
+3857283,Belgium vs Morocco,2022-11-27,group,Morocco,Belgium,2,0,W,287,107,16,0.4458,Nayef Aguerd,0.1272,Mouh → Amallah,11,18,1,1,3rd Place,0.0627,6.27,37.28,2.68
+3857286,Qatar vs Ecuador,2022-11-20,group,Qatar,Ecuador,0,2,L,382,93,13,0.5962,Boualem Khoukhi,0.1675,Khoukhi → Fadlalla,24,25,0,0,Group Stage,0.0654,6.54,24.35,4.11
+3857286,Qatar vs Ecuador,2022-11-20,group,Ecuador,Qatar,2,0,W,432,108,14,0.5934,Jhegson Sebastián Méndez Carabalí,0.1657,Carabalí → Reyna,25,19,0,0,Group Stage,0.044,4.4,25.0,4.0
+3857300,Argentina vs Saudi Arabia,2022-11-22,group,Argentina,Saudi Arabia,1,2,L,542,124,14,0.6813,Nicolás Hernán Otamendi,0.1524,Otamendi → Romero,18,35,1,1,Final,0.0646,6.46,22.88,4.37
+3857300,Argentina vs Saudi Arabia,2022-11-22,group,Saudi Arabia,Argentina,2,1,W,197,89,15,0.4238,Mohammed Kanoo,0.1421,Al-Tambakti → Al-Malki,6,13,0,0,Group Stage,0.066,6.6,45.18,2.21
+3857299,South Korea vs Ghana,2022-11-28,group,South Korea,Ghana,2,3,L,499,119,14,0.6538,In-Beom Hwang,0.1575,Kim → Hwang,21,50,1,0,Round of 16,0.1002,10.02,23.85,4.19
+3857299,South Korea vs Ghana,2022-11-28,group,Ghana,South Korea,3,2,W,266,87,14,0.478,Thomas Teye Partey,0.1601,Amartey → Partey,14,15,0,0,Group Stage,0.0564,5.64,32.71,3.06
+3857293,Ghana vs Uruguay,2022-12-02,group,Ghana,Uruguay,0,2,L,384,111,15,0.5286,Thomas Teye Partey,0.1617,Partey → Samed,14,36,0,0,Group Stage,0.0938,9.38,28.91,3.46
+3857293,Ghana vs Uruguay,2022-12-02,group,Uruguay,Ghana,2,0,W,364,126,16,0.525,Federico Santiago Valverde Dipetta,0.1717,Dipetta → Olivera,13,38,0,0,Group Stage,0.1044,10.44,34.62,2.89
+3857291,Spain vs Costa Rica,2022-11-23,group,Spain,Costa Rica,7,0,W,1009,148,16,0.6167,Aymeric Laporte,0.1378,Cascante → Laporte,40,64,1,0,Round of 16,0.0634,6.34,14.67,6.82
+3857291,Spain vs Costa Rica,2022-11-23,group,Costa Rica,Spain,0,7,L,172,106,16,0.4417,Joel Nathaniel Campbell Samuels,0.1192,Mora → Samuels,6,11,0,0,Group Stage,0.064,6.4,61.63,1.62
+3857281,Croatia vs Canada,2022-11-27,group,Croatia,Canada,4,1,W,411,108,16,0.45,Marcelo Brozović,0.1314,Modrić → Brozović,17,31,1,1,3rd Place,0.0754,7.54,26.28,3.81
+3857281,Croatia vs Canada,2022-11-27,group,Canada,Croatia,1,4,L,437,145,16,0.6042,Kamal Miller,0.1384,Vitoria → Johnston,12,42,0,0,Group Stage,0.0961,9.61,33.18,3.01
+3857280,Cameroon vs Brazil,2022-12-02,group,Cameroon,Brazil,1,0,W,254,90,14,0.4945,André-Frank Zambo Anguissa,0.1614,Mboka → Ebosse,9,31,0,0,Group Stage,0.122,12.2,35.43,2.82
+3857280,Cameroon vs Brazil,2022-12-02,group,Brazil,Cameroon,0,1,L,512,138,16,0.575,Éder Gabriel Militão,0.1299,Nascimento → Militão,27,33,1,1,Quarter-final,0.0645,6.45,26.95,3.71
+3857279,France vs Australia,2022-11-22,group,France,Australia,4,1,W,680,127,15,0.6048,Dayotchanculle Upamecano,0.1581,Konaté → Upamecano,24,63,1,1,Final,0.0926,9.26,18.68,5.35
+3857279,France vs Australia,2022-11-22,group,Australia,France,1,4,L,394,115,16,0.4792,Aaron Mooy,0.1497,Behich → Rowles,20,21,1,0,Round of 16,0.0533,5.33,29.19,3.43
+3857262,South Korea vs Portugal,2022-12-02,group,South Korea,Portugal,2,1,W,309,110,14,0.6044,Woo-Young Jung,0.1537,Kim → Kim,11,24,1,0,Round of 16,0.0777,7.77,35.6,2.81
+3857262,South Korea vs Portugal,2022-12-02,group,Portugal,South Korea,1,2,L,534,137,16,0.5708,João Pedro Cavaco Cancelo,0.1339,Cancelo → Ferreira,18,52,1,1,Quarter-final,0.0974,9.74,25.66,3.9

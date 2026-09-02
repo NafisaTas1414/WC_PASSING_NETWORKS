@@ -1,0 +1,9 @@
+metric,qf_mean,non_qf_mean,mean_difference,mean_pct_difference,qf_median,non_qf_median,median_difference,effect_size_rbc,p_value,significant
+completed_passes,415.75,374.014,41.736,11.2,434.0,353.5,80.5,0.2216,0.1061,False
+unique_passing_pairs,106.625,102.806,3.819,3.7,110.5,102.0,8.5,0.2193,0.1095,False
+network_density,0.605,0.589,0.016,2.6,0.624,0.601,0.023,0.1464,0.2861,False
+top_player_reliance,0.146,0.147,-0.001,-0.7,0.142,0.148,-0.005,-0.0255,0.8556,False
+final_third_entries,35.875,32.444,3.431,10.6,34.5,30.0,4.5,0.206,0.1329,False
+final_third_entries_per_100_passes,8.792,8.833,-0.04,-0.5,8.83,8.715,0.115,0.0081,0.9561,False
+connections_per_100_passes,27.97,30.754,-2.784,-9.1,25.31,29.425,-4.115,-0.1979,0.1491,False
+passes_per_connection,3.835,3.568,0.268,7.5,3.95,3.395,0.555,0.1985,0.1479,False
