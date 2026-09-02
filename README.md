@@ -25,13 +25,11 @@ wc_passing_networks/
 ├── data/
 │   ├── raw/                # StatsBomb event parquets (auto-downloaded, cached), 2018 + 2022
 │   └── processed/          # Cleaned pass tables, feature tables, vulnerability-analysis outputs
-├── notebooks/               # 01–15, run in order — see below
+├── notebooks/               # 01–14, run in order — see below
 ├── src/
 │   ├── data_loader.py           # StatsBomb loading, pass cleaning, labeling
 │   ├── network_builder.py       # NetworkX directed graph construction
 │   ├── network_vulnerability.py # Player/pair removal simulation (Parts 1–5)
-│   ├── network_export.py        # Dashboard JSON export helpers
-│   ├── insights_builder.py      # Dominance/defensive insights for the dashboard
 │   ├── pipeline.py              # Multi-tournament data pipeline
 │   ├── visualization.py         # Pitch plots, distributions, network diagrams
 │   └── pass_direction_analysis.py # Exploratory — pass-direction classifier, not yet wired into a notebook
@@ -55,7 +53,7 @@ Event data downloads automatically from StatsBomb on first run and is cached to 
 Notebooks can be run interactively in Jupyter, or regenerated + executed from the repo root via the matching `build_*.py` script, e.g.:
 ```bash
 python3 build_case_studies_notebook.py
-jupyter nbconvert --to notebook --execute --inplace notebooks/15_tactical_case_studies.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/12_tactical_case_studies.ipynb
 ```
 
 ---
@@ -76,26 +74,25 @@ Run in order — each stage caches its output to `data/processed/`, so later not
 **Association & predictive analysis**
 | # | Notebook | Finding |
 |---|---|---|
-| 05 | `statistical_association` | Mann-Whitney U across all stages (project's core association finding) + a group-stage-only check that the signal isn't a knockout-round artifact |
-| 07 | `historical_qf_modeling` | Cross-tournament classifier (train on 2018, test on unseen 2022) — Random Forest ROC-AUC 0.84 |
-| 08 | `passing_dominance_defensive_resistance` | Composite dominance score; the passing-dominant team wins only 41% of matches |
-| 09 | `possession_zone_distribution` | Pitch-zone distribution barely predicts match outcome |
-| 10 | `passes_per_shot` | Possession efficiency (passes/shot) *does* predict outcome — contrast with 09 |
+| 05 | `statistical_association` | Primary test is team-level Mann-Whitney U (8 QF vs 24 non-QF teams, one group-stage profile per team) — 3 of 8 features significant after FDR correction; team-match-level test kept as secondary/exploratory (non-independent rows) |
+| 07 | `historical_qf_modeling` | Cross-tournament Random Forest ranking: 2018→2022 gets 6/8 top-ranked teams correct (ROC-AUC 0.84, permutation p≈0.055); the reverse 2022→2018 direction is much weaker (3/8, AUC 0.63, p≈0.18) — asymmetric, exploratory, not a calibrated forecaster |
+| 13 | `statistical_association_2018` | Same team-level design as 05, run on 2018 — 0 of 8 features significant (vs 3/8 in 2022) |
+| 14 | `cross_tournament_comparison` | Compares the saved team-level results from 05 and 13 — direction agrees on 6/8 features but every one is substantially weaker in 2018, suggesting a 2022-specific or underpowered-in-2018 effect rather than a general one; run 05 and 13 first |
 
 **Network vulnerability — does structural importance follow raw involvement, or hide from it? (Parts 1–5)**
 | # | Notebook | Finding |
 |---|---|---|
-| 11 | `player_disruption_baseline` | Baseline player/team network tables for every team-match |
-| 12 | `single_player_removal` | Simulates removing each player; measures structural damage |
-| 13 | `targeted_vs_random_disruption` | The most damaging player is the team's #1 passer only 27% of the time, #1 by betweenness only 22.7% |
-| 14 | `two_player_removal` | Tests every eligible player pair — the true optimal pair differs from naively combining the two most damaging individuals in ~33% of team-matches |
-| 15 | `tactical_case_studies` | Three contrasting case studies (hidden linchpin, pair synergy, fully redundant network) + a summary framework classifying all 256 team-matches |
+| 08 | `player_disruption_baseline` | Baseline player/team network tables for every team-match |
+| 09 | `single_player_removal` | Simulates removing each player; measures structural damage |
+| 10 | `targeted_vs_random_disruption` | The most damaging player is the team's #1 passer only 27% of the time, #1 by betweenness only 22.7% |
+| 11 | `two_player_removal` | Tests every eligible player pair — the true optimal pair differs from naively combining the two most damaging individuals in ~33% of team-matches |
+| 12 | `tactical_case_studies` | Three contrasting case studies (hidden linchpin, pair synergy, fully redundant network) + a summary framework classifying all 256 team-matches |
 
 ---
 
 ## Interactive dashboard
 
-`outputs/web/index.html` is a self-contained interactive dashboard (open directly, or serve locally with `python -m http.server` from `outputs/web/`). Select a match to explore its passing networks, dominance meter, and defensive stats. Each team panel also shows its **most structurally critical player** (from notebook 15) with a one-click "Remove Critical Player" simulation, rendered on a fixed visual scale so the structural change is directly comparable to the original network.
+`outputs/web/index.html` is a self-contained interactive dashboard (open directly, or serve locally with `python -m http.server` from `outputs/web/`). Select a match to explore both teams' passing networks side by side, with stats cards, pass-count/type filters, and hover tooltips on players and connections.
 
 ---
 
@@ -114,9 +111,9 @@ Networks are built at the **team-match** level (one graph per team per match).
 
 ## Key findings
 
-- **Association:** quarterfinalists complete significantly more passes, more progressive passes, and show higher network density than eliminated teams (Mann-Whitney U, p<0.05 on 7 of 11 tested features).
-- **Prediction:** a Random Forest trained on 2018 network features and tested on unseen 2022 data reaches 0.84 ROC-AUC — genuine out-of-sample generalization, not just cross-validation on one dataset.
-- **Dominance ≠ winning:** the passing-dominant team wins only 41% of matches; possession efficiency (passes per shot) predicts outcomes better than raw zone distribution.
+- **Association:** at the team level (8 QF vs 24 non-QF teams, group-stage profiles), quarterfinalists complete significantly more passes and reuse passing connections more heavily than eliminated teams — 3 of 8 tested features significant after FDR correction in 2022 (see notebook 05); the same test on 2018 finds no significant features, an asymmetry examined in notebooks 13/14.
+- **Prediction:** a Random Forest trained on 2018 network features and tested on unseen 2022 data reaches 0.84 ROC-AUC (6/8 top-ranked teams correct) — but the reverse direction (train 2022, test 2018) is much weaker, so this is treated as an exploratory, tournament-asymmetric signal rather than a validated forecaster (see notebook 07).
+- **Possession efficiency, not raw volume, predicts outcomes (unverified):** passes per shot is claimed to predict match outcome better than raw pitch-zone distribution, but the notebooks for this (`build_zone_notebook.py` / `build_passes_per_shot_notebook.py`) exist as generator scripts only — they've never been run, so this finding isn't currently reproducible in this repo.
 - **Structural vulnerability is often hidden:** the single player whose removal does the most damage to a team's passing network is frequently *not* the top passer or the highest-betweenness player by standard centrality — and some of the most damaging *pairs* of players are individually unremarkable.
 
 ---

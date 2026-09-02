@@ -1,4 +1,4 @@
-"""One-off builder script for notebooks/15_tactical_case_studies.ipynb.
+"""One-off builder script for notebooks/12_tactical_case_studies.ipynb.
 
 Run once to generate the notebook, then execute it with nbconvert. Not part
 of the analysis pipeline itself — safe to delete after the notebook exists.
@@ -20,7 +20,7 @@ def cell(cell_type, source):
 cells = []
 
 cells.append(cell("markdown", """
-# 15 — Passing-Network Vulnerability: Part 5, Tactical Case Studies
+# 12 — Passing-Network Vulnerability: Part 5, Tactical Case Studies
 
 *2018 & 2022 FIFA World Cup · StatsBomb event data*
 
@@ -104,7 +104,7 @@ def shared_positions(original_net):
 """))
 
 cells.append(cell("markdown", """
-## 5A — Three case studies, selected from the validated Parts 1-4 output
+## Three case studies, selected from the validated Parts 1-4 output
 
 | Case | Team-match | Selection criterion |
 |---|---|---|
@@ -161,7 +161,7 @@ f1 = plot_pass_network(
     orig_c1, title='France vs Belgium — original network',
     min_edge_weight=2, max_out_degree_ref=max_deg_c1, max_edge_weight_ref=max_w_c1,
     node_positions=pos_c1, highlight_players=[\"N'Golo Kanté\"],
-    save_path=FIG_DIR / '15_case1_original.png',
+    save_path=FIG_DIR / '12_case1_original.png',
 )
 plt.show()
 plt.close(f1)
@@ -170,7 +170,7 @@ f2 = plot_pass_network(
     removed_c1, title='France vs Belgium — Kanté removed',
     min_edge_weight=2, max_out_degree_ref=max_deg_c1, max_edge_weight_ref=max_w_c1,
     node_positions=pos_c1,
-    save_path=FIG_DIR / '15_case1_removed.png',
+    save_path=FIG_DIR / '12_case1_removed.png',
 )
 plt.show()
 plt.close(f2)
@@ -213,9 +213,9 @@ max_deg_c2, max_w_c2 = fixed_scale_refs(orig_c2)
 pos_c2 = shared_positions(orig_c2)
 
 panels = [
-    (orig_c2, 'Japan vs Senegal — original network', ['Keisuke Honda', 'Yuto Nagatomo'], '15_case2_original.png'),
-    (minus_a_c2, 'Japan vs Senegal — Honda removed', ['Yuto Nagatomo'], '15_case2_minus_honda.png'),
-    (minus_ab_c2, 'Japan vs Senegal — Honda + Nagatomo removed', [], '15_case2_minus_both.png'),
+    (orig_c2, 'Japan vs Senegal — original network', ['Keisuke Honda', 'Yuto Nagatomo'], '12_case2_original.png'),
+    (minus_a_c2, 'Japan vs Senegal — Honda removed', ['Yuto Nagatomo'], '12_case2_minus_honda.png'),
+    (minus_ab_c2, 'Japan vs Senegal — Honda + Nagatomo removed', [], '12_case2_minus_both.png'),
 ]
 for net, title, highlight, fname in panels:
     f = plot_pass_network(
@@ -272,7 +272,7 @@ f1 = plot_pass_network(
     orig_c3, title='England vs Tunisia — original network',
     min_edge_weight=2, max_out_degree_ref=max_deg_c3, max_edge_weight_ref=max_w_c3,
     node_positions=pos_c3, highlight_players=[c3['targeted_player']],
-    save_path=FIG_DIR / '15_case3_original.png',
+    save_path=FIG_DIR / '12_case3_original.png',
 )
 plt.show()
 plt.close(f1)
@@ -281,14 +281,14 @@ f2 = plot_pass_network(
     removed_c3, title=f\"England vs Tunisia — {c3['targeted_player']} removed (barely changes)\",
     min_edge_weight=2, max_out_degree_ref=max_deg_c3, max_edge_weight_ref=max_w_c3,
     node_positions=pos_c3,
-    save_path=FIG_DIR / '15_case3_removed.png',
+    save_path=FIG_DIR / '12_case3_removed.png',
 )
 plt.show()
 plt.close(f2)
 """))
 
 cells.append(cell("markdown", """
-## 5D — Summary framework: individual concentration vs. pair synergy
+## Summary framework: individual concentration vs. pair synergy
 
 Every team-match plotted by two axes:
 - **X: individual vulnerability concentration** (`top1_top2_gap` — how much worse the
@@ -343,12 +343,12 @@ ax.set_ylabel('Pair synergy (best pair interaction effect)')
 ax.set_title('World Cup passing networks: individual vs. pair structural vulnerability')
 ax.spines[['top', 'right']].set_visible(False)
 fig.tight_layout()
-fig.savefig(FIG_DIR / '15_vulnerability_framework_scatter.png', dpi=150, bbox_inches='tight')
+fig.savefig(FIG_DIR / '12_vulnerability_framework_scatter.png', dpi=150, bbox_inches='tight')
 plt.show()
 """))
 
 cells.append(cell("markdown", """
-## 5E — Practical interpretation
+## Practical interpretation
 
 **Where are World Cup passing networks structurally vulnerable, and are those
 vulnerabilities concentrated in obvious stars or hidden combinations of players?**
@@ -390,8 +390,8 @@ cells.append(cell("markdown", """
 - Structural disruption simulation on the *observed* network, not a behavioral
   counterfactual — teammates are not modeled as adapting to a player's absence
 - Case studies were selected to illustrate the range of behavior the pipeline finds, not
-  as a representative random sample — the summary scatter (5D) is what shows the full
-  256-team-match distribution
+  as a representative random sample — the summary framework scatter above is what shows
+  the full 256-team-match distribution
 - `efficiency_damage` and `progressive_capacity_damage` are the only two metrics carried
   through from Part 3 onward (density and largest-component damage were excluded for the
   documented reasons in Part 3)
@@ -407,7 +407,7 @@ nb = {
     "nbformat_minor": 5,
 }
 
-with open("notebooks/15_tactical_case_studies.ipynb", "w") as f:
+with open("notebooks/12_tactical_case_studies.ipynb", "w") as f:
     json.dump(nb, f, indent=1)
 
-print("wrote notebooks/15_tactical_case_studies.ipynb with", len(cells), "cells")
+print("wrote notebooks/12_tactical_case_studies.ipynb with", len(cells), "cells")

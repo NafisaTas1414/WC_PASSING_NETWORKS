@@ -1,4 +1,4 @@
-"""One-off builder script for notebooks/11_player_disruption_baseline.ipynb.
+"""One-off builder script for notebooks/08_player_disruption_baseline.ipynb.
 
 Run once to generate the notebook, then execute it with nbconvert. Not part
 of the analysis pipeline itself — safe to delete after the notebook exists.
@@ -20,7 +20,7 @@ def cell(cell_type, source):
 cells = []
 
 cells.append(cell("markdown", """
-# 11 — Passing-Network Vulnerability: Part 1, Baseline Data
+# 08 — Passing-Network Vulnerability: Part 1, Baseline Data
 
 ### Building the clean player-level and team-match-level dataset for a future disruption analysis
 
@@ -151,7 +151,7 @@ nb = {
     "nbformat_minor": 5,
 }
 
-with open("notebooks/11_player_disruption_baseline.ipynb", "w") as f:
+with open("notebooks/08_player_disruption_baseline.ipynb", "w") as f:
     json.dump(nb, f, indent=1)
 
-print("wrote notebooks/11_player_disruption_baseline.ipynb with", len(cells), "cells")
+print("wrote notebooks/08_player_disruption_baseline.ipynb with", len(cells), "cells")

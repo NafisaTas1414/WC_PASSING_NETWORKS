@@ -1,4 +1,4 @@
-"""One-off builder script for notebooks/14_two_player_removal.ipynb.
+"""One-off builder script for notebooks/11_two_player_removal.ipynb.
 
 Run once to generate the notebook, then execute it with nbconvert. Not part
 of the analysis pipeline itself — safe to delete after the notebook exists.
@@ -20,7 +20,7 @@ def cell(cell_type, source):
 cells = []
 
 cells.append(cell("markdown", """
-# 14 — Passing-Network Vulnerability: Part 4, Two-Player Combination Search
+# 11 — Passing-Network Vulnerability: Part 4, Two-Player Combination Search
 
 *2018 & 2022 FIFA World Cup · StatsBomb event data*
 
@@ -134,7 +134,7 @@ ax.set_ylabel('Number of eligible pairs')
 ax.set_title('Synergy (right of 0) vs. redundancy (left of 0) across all 24,149 tested pairs')
 ax.spines[['top', 'right']].set_visible(False)
 fig.tight_layout()
-fig.savefig('../outputs/figures/14_interaction_effect_distribution.png', dpi=150, bbox_inches='tight')
+fig.savefig('../outputs/figures/11_interaction_effect_distribution.png', dpi=150, bbox_inches='tight')
 plt.show()
 """))
 
@@ -213,7 +213,7 @@ nb = {
     "nbformat_minor": 5,
 }
 
-with open("notebooks/14_two_player_removal.ipynb", "w") as f:
+with open("notebooks/11_two_player_removal.ipynb", "w") as f:
     json.dump(nb, f, indent=1)
 
-print("wrote notebooks/14_two_player_removal.ipynb with", len(cells), "cells")
+print("wrote notebooks/11_two_player_removal.ipynb with", len(cells), "cells")

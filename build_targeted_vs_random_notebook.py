@@ -1,4 +1,4 @@
-"""One-off builder script for notebooks/13_targeted_vs_random_disruption.ipynb.
+"""One-off builder script for notebooks/10_targeted_vs_random_disruption.ipynb.
 
 Run once to generate the notebook, then execute it with nbconvert. Not part
 of the analysis pipeline itself — safe to delete after the notebook exists.
@@ -20,7 +20,7 @@ def cell(cell_type, source):
 cells = []
 
 cells.append(cell("markdown", """
-# 13 — Passing-Network Vulnerability: Part 3, Targeted vs. Eligible-Pool Disruption
+# 10 — Passing-Network Vulnerability: Part 3, Targeted vs. Eligible-Pool Disruption
 
 *2018 & 2022 FIFA World Cup · StatsBomb event data*
 
@@ -48,7 +48,8 @@ Sampling would only add noise to a quantity already known exactly.
 **A note on what NOT to headline:** the targeted player is *defined* as the eligible-pool
 maximum, so "targeted damage exceeds the pool mean" is mechanically guaranteed — it is not
 a finding. The real question is whether that maximum belongs to an ordinary hub (highest
-pass volume, highest betweenness) or not. That's what Task 8 actually tests.
+pass volume, highest betweenness) or not. That's what the vulnerability-concentration
+check (Section 3 below) actually tests.
 
 **Interpretation:** this measures how unusually dependent the *observed* network is on
 its most structurally important participant, relative to other meaningful participants —
@@ -74,7 +75,7 @@ single_player_removal = pd.read_csv(PROC_DIR / 'single_player_removal.csv')
 """))
 
 cells.append(cell("markdown", """
-## Task 2 — eligibility rule for the baseline pool
+## 1. Eligibility rule for the baseline pool
 
 Before applying any rule, check how many players each candidate threshold would exclude.
 """))
@@ -103,7 +104,7 @@ team_match_robustness.head(10)
 """))
 
 cells.append(cell("markdown", """
-## Task 7 — validation checks
+## 2. Validation checks
 """))
 
 cells.append(cell("code", """
@@ -111,7 +112,7 @@ nv.run_robustness_validation_checks(team_match_robustness, single_player_removal
 """))
 
 cells.append(cell("markdown", """
-## Task 8 — is "vulnerability" actually concentrated?
+## 3. Is vulnerability actually concentrated?
 
 **The headline finding is Q3-Q5 below, not the targeted-vs-mean comparison** (which is
 mechanical by construction — see the methodology note above).
@@ -181,7 +182,7 @@ print("consistent with concentrated vulnerability being the exception, not the r
 """))
 
 cells.append(cell("markdown", """
-## Task 9 — illustrative examples (not case studies, not causal claims)
+## 4. Illustrative examples (not case studies, not causal claims)
 
 ### A. 5 team-matches with the largest standardized gap (most reliable "stands out" measure)
 """))
@@ -223,7 +224,7 @@ nb = {
     "nbformat_minor": 5,
 }
 
-with open("notebooks/13_targeted_vs_random_disruption.ipynb", "w") as f:
+with open("notebooks/10_targeted_vs_random_disruption.ipynb", "w") as f:
     json.dump(nb, f, indent=1)
 
-print("wrote notebooks/13_targeted_vs_random_disruption.ipynb with", len(cells), "cells")
+print("wrote notebooks/10_targeted_vs_random_disruption.ipynb with", len(cells), "cells")

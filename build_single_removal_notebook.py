@@ -1,4 +1,4 @@
-"""One-off builder script for notebooks/12_single_player_removal.ipynb.
+"""One-off builder script for notebooks/09_single_player_removal.ipynb.
 
 Run once to generate the notebook, then execute it with nbconvert. Not part
 of the analysis pipeline itself — safe to delete after the notebook exists.
@@ -20,7 +20,7 @@ def cell(cell_type, source):
 cells = []
 
 cells.append(cell("markdown", """
-# 12 — Passing-Network Vulnerability: Part 2, Single-Player Removal Simulation
+# 09 — Passing-Network Vulnerability: Part 2, Single-Player Removal Simulation
 
 *2018 & 2022 FIFA World Cup · StatsBomb event data*
 
@@ -30,7 +30,7 @@ how much does the network structurally deteriorate relative to its original stat
 **Scope:** this notebook does Part 2 only — single-player removal. It does not do
 Monte Carlo random-removal comparison, two-player combination search, team robustness
 rankings, or outcome analysis (Parts 3-5). It builds directly on the validated Part 1
-baseline (`notebooks/11_player_disruption_baseline.ipynb`).
+baseline (`notebooks/08_player_disruption_baseline.ipynb`).
 
 **What a damage score does *not* mean:** "if this player were absent, the team would
 lose X% of its passing ability." **What it does mean:** "X% of the network's *observed*
@@ -66,7 +66,7 @@ print(single_player_removal.shape)
 """))
 
 cells.append(cell("markdown", """
-## Validation checks (Task 6)
+## Validation checks
 """))
 
 cells.append(cell("code", """
@@ -74,9 +74,9 @@ nv.run_removal_validation_checks(single_player_removal)
 """))
 
 cells.append(cell("markdown", """
-## Task 7 — sanity output
+## Sanity checks on the removal simulation
 
-### 1-2. Shape and first 10 rows
+### Shape and first 10 rows
 """))
 
 cells.append(cell("code", """
@@ -160,7 +160,7 @@ nb = {
     "nbformat_minor": 5,
 }
 
-with open("notebooks/12_single_player_removal.ipynb", "w") as f:
+with open("notebooks/09_single_player_removal.ipynb", "w") as f:
     json.dump(nb, f, indent=1)
 
-print("wrote notebooks/12_single_player_removal.ipynb with", len(cells), "cells")
+print("wrote notebooks/09_single_player_removal.ipynb with", len(cells), "cells")
