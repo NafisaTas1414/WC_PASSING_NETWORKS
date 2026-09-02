@@ -1,0 +1,3 @@
+train_tournament,test_tournament,model,roc_auc,precision_at_8,recall_at_8,correct_qf_in_top8,random_expected_qf_in_top8
+2018,2022,Random Forest,0.839,0.75,0.75,6,2.0
+2022,2018,Random Forest,0.628,0.375,0.375,3,2.0
