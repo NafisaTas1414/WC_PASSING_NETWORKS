@@ -120,4 +120,4 @@ Networks are built at the **team-match** level (one graph per team per match).
 
 ## Framing
 
-This is an **association and structural-simulation study, not a prediction system** for real-world outcomes. The classifiers and network-disruption simulations describe patterns in the *observed* data — they don't claim a team would actually lose X% of its passing ability if a player were literally removed, and small-sample results (e.g. n=32 teams) are treated as descriptive, not confirmatory. See the limitations sections in individual notebooks (particularly 13–15) for details specific to each analysis.
+This is an **association and structural-simulation study, not a prediction system** for real-world outcomes. The classifiers and network-disruption simulations describe patterns in the *observed* data — they don't claim a team would actually lose X% of its passing ability if a player were literally removed, and small-sample results (e.g. n=32 teams) are treated as descriptive, not confirmatory. See the limitations sections in individual notebooks (particularly 10–12) for details specific to each analysis.
