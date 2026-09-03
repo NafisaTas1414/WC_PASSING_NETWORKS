@@ -49,8 +49,8 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .fb:hover:not(:disabled){background:#30363d;color:#c9d1d9}
 .fb.on{background:#1f6feb;border-color:#1f6feb;color:white}
 .fb:disabled{opacity:.35;cursor:not-allowed}
-#lblBtn,#mapToggle{background:#21262d;border:1px solid #30363d;color:#8b949e;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:15px}
-#lblBtn:hover,#mapToggle:hover{background:#30363d}
+#lblBtn{background:#21262d;border:1px solid #30363d;color:#8b949e;padding:2px 8px;border-radius:4px;cursor:pointer;font-size:9.5px}
+#lblBtn:hover{background:#30363d}
 #lblBtn.on{border-color:#f0a500;color:#f0a500}
 .leg{margin-left:auto;display:flex;gap:10px;align-items:center}
 .li{display:flex;align-items:center;gap:3px;font-size:9.5px}
@@ -150,7 +150,6 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .sim-btn:hover{background:#1c2128;border-color:#444c56}
 .sim-btn.upset{border-left:3px solid #f85149}
 .sim-btn.dom-win{border-left:3px solid #3fb950}
-#mapToggle.on{border-color:#58a6ff;color:#58a6ff}
 
 /* ── Landing page ──────────────────────────────────────────
    NO zoom counteract here — we design in the same coordinate
@@ -422,7 +421,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
       <div id="drawer-tabs">
         <button class="dt on" data-t="metrics">Metrics</button>
         <button class="dt" data-t="defense">Defense</button>
-        <button class="dt" data-t="explore">Explore</button>
+        <button class="dt" data-t="explore">Match map</button>
         <button class="dt" data-t="vulnerability">Remove Critical Player</button>
         <button id="drawer-close">▼</button>
       </div>
@@ -431,7 +430,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
   </div>
   <div id="drawer-handle">
     <span class="dh-arrow">▲</span>
-    <span id="dh-label">Metrics · Defense · Remove Critical Player · Explore</span>
+    <span id="dh-label">Metrics · Defense · Remove Critical Player · Match map</span>
   </div>
   <div id="ctrl">
     <label>Min passes:</label>
@@ -447,8 +446,6 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
     <button class="fb" data-f="h2">2nd half</button>
     <div class="sep"></div>
     <button id="lblBtn">Show all players</button>
-    <button id="mapToggle" title="Highlights matches where the passing-dominant team lost">Upset map</button>
-    <span id="upset-desc" style="font-size:12px;color:#7d8590;display:none">— shows matches where the dominant team lost</span>
     <div class="leg">
       <div class="li"><div class="lt"></div><span>Key player</span></div>
       <div class="li"><div class="ll"></div><span>Top connection</span></div>
@@ -471,7 +468,6 @@ let CUR = DATA_2022;
 let INS = INSIGHTS_2022;
 let matchFilter = 'all';
 let drawerTab = 'metrics';
-let scatterOn = false;
 const zoomStates = {};
 let _drag = null;
 function doZoom(svgId,factor){
@@ -656,22 +652,11 @@ function toggleDrawerPanel(){
 }
 document.getElementById('drawer-handle').addEventListener('click', toggleDrawerPanel);
 document.getElementById('drawer-close').addEventListener('click', toggleDrawerPanel);
-document.getElementById('mapToggle').addEventListener('click',function(){
-  scatterOn=!scatterOn;
-  document.getElementById('upset-desc').style.display=scatterOn?'inline':'none';
-  this.classList.toggle('on',scatterOn);
-  const d=document.getElementById('drawer');
-  const dh=document.getElementById('drawer-handle');
-  if(scatterOn){ drawerTab='explore'; document.querySelectorAll('.dt').forEach(x=>x.classList.toggle('on',x.dataset.t==='explore')); d.classList.add('open'); dh.classList.add('open'); renderScatter(); }
-  else { d.classList.remove('open'); dh.classList.remove('open'); if(curMatch) renderDrawer(curMatch); }
-});
 
 /* ── Match selection ───────────────────────────── */
 function selectMatch(m,it){
   if(cur) cur.classList.remove('active');
   it.classList.add('active'); cur=it; curMatch=m;
-  scatterOn=false;
-  document.getElementById('mapToggle').classList.remove('on');
   document.getElementById('desc').textContent=
     `${m.home_team}  ${m.home_score}–${m.away_score}  ${m.away_team}  ·  ${m.stage}  ·  ${m.date}`;
   document.getElementById('ph').style.display='none';
@@ -885,20 +870,20 @@ function renderScatter(highlightMid){
   svg+=`<line x1="${tx(50)}" y1="${P}" x2="${tx(50)}" y2="${H-P}" stroke="#30363d" stroke-dasharray="4"/>`;
   pts.forEach(({m,ins,x,y})=>{
     const col=ins.failed_dominance?'#f85149':ins.dominant_won?'#3fb950':ins.winner===null?'#d29922':'#58a6ff';
-    const r=m.match_id===highlightMid?10:7;
+    const r=m.match_id===highlightMid?7:5;
     const sw=m.match_id===highlightMid?2:0;
     svg+=`<circle cx="${tx(x)}" cy="${ty(y)}" r="${r}" fill="${col}" stroke="#fff" stroke-width="${sw}" style="cursor:pointer" data-mid="${m.match_id}">`+
       `<title>${m.home_team} vs ${m.away_team} (${x}% / ${y>0?'+':''}${y} gd)</title></circle>`;
   });
-  svg+=`<text x="${P}" y="${H-10}" fill="#7d8590" font-size="12">← less possession dominance</text>`;
-  svg+=`<text x="${W-P}" y="${H-10}" fill="#7d8590" font-size="12" text-anchor="end">more →</text>`;
-  svg+=`<text x="${P}" y="${16}" fill="#7d8590" font-size="12">goal diff (home)</text>`;
+  svg+=`<text x="${P}" y="${H-8}" fill="#7d8590" font-size="9">← less possession dominance</text>`;
+  svg+=`<text x="${W-P}" y="${H-8}" fill="#7d8590" font-size="9" text-anchor="end">more →</text>`;
+  svg+=`<text x="${P}" y="${13}" fill="#7d8590" font-size="9">goal diff (home)</text>`;
   const leg=[['#3fb950','Dominant team won'],['#f85149','Dominant team lost (upset)'],['#d29922','Draw'],['#58a6ff','Split dominance']];
-  const ly0=P+22;
+  const ly0=P+16;
   leg.forEach(([col,label],i)=>{
-    const y=ly0+i*26;
-    svg+=`<circle cx="${P+8}" cy="${y}" r="8" fill="${col}"/>`;
-    svg+=`<text x="${P+22}" y="${y+5}" fill="#c9d1d9" font-size="14">${label}</text>`;
+    const y=ly0+i*16;
+    svg+=`<circle cx="${P+5}" cy="${y}" r="5" fill="${col}"/>`;
+    svg+=`<text x="${P+14}" y="${y+3.5}" fill="#c9d1d9" font-size="9.5">${label}</text>`;
   });
   svg+=`</svg>`;
   host.innerHTML=svg;
@@ -1043,7 +1028,7 @@ function renderNet(svgId,matchId,team,removedPlayer){
 window.addEventListener('resize',()=>{
   if(curMatch){
     renderBoth(curMatch);
-    if(drawerTab==='explore'||scatterOn) renderScatter(curMatch.match_id);
+    if(drawerTab==='explore') renderScatter(curMatch.match_id);
   }
 });
 
@@ -1062,8 +1047,6 @@ function switchTournament(yr){
   document.getElementById('drawer').classList.remove('open');
   document.getElementById('drawer-handle').classList.remove('open');
   document.getElementById('ctrl').style.display='flex';
-  scatterOn=false;
-  document.getElementById('mapToggle').classList.remove('on');
   buildSidebar();
 }
 
