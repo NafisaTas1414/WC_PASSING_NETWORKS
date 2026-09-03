@@ -30,15 +30,15 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .zoom-btn:hover{background:#30363d;color:#fff}
 .zoom-btn.reset{font-size:13px}
 .net-panel:last-child{border-right:none}
-.panel-name{padding:1px 4px;font-size:12px;font-weight:700;text-align:center;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;color:#c9d1d9;letter-spacing:.3px}
+.panel-name{padding:1px 4px;font-size:9px;font-weight:700;text-align:center;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;color:#c9d1d9;letter-spacing:.3px}
 .sc{display:grid;grid-template-columns:repeat(3,1fr);background:#0d1117;border-bottom:1px solid #21262d;flex-shrink:0}
 .si{padding:1px 1px;text-align:center;border-right:1px solid #21262d}
 .si:nth-child(3n){border-right:none}
-.sv{font-size:12px;font-weight:700;color:#e6edf3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sv{font-size:9px;font-weight:700;color:#e6edf3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sv.hi{color:#f0a500}
-.sl{font-size:12px;color:#7d8590;text-transform:uppercase;letter-spacing:.2px;margin-top:0px}
+.sl{font-size:9px;color:#7d8590;text-transform:uppercase;letter-spacing:.2px;margin-top:0px}
 .panel-svg{flex:1;width:100%;display:block;min-height:0}
-.ins{padding:1px 4px;font-size:12px;color:#c9d1d9;background:#0d1117;border-top:1px solid #21262d;flex-shrink:0;display:flex;gap:6px;justify-content:center;overflow:hidden}
+.ins{padding:1px 4px;font-size:9px;color:#c9d1d9;background:#0d1117;border-top:1px solid #21262d;flex-shrink:0;display:flex;gap:6px;justify-content:center;overflow:hidden}
 .ins b{color:#c9d1d9}
 .ins .te{color:#ff6b6b}
 #ctrl{padding:2px 10px;background:#161b22;border-top:1px solid #30363d;display:flex;align-items:center;gap:3px;flex-shrink:0;font-size:7px;color:#7d8590;flex-wrap:wrap}
@@ -970,7 +970,7 @@ function renderNet(svgId,matchId,team,removedPlayer){
   // Fixed scale refs: always computed from the FULL original network, so
   // removing the critical player never rescales the remaining nodes/edges.
   const maxS=Math.max(...net.nodes.map(n=>n.sent),1);
-  const nR=n=>3+9*(n.sent/maxS);
+  const nR=n=>2+6*(n.sent/maxS);
   const nodesToRender=removedPlayer?net.nodes.filter(n=>n.id!==removedPlayer):net.nodes;
   const edgesSource=removedPlayer?net.edges.filter(e=>e.s!==removedPlayer&&e.t!==removedPlayer):net.edges;
   const scaleVis=net.edges.map(e=>({...e,_w:ew(e)})).filter(e=>e._w>=minW&&nm[e.s]&&nm[e.t]&&nm[e.s].x);
@@ -1007,8 +1007,8 @@ function renderNet(svgId,matchId,team,removedPlayer){
     const isTop=n.id===mx.most_involved;
     const isCritical=!removedPlayer&&n.id===criticalId;
     const g=mk('g',{transform:`translate(${cx},${cy})`,style:'cursor:default'});
-    if(isTop) g.appendChild(mk('circle',{r:r+3,fill:'none',stroke:'rgba(255,255,255,0.3)','stroke-width':1.2,'stroke-dasharray':'2,2'}));
-    if(isCritical) g.appendChild(mk('circle',{r:r+4.5,fill:'none',stroke:'#f85149','stroke-width':1.6}));
+    if(isTop) g.appendChild(mk('circle',{r:r+2,fill:'none',stroke:'rgba(255,255,255,0.3)','stroke-width':1,'stroke-dasharray':'2,2'}));
+    if(isCritical) g.appendChild(mk('circle',{r:r+3,fill:'none',stroke:'#f85149','stroke-width':1.3}));
     g.appendChild(mk('circle',{r,fill:'#f0a500',stroke:isCritical?'#ffcc00':(isTop?'white':'rgba(255,255,255,0.5)'),'stroke-width':isCritical?'2':(isTop?'2':'1.2')}));
     const nd=n,pt=topPartner(net.edges,n.id);
     g.addEventListener('mouseenter',evt=>{
@@ -1019,7 +1019,7 @@ function renderNet(svgId,matchId,team,removedPlayer){
     });
     g.addEventListener('mouseleave',hideTip);
     if(allLbls||!nd.rank||nd.rank<=3){
-      g.appendChild(mk('text',{y:r+9,'text-anchor':'middle',fill:'white','font-size':isTop?'10.5':'9','font-weight':isTop?'700':'500',style:'pointer-events:none'},sn(nd.id)));
+      g.appendChild(mk('text',{y:r+7,'text-anchor':'middle',fill:'white','font-size':isTop?'8':'6.5','font-weight':isTop?'700':'500',style:'pointer-events:none'},sn(nd.id)));
     }
     svg.appendChild(g);
   });
