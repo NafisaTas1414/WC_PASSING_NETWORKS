@@ -138,16 +138,17 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .def-totals{font-size:10px;color:#58a6ff;margin-top:6px;font-weight:700;flex-shrink:0}
 .def-empty{color:#7d8590;font-size:10px;padding:6px 0}
 .ctx-chip{margin-top:16px;padding:14px 20px;background:#161b22;border-radius:8px;color:#8b949e;font-size:20px;border-left:5px solid #f0a500;line-height:1.3}
-.scatter-desc{background:#161b22;border:1px solid #30363d;border-radius:6px;padding:9px 11px;font-size:10.5px;color:#8b949e;line-height:1.4;flex-shrink:0}
-.scatter-desc-title{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#7d8590;margin-bottom:5px}
+.scatter-desc{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:11px 14px;font-size:14px;color:#8b949e;line-height:1.4;flex-shrink:0}
+.ctx-chip-explore{font-size:14px;padding:10px 14px}
+.scatter-desc-title{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#7d8590;margin-bottom:5px}
 .scatter-desc b{color:#c9d1d9}
 .explore-wrap{display:flex;gap:14px;height:100%}
 #scatter-host{flex:2;height:100%;min-width:260px}
 .scatter-svg{background:#161b22;border-radius:8px;display:block}
-.explore-right{flex:1;min-width:220px;display:flex;flex-direction:column;gap:5px;overflow-y:auto}
+.explore-right{flex:1;min-width:220px;display:flex;flex-direction:column;gap:8px;overflow-y:auto}
 .similar-block{flex:1;display:flex;flex-direction:column}
-.sim-title{font-size:10.5px;font-weight:800;color:#7d8590;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;flex-shrink:0}
-.sim-btn{display:block;width:100%;text-align:left;padding:4px 6px;margin-bottom:3px;background:#161b22;border:1px solid #30363d;border-radius:5px;color:#c9d1d9;font-size:8.5px;cursor:pointer;line-height:1.2;transition:background .1s,border-color .1s}
+.sim-title{font-size:15px;font-weight:800;color:#7d8590;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;flex-shrink:0}
+.sim-btn{display:block;width:100%;text-align:left;padding:7px 10px;margin-bottom:5px;background:#161b22;border:1px solid #30363d;border-radius:7px;color:#c9d1d9;font-size:13px;cursor:pointer;line-height:1.25;transition:background .1s,border-color .1s}
 .sim-btn:hover{background:#1c2128;border-color:#444c56}
 .sim-btn.upset{border-left:3px solid #f85149}
 .sim-btn.dom-win{border-left:3px solid #3fb950}
@@ -823,7 +824,7 @@ function renderExploreTab(m,ins){
     Each dot is a WC match. The <b>x-axis</b> shows how dominant the passing team was (0% = no dominance, 100% = total control). The <b>y-axis</b> shows goal difference for the home team. Use it to see whether passing dominance actually translated into goals — and spot upsets where it didn't.
   </div>`;
   html+=`<div class="similar-block" style="margin-top:4px"><div class="sim-title">Similar Matches</div><div id="similar-list"></div></div>`;
-  html+=`<div class="ctx-chip"><b>${CONTEXT.failed_dominance_count}</b> matches saw the passing-dominant team lose — <b>${Math.round(CONTEXT.dominant_win_rate*100)}%</b> dominant-team win rate overall.</div>`;
+  html+=`<div class="ctx-chip ctx-chip-explore"><b>${CONTEXT.failed_dominance_count}</b> matches saw the passing-dominant team lose — <b>${Math.round(CONTEXT.dominant_win_rate*100)}%</b> dominant-team win rate overall.</div>`;
   html+=`</div>`;
   html+='</div>';
   setTimeout(()=>{ renderScatter(m&&m.match_id); renderSimilar(m,ins); },0);
@@ -839,8 +840,8 @@ function renderSimilar(m,ins){
     .sort((a,b)=>a.d-b.d).slice(0,4);
   el.innerHTML=sim.map(({m:x,ins:xi})=>
     `<button class="sim-btn ${outcomeClass(xi)}" data-mid="${x.match_id}">`+
-    `<div style="font-weight:700;font-size:9.5px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
-    `<div style="font-size:7.5px;color:#7d8590;margin-top:1px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
+    `<div style="font-weight:700;font-size:15px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
+    `<div style="font-size:12px;color:#7d8590;margin-top:2px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
     `</button>`
   ).join('');
   el.querySelectorAll('.sim-btn').forEach(b=>{
@@ -856,7 +857,7 @@ function renderSimilar(m,ins){
 function renderScatter(highlightMid){
   const host=document.getElementById('scatter-host');
   if(!host) return;
-  const W=host.clientWidth||560, H=Math.max(host.clientHeight||400,200), P=36;
+  const W=host.clientWidth||560, H=Math.max(host.clientHeight||400,200), P=58;
   const pts=CUR.matches.map(m=>{
     const ins=getIns(m.match_id);
     if(!ins) return null;
@@ -871,20 +872,20 @@ function renderScatter(highlightMid){
   svg+=`<line x1="${tx(50)}" y1="${P}" x2="${tx(50)}" y2="${H-P}" stroke="#30363d" stroke-dasharray="4"/>`;
   pts.forEach(({m,ins,x,y})=>{
     const col=ins.failed_dominance?'#f85149':ins.dominant_won?'#3fb950':ins.winner===null?'#d29922':'#58a6ff';
-    const r=m.match_id===highlightMid?7:5;
-    const sw=m.match_id===highlightMid?2:0;
+    const r=m.match_id===highlightMid?11:8;
+    const sw=m.match_id===highlightMid?2.5:0;
     svg+=`<circle cx="${tx(x)}" cy="${ty(y)}" r="${r}" fill="${col}" stroke="#fff" stroke-width="${sw}" style="cursor:pointer" data-mid="${m.match_id}">`+
       `<title>${m.home_team} vs ${m.away_team} (${x}% / ${y>0?'+':''}${y} gd)</title></circle>`;
   });
-  svg+=`<text x="${P}" y="${H-8}" fill="#7d8590" font-size="9">← less possession dominance</text>`;
-  svg+=`<text x="${W-P}" y="${H-8}" fill="#7d8590" font-size="9" text-anchor="end">more →</text>`;
-  svg+=`<text x="${P}" y="${13}" fill="#7d8590" font-size="9">goal diff (home)</text>`;
+  svg+=`<text x="${P}" y="${H-12}" fill="#7d8590" font-size="36">← less possession dominance</text>`;
+  svg+=`<text x="${W-P}" y="${H-12}" fill="#7d8590" font-size="36" text-anchor="end">more →</text>`;
+  svg+=`<text x="${P}" y="${30}" fill="#7d8590" font-size="36">goal diff (home)</text>`;
   const leg=[['#3fb950','Dominant team won'],['#f85149','Dominant team lost (upset)'],['#d29922','Draw'],['#58a6ff','Split dominance']];
-  const ly0=P+16;
+  const ly0=P+34;
   leg.forEach(([col,label],i)=>{
-    const y=ly0+i*16;
-    svg+=`<circle cx="${P+5}" cy="${y}" r="5" fill="${col}"/>`;
-    svg+=`<text x="${P+14}" y="${y+3.5}" fill="#c9d1d9" font-size="9.5">${label}</text>`;
+    const y=ly0+i*30;
+    svg+=`<circle cx="${P+8}" cy="${y}" r="8" fill="${col}"/>`;
+    svg+=`<text x="${P+22}" y="${y+6}" fill="#c9d1d9" font-size="19">${label}</text>`;
   });
   svg+=`</svg>`;
   host.innerHTML=svg;
