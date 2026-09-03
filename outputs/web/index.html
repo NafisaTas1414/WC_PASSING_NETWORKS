@@ -19,9 +19,9 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .match-score{font-size:7.5px;color:#7d8590;margin-top:0px}
 .match-item.active .match-teams{color:#f0a500}
 #main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
-#topbar{padding:2px 12px;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;position:relative}
-#topbar h1{font-size:11px;font-weight:700}
-#topbar p{font-size:8.5px;color:#7d8590;margin-top:0px}
+#topbar{padding:1px 10px;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;position:relative}
+#topbar h1{font-size:7px;font-weight:700}
+#topbar p{font-size:5.5px;color:#7d8590;margin-top:0px}
 #panels{flex:1;display:flex;overflow:hidden;position:relative;min-height:0}
 #ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#7d8590;font-size:14px;pointer-events:none}
 .net-panel{flex:1;display:flex;flex-direction:column;border-right:1px solid #30363d;overflow:hidden;min-width:0;position:relative}
@@ -30,13 +30,13 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .zoom-btn:hover{background:#30363d;color:#fff}
 .zoom-btn.reset{font-size:13px}
 .net-panel:last-child{border-right:none}
-.panel-name{padding:1px 4px;font-size:9px;font-weight:700;text-align:center;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;color:#c9d1d9;letter-spacing:.3px}
+.panel-name{padding:0px 3px;font-size:6px;font-weight:700;text-align:center;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;color:#c9d1d9;letter-spacing:.3px}
 .sc{display:grid;grid-template-columns:repeat(3,1fr);background:#0d1117;border-bottom:1px solid #21262d;flex-shrink:0}
 .si{padding:1px 1px;text-align:center;border-right:1px solid #21262d}
 .si:nth-child(3n){border-right:none}
-.sv{font-size:9px;font-weight:700;color:#e6edf3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sv{font-size:6px;font-weight:700;color:#e6edf3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sv.hi{color:#f0a500}
-.sl{font-size:9px;color:#7d8590;text-transform:uppercase;letter-spacing:.2px;margin-top:0px}
+.sl{font-size:6px;color:#7d8590;text-transform:uppercase;letter-spacing:.2px;margin-top:0px}
 .panel-svg{flex:1;width:100%;display:block;min-height:0}
 .ins{padding:1px 4px;font-size:9px;color:#c9d1d9;background:#0d1117;border-top:1px solid #21262d;flex-shrink:0;display:flex;gap:6px;justify-content:center;overflow:hidden}
 .ins b{color:#c9d1d9}
@@ -80,19 +80,19 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .dom-pip.draw{background:#d29922}
 .upset-badge{margin-left:4px;font-size:10px}
 .empty-side{padding:16px;color:#7d8590;font-size:11px;text-align:center}
-#story-bar{display:none;padding:3px 12px;background:#161b22;border-bottom:1px solid #30363d;gap:6px;align-items:center;flex-shrink:0;flex-wrap:wrap}
+#story-bar{display:none;padding:1px 10px;background:#161b22;border-bottom:1px solid #30363d;gap:4px;align-items:center;flex-shrink:0;flex-wrap:wrap}
 .story-left{flex:1;min-width:220px}
-#dom-meter .meter-labels{display:flex;justify-content:space-between;font-size:9px;color:#c9d1d9;font-weight:600;margin-bottom:1px}
-.meter-track{display:flex;height:6px;border-radius:3px;overflow:hidden;background:#21262d}
+#dom-meter .meter-labels{display:flex;justify-content:space-between;font-size:6px;color:#c9d1d9;font-weight:600;margin-bottom:1px}
+.meter-track{display:flex;height:4px;border-radius:2px;overflow:hidden;background:#21262d}
 .meter-home{background:linear-gradient(90deg,#1f6feb,#58a6ff);transition:width .3s}
 .meter-away{background:linear-gradient(90deg,#f0a500,#ffca66);transition:width .3s}
-.meter-sub{font-size:8px;color:#7d8590;margin-top:1px}
-.outcome-badge{padding:1px 5px;border-radius:7px;font-size:7px;font-weight:700;white-space:nowrap}
+.meter-sub{font-size:5.5px;color:#7d8590;margin-top:1px}
+.outcome-badge{padding:0px 4px;border-radius:6px;font-size:5.5px;font-weight:700;white-space:nowrap}
 .outcome-badge.upset{background:rgba(248,81,73,.15);color:#f85149;border:1px solid rgba(248,81,73,.35)}
 .outcome-badge.dom-win{background:rgba(63,185,80,.15);color:#3fb950;border:1px solid rgba(63,185,80,.35)}
 .outcome-badge.draw{background:rgba(210,153,34,.15);color:#d29922;border:1px solid rgba(210,153,34,.35)}
 .outcome-badge.split{background:rgba(88,166,255,.15);color:#58a6ff;border:1px solid rgba(88,166,255,.35)}
-#story-insight{flex:2;font-size:8px;color:#8b949e;line-height:1.25;min-width:180px}
+#story-insight{flex:2;font-size:5.5px;color:#8b949e;line-height:1.2;min-width:150px}
 #story-insight b{color:#c9d1d9}
 #drawer{position:absolute;bottom:0;left:0;right:0;height:0;overflow:hidden;transition:height .3s ease;background:#0d1117;border-top:1px solid #30363d;z-index:10}
 #drawer.open{height:100%}
@@ -221,12 +221,12 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 }
 
 /* ── Match takeaway ── */
-#match-takeaway{display:none;padding:2px 12px;background:#0d1423;border-bottom:1px solid #21262d;font-size:8px;color:#8b949e;line-height:1.2;flex-shrink:0}
-#match-takeaway .tk-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#f0a500;margin-right:8px}
+#match-takeaway{display:none;padding:1px 10px;background:#0d1423;border-bottom:1px solid #21262d;font-size:5.5px;color:#8b949e;line-height:1.15;flex-shrink:0}
+#match-takeaway .tk-label{font-size:6px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#f0a500;margin-right:5px}
 #match-takeaway b{color:#c9d1d9}
 
 /* ── Help button ── */
-#help-btn{background:transparent;border:1px solid #30363d;color:#7d8590;padding:1px 5px;border-radius:4px;cursor:pointer;font-size:7.5px;transition:background .1s,color .1s;position:absolute;top:3px;right:12px}
+#help-btn{background:transparent;border:1px solid #30363d;color:#7d8590;padding:0px 4px;border-radius:3px;cursor:pointer;font-size:5.5px;transition:background .1s,color .1s;position:absolute;top:2px;right:10px}
 #help-btn:hover{background:#21262d;color:#c9d1d9}
 
 #tt{display:flex;gap:3px;margin-top:3px}
