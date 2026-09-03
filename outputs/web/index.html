@@ -146,7 +146,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .explore-right{flex:1;min-width:220px;display:flex;flex-direction:column;gap:5px;overflow-y:auto}
 .similar-block{flex:1;display:flex;flex-direction:column}
 .sim-title{font-size:10.5px;font-weight:800;color:#7d8590;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;flex-shrink:0}
-.sim-btn{display:block;width:100%;text-align:left;padding:6px 9px;margin-bottom:5px;background:#161b22;border:1px solid #30363d;border-radius:6px;color:#c9d1d9;font-size:10px;cursor:pointer;line-height:1.3;transition:background .1s,border-color .1s}
+.sim-btn{display:block;width:100%;text-align:left;padding:4px 6px;margin-bottom:3px;background:#161b22;border:1px solid #30363d;border-radius:5px;color:#c9d1d9;font-size:8.5px;cursor:pointer;line-height:1.2;transition:background .1s,border-color .1s}
 .sim-btn:hover{background:#1c2128;border-color:#444c56}
 .sim-btn.upset{border-left:3px solid #f85149}
 .sim-btn.dom-win{border-left:3px solid #3fb950}
@@ -838,8 +838,8 @@ function renderSimilar(m,ins){
     .sort((a,b)=>a.d-b.d).slice(0,4);
   el.innerHTML=sim.map(({m:x,ins:xi})=>
     `<button class="sim-btn ${outcomeClass(xi)}" data-mid="${x.match_id}">`+
-    `<div style="font-weight:700;font-size:11px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
-    `<div style="font-size:9px;color:#7d8590;margin-top:2px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
+    `<div style="font-weight:700;font-size:9.5px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
+    `<div style="font-size:7.5px;color:#7d8590;margin-top:1px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
     `</button>`
   ).join('');
   el.querySelectorAll('.sim-btn').forEach(b=>{
