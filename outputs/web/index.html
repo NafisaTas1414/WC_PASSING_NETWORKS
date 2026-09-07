@@ -6,22 +6,25 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:flex;height:calc(100vh / 1.4);overflow:hidden;zoom:1.4;line-height:1.25}
-#sidebar{width:235px;flex-shrink:0;background:#161b22;border-right:1px solid #30363d;display:flex;flex-direction:column;overflow:hidden}
-#sidebar-title{padding:5px 10px;font-size:13px;font-weight:700;color:#f0a500;border-bottom:1px solid #30363d}
+#sidebar{width:270px;flex-shrink:0;background:#161b22;border-right:1px solid #30363d;display:flex;flex-direction:column;overflow:hidden;transition:width .2s ease}
+body.sidebar-collapsed #sidebar{width:0;border-right:none}
+#sidebar-toggle{flex-shrink:0;width:18px;background:#161b22;border:none;border-right:1px solid #30363d;color:#7d8590;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;padding:0;transition:background .15s,color .15s}
+#sidebar-toggle:hover{background:#21262d;color:#f0a500}
+#sidebar-title{padding:7px 12px;font-size:16px;font-weight:700;color:#f0a500;border-bottom:1px solid #30363d}
 #match-list{overflow-y:auto;flex:1}
 #match-list::-webkit-scrollbar{width:4px}
 #match-list::-webkit-scrollbar-thumb{background:#30363d;border-radius:2px}
-.stage-label{padding:5px 10px 2px;font-size:10.5px;font-weight:700;color:#7d8590;text-transform:uppercase;letter-spacing:.4px}
-.match-item{padding:4px 7px;cursor:pointer;border-left:3px solid transparent;transition:background .1s,border-color .1s;user-select:none}
+.stage-label{padding:10px 12px 4px;font-size:12px;font-weight:700;color:#7d8590;text-transform:uppercase;letter-spacing:.4px}
+.match-item{padding:9px 12px;margin-bottom:3px;cursor:pointer;border-left:4px solid transparent;transition:background .1s,border-color .1s;user-select:none}
 .match-item:hover{background:#1c2128}
 .match-item.active{background:#1c2128;border-left-color:#f0a500}
-.match-teams{font-size:12px;color:#c9d1d9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.15}
-.match-score{font-size:10px;color:#7d8590;margin-top:0px;line-height:1.15}
+.match-teams{font-size:15px;color:#c9d1d9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.25}
+.match-score{font-size:12.5px;color:#7d8590;margin-top:4px;line-height:1.25}
 .match-item.active .match-teams{color:#f0a500}
 #main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
-#topbar{padding:6px 12px;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;position:relative}
-#topbar h1{font-size:18px;font-weight:700}
-#topbar p{font-size:12px;color:#7d8590;margin-top:0px}
+#topbar{padding:9px 12px;background:#161b22;border-bottom:1px solid #30363d;flex-shrink:0;position:relative}
+#topbar h1{font-size:20px;font-weight:700}
+#topbar p{font-size:15px;color:#7d8590;margin-top:1px}
 #panels{flex:1;display:flex;overflow:hidden;position:relative;min-height:0}
 #ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#7d8590;font-size:14px;pointer-events:none}
 .net-panel{flex:1;display:flex;flex-direction:column;border-right:1px solid #30363d;overflow:hidden;min-width:0;position:relative}
@@ -62,49 +65,97 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 #tip td{padding:0 14px 3px 0;vertical-align:top}
 
 
-#defBtn{margin:0 5px 2px;background:#21262d;border:1px solid #30363d;color:#8b949e;padding:3px 6px;border-radius:4px;cursor:pointer;font-size:11.5px;font-weight:700}
+#defBtn{margin:0 8px 4px;background:#21262d;border:1px solid #30363d;color:#8b949e;padding:7px 10px;border-radius:5px;cursor:pointer;font-size:14px;font-weight:700}
 #defBtn:hover{background:#30363d;color:#c9d1d9}
 #defBtn.on{border-color:#f0a500;color:#f0a500}
-#def-panel{display:none;margin:0 6px 5px;padding:5px 6px;background:#161b22;border:1px solid #30363d;border-radius:5px;font-size:8.5px;color:#c9d1d9;line-height:1.3}
-#def-panel div{margin-bottom:8px}
+#def-panel{display:none;margin:0 8px 8px;padding:11px 13px;background:#161b22;border:1px solid #30363d;border-radius:7px;font-size:13px;color:#c9d1d9;line-height:1.5}
+#def-panel div{margin-bottom:9px}
 #def-panel div:last-child{margin-bottom:0}
 #def-panel b{color:#f0a500}
-#sidebar-filters{display:flex;gap:3px;padding:3px 6px;border-bottom:1px solid #30363d;flex-wrap:wrap}
-.sf{flex:1;min-width:26px;padding:2px 0;background:#21262d;border:1px solid #30363d;color:#8b949e;border-radius:3px;cursor:pointer;font-size:11.5px;font-weight:700}
+
+#kfBtn{margin:8px 8px 4px;background:rgba(240,165,0,.1);border:1px solid rgba(240,165,0,.45);color:#f0a500;padding:8px 10px;border-radius:5px;cursor:pointer;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:6px}
+#kfBtn:hover{background:rgba(240,165,0,.18)}
+
+/* ── Key Findings — full-page view ── */
+#findings-page{display:none;position:fixed;inset:0;background:#0d1117;z-index:800;overflow:hidden}
+.fp-inner{max-width:1750px;margin:0;width:100%;height:100%;padding:14px 24px 10px 64px;box-sizing:border-box;display:flex;flex-direction:column;align-items:stretch;gap:10px;min-height:0}
+.fp-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-shrink:0}
+.fp-title-col{display:flex;flex-direction:column;justify-content:flex-start;gap:4px;min-width:0;flex:1}
+.fp-eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#f0a500;opacity:.8}
+.fp-title{font-size:32px;font-weight:800;color:#e6edf3;margin:0;line-height:1.05}
+.fp-story{font-size:15px;color:#e6edf3;font-weight:700;line-height:1.3;margin:3px 0 0;max-width:760px}
+.fp-sub{font-size:13px;color:#AEB4BD;line-height:1.25;margin:3px 0 0;max-width:720px}
+.fp-close{flex-shrink:0;background:#21262d;border:1px solid #30363d;color:#c9d1d9;padding:7px 14px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:2px}
+.fp-close:hover{background:#30363d;border-color:#f0a500;color:#f0a500}
+.fp-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;column-gap:22px;row-gap:20px;flex:1;min-width:0;min-height:0}
+.fp-card{background:#161b22;border:1px solid #30363d;border-left:4px solid #f0a500;border-radius:9px;padding:24px;display:flex;flex-direction:column;gap:.5em;min-height:0;overflow:hidden;font-size:14px}
+.fp-q{font-size:1.22em;font-weight:700;color:#f0a500;margin:0;line-height:1.15;flex-shrink:0}
+.fp-answer{font-size:1.05em;font-weight:700;color:#e6edf3;line-height:1.25;margin:0;flex-shrink:0}
+.fp-badge{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:4px;font-size:.62em;font-weight:700;text-transform:uppercase;letter-spacing:.5px;vertical-align:middle}
+.fp-badge.ok{background:rgba(63,185,80,.15);color:#3fb950}
+.fp-badge.no{background:rgba(248,81,73,.15);color:#f85149}
+.fp-badge.mixed{background:rgba(210,153,34,.15);color:#d29922}
+.fp-stats{display:flex;gap:.5em;margin:.1em 0;flex-shrink:0}
+.fp-stat{flex:1;min-width:0;text-align:center;background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:.32em .2em}
+.fp-stat-val{font-size:1.2em;font-weight:800;color:#e6edf3;line-height:1.1}
+.fp-stat-val.pos{color:#3fb950}
+.fp-stat-val.neg{color:#f85149}
+.fp-stat-label{font-size:.6em;color:#8b949e;text-transform:uppercase;letter-spacing:.3px;line-height:1.25;margin-top:1px}
+.fp-note{font-size:.82em;color:#7d8590;line-height:1.3;margin:0;flex-shrink:0}
+.fp-evidence{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.35em;flex-shrink:0}
+.fp-evidence li{font-size:.95em;color:#AEB4BD;line-height:1.3;padding-left:.95em;position:relative;margin:0}
+.fp-evidence li:last-child{margin-bottom:0}
+.fp-evidence li::before{content:'•';position:absolute;left:0;color:#5a626d}
+.fp-evidence li b{color:#e6edf3}
+.fp-evidence-lead{font-size:.95em;color:#AEB4BD;line-height:1.3;margin:0;flex-shrink:0}
+.fp-meaning{font-size:.95em;color:#AEB4BD;line-height:1.3;font-style:italic;margin:0;flex-shrink:0}
+.fp-source{font-size:.82em;color:#58a6ff;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;margin:0;letter-spacing:.2px;flex-shrink:0}
+.fp-explore{align-self:flex-start;margin-top:auto;flex-shrink:0;display:inline-flex;align-items:center;gap:4px;background:#21262d;border:1px solid #30363d;color:#c9d1d9;padding:.35em .75em;border-radius:5px;cursor:pointer;font-size:.82em;font-weight:700}
+.fp-explore:hover{background:#30363d;border-color:#f0a500;color:#f0a500}
+@media(max-width:1100px){
+  #findings-page{overflow-y:auto}
+  .fp-inner{height:auto;padding:20px 0}
+  .fp-header{flex-direction:column;gap:10px}
+  .fp-grid{grid-template-rows:none;height:auto;flex:none}
+  .fp-card{overflow:visible}
+}
+@media(max-width:640px){.fp-grid{grid-template-columns:1fr}}
+#sidebar-filters{display:flex;gap:5px;padding:5px 8px;border-bottom:1px solid #30363d;flex-wrap:wrap}
+.sf{flex:1;min-width:30px;padding:5px 0;background:#21262d;border:1px solid #30363d;color:#8b949e;border-radius:4px;cursor:pointer;font-size:13px;font-weight:700}
 .sf.on{background:#1f6feb;border-color:#1f6feb;color:#fff}
 .sf:hover:not(.on){background:#30363d;color:#c9d1d9}
 .match-row{display:flex;align-items:center;gap:6px}
-.dom-pip{height:4px;border-radius:2px;flex-shrink:0;background:#58a6ff}
+.dom-pip{height:5px;border-radius:2.5px;flex-shrink:0;background:#58a6ff}
 .dom-pip.upset{background:#f85149}
 .dom-pip.dom-win{background:#3fb950}
 .dom-pip.draw{background:#d29922}
 .upset-badge{margin-left:4px;font-size:10px}
 .empty-side{padding:16px;color:#7d8590;font-size:11px;text-align:center}
-#story-bar{display:none;padding:5px 12px 7px;background:#161b22;border-bottom:1px solid #30363d;gap:12px;align-items:center;flex-shrink:0;flex-wrap:wrap}
+#story-bar{display:none;padding:9px 12px 11px;background:#161b22;border-bottom:1px solid #30363d;gap:12px;align-items:center;flex-shrink:0;flex-wrap:wrap}
 .story-left{flex:1;min-width:220px}
-#dom-meter .meter-labels{display:flex;justify-content:space-between;font-size:15px;color:#c9d1d9;font-weight:600;margin-bottom:1px}
+#dom-meter .meter-labels{display:flex;justify-content:space-between;font-size:17px;color:#c9d1d9;font-weight:600;margin-bottom:1px}
 .meter-track{display:flex;height:6px;border-radius:3px;overflow:hidden;background:#21262d}
 .meter-home{background:linear-gradient(90deg,#1f6feb,#58a6ff);transition:width .3s}
 .meter-away{background:linear-gradient(90deg,#f0a500,#ffca66);transition:width .3s}
-.meter-sub{font-size:12.5px;color:#7d8590;margin-top:1px;line-height:1.3}
-.meter-sub b{font-size:12.5px}
-.outcome-badge{padding:2px 10px;border-radius:6px;font-size:14px;font-weight:700;white-space:nowrap}
+.meter-sub{font-size:15.5px;color:#7d8590;margin-top:3px;line-height:1.35}
+.meter-sub b{font-size:15.5px}
+.outcome-badge{padding:2px 10px;border-radius:6px;font-size:15px;font-weight:700;white-space:nowrap}
 .outcome-badge.upset{background:rgba(248,81,73,.15);color:#f85149;border:1px solid rgba(248,81,73,.35)}
 .outcome-badge.dom-win{background:rgba(63,185,80,.15);color:#3fb950;border:1px solid rgba(63,185,80,.35)}
 .outcome-badge.draw{background:rgba(210,153,34,.15);color:#d29922;border:1px solid rgba(210,153,34,.35)}
 .outcome-badge.split{background:rgba(88,166,255,.15);color:#58a6ff;border:1px solid rgba(88,166,255,.35)}
-#story-insight{flex:2;font-size:13.5px;color:#8b949e;line-height:1.3;min-width:150px}
+#story-insight{flex:2;font-size:16px;color:#8b949e;line-height:1.35;min-width:150px}
 #story-insight b{color:#c9d1d9}
 #drawer{position:absolute;bottom:0;left:0;right:0;height:0;overflow:hidden;transition:height .3s ease;background:#0d1117;border-top:1px solid #30363d;z-index:10}
 #drawer.open{height:100%}
 #drawer-tabs{display:flex;gap:0;border-bottom:1px solid #21262d;align-items:center}
-.dt{padding:7px 14px;background:transparent;border:none;color:#7d8590;font-size:12px;font-weight:700;cursor:pointer;border-bottom:2px solid transparent}
+.dt{padding:9px 16px;background:transparent;border:none;color:#7d8590;font-size:14px;font-weight:700;cursor:pointer;border-bottom:2px solid transparent}
 .dt.on{color:#f0a500;border-bottom-color:#f0a500}
 .dt:hover:not(.on){color:#c9d1d9}
 #drawer-close{margin-left:auto;padding:4px 10px;background:transparent;border:none;color:#7d8590;font-size:16px;cursor:pointer;line-height:1}
 #drawer-close:hover{color:#c9d1d9}
 #drawer-body{padding:12px 20px;overflow-y:auto;height:calc(100% - 34px);font-size:12px}
-#drawer-handle{flex-shrink:0;background:#161b22;border-top:1px solid #30363d;display:flex;align-items:center;justify-content:center;gap:5px;padding:4px 12px;cursor:pointer;font-size:11.5px;color:#c9d1d9;user-select:none;transition:background .1s,color .1s;letter-spacing:.2px;font-weight:600}
+#drawer-handle{flex-shrink:0;background:#161b22;border-top:1px solid #30363d;display:flex;align-items:center;justify-content:center;gap:5px;padding:6px 12px;cursor:pointer;font-size:13px;color:#c9d1d9;user-select:none;transition:background .1s,color .1s;letter-spacing:.2px;font-weight:600}
 #drawer-handle:hover{background:#1c2128;color:#c9d1d9}
 #drawer-handle .dh-arrow{font-size:15px;display:inline-block;transition:transform .25s;line-height:1}
 #drawer-handle.open .dh-arrow{transform:rotate(180deg)}
@@ -120,35 +171,35 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 .mb-fill.away{background:linear-gradient(90deg,#a06b00,#f0a500)}
 .mb-val{font-size:18px;font-weight:800;color:#e6edf3;text-align:right;letter-spacing:-.3px}
 .mb-lead{font-size:12px;font-weight:700;color:#3fb950;padding-left:2px;letter-spacing:.2px}
-.resistance-card{background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 11px;margin-bottom:8px}
-.rc-title{font-size:14px;font-weight:700;color:#58a6ff;margin-bottom:6px}
-.rc-grid{display:flex;gap:7px;flex-wrap:wrap}
-.rc-pill{text-align:center;min-width:80px;background:#0d1117;border-radius:8px;padding:12px 14px;border:1px solid #21262d}
-.rc-val{font-size:17px;font-weight:800;color:#e6edf3;line-height:1}
-.rc-lbl{font-size:10.5px;color:#7d8590;text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
-.rc-bench{font-size:10.5px;color:#7d8590;margin-top:6px;line-height:1.35;border-top:1px solid #21262d;padding-top:5px}
-.def-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;height:100%}
+.resistance-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;margin-bottom:10px}
+.rc-title{font-size:19px;font-weight:700;color:#58a6ff;margin-bottom:9px}
+.rc-grid{display:flex;gap:10px;flex-wrap:wrap}
+.rc-pill{text-align:center;min-width:104px;background:#0d1117;border-radius:10px;padding:16px 18px;border:1px solid #21262d}
+.rc-val{font-size:24px;font-weight:800;color:#e6edf3;line-height:1}
+.rc-lbl{font-size:13px;color:#7d8590;text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
+.rc-bench{font-size:13.5px;color:#7d8590;margin-top:9px;line-height:1.4;border-top:1px solid #21262d;padding-top:7px}
+.def-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .def-col{display:flex;flex-direction:column}
-.def-col-title{font-weight:800;color:#f0a500;margin-bottom:6px;font-size:15px;border-bottom:2px solid #21262d;padding-bottom:4px;flex-shrink:0}
-.def-player{padding:5px 0;border-bottom:1px solid #21262d;flex:1}
-.def-player b{font-size:14px;color:#e6edf3}
-.def-pos{font-size:10.5px;color:#7d8590;margin-left:5px;font-weight:400}
-.def-stats{display:flex;gap:4px;margin-top:4px;flex-wrap:wrap}
-.def-stat-chip{background:#21262d;border-radius:5px;padding:2px 7px;font-size:11px;color:#c9d1d9;font-weight:700}
-.def-totals{font-size:11.5px;color:#58a6ff;margin-top:6px;font-weight:700;flex-shrink:0}
-.def-empty{color:#7d8590;font-size:12px;padding:6px 0}
+.def-col-title{font-weight:800;color:#f0a500;margin-bottom:9px;font-size:19px;border-bottom:2px solid #21262d;padding-bottom:6px;flex-shrink:0}
+.def-player{padding:10px 0;border-bottom:1px solid #21262d}
+.def-player b{font-size:18px;color:#e6edf3}
+.def-pos{font-size:13.5px;color:#7d8590;margin-left:7px;font-weight:400}
+.def-stats{display:flex;gap:6px;margin-top:7px;flex-wrap:wrap}
+.def-stat-chip{background:#21262d;border-radius:6px;padding:5px 11px;font-size:14.5px;color:#c9d1d9;font-weight:700}
+.def-totals{font-size:15px;color:#58a6ff;margin-top:9px;font-weight:700;flex-shrink:0}
+.def-empty{color:#7d8590;font-size:15px;padding:9px 0}
 .ctx-chip{margin-top:12px;padding:10px 14px;background:#161b22;border-radius:8px;color:#8b949e;font-size:12.5px;border-left:5px solid #f0a500;line-height:1.35}
-.scatter-desc{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:11px 16px;font-size:15px;color:#8b949e;line-height:1.38;flex-shrink:0}
-.ctx-chip-explore{font-size:14px;padding:11px 15px;margin-top:0}
-.scatter-desc-title{font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#7d8590;margin-bottom:4px}
+.scatter-desc{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px 20px;font-size:17px;color:#8b949e;line-height:1.45;flex-shrink:0}
+.ctx-chip-explore{font-size:16px;padding:14px 18px;margin-top:0}
+.scatter-desc-title{font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#7d8590;margin-bottom:6px}
 .scatter-desc b{color:#c9d1d9}
 .explore-wrap{display:flex;gap:14px;height:100%}
 #scatter-host{flex:2;height:100%;min-width:260px}
 .scatter-svg{background:#161b22;border-radius:8px;display:block}
 .explore-right{flex:1;min-width:220px;display:flex;flex-direction:column;gap:4px;overflow-y:auto}
 .similar-block{display:flex;flex-direction:column}
-.sim-title{font-size:16px;font-weight:800;color:#7d8590;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;flex-shrink:0}
-.sim-btn{display:block;width:100%;text-align:left;padding:11px 16px;margin-bottom:6px;background:#161b22;border:1px solid #30363d;border-radius:9px;color:#c9d1d9;font-size:16px;cursor:pointer;line-height:1.2;transition:background .1s,border-color .1s}
+.sim-title{font-size:18px;font-weight:800;color:#7d8590;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;flex-shrink:0}
+.sim-btn{display:block;width:100%;text-align:left;padding:14px 18px;margin-bottom:9px;background:#161b22;border:1px solid #30363d;border-radius:9px;color:#c9d1d9;font-size:17px;cursor:pointer;line-height:1.25;transition:background .1s,border-color .1s}
 .sim-btn:hover{background:#1c2128;border-color:#444c56}
 .sim-btn.upset{border-left:3px solid #f85149}
 .sim-btn.dom-win{border-left:3px solid #3fb950}
@@ -165,50 +216,49 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 
 /* Shell: CSS grid so hero row (1fr) absorbs all spare height,
    cards and questions rows (auto) use natural content height */
-.land-inner{position:relative;z-index:1;flex:1;display:grid;grid-template-rows:1fr auto auto;width:100%;padding:8px 36px 8px;box-sizing:border-box;gap:6px}
+.land-inner{position:relative;z-index:1;flex:1;display:grid;grid-template-rows:auto auto auto;align-content:center;width:100%;padding:clamp(4px,0.44vh,9px) clamp(24px,2.5vw,52px);box-sizing:border-box;gap:clamp(8px,0.9vh,16px)}
 
-/* ── Hero fills the 1fr row; both columns stretch to full height ── */
-.land-hero{display:grid;grid-template-columns:1.15fr 0.85fr;gap:24px;align-items:stretch;width:100%}
+/* ── Hero rows size to content and are centered as a block on the page ── */
+.land-hero{display:grid;grid-template-columns:1.15fr 0.85fr;gap:clamp(18px,1.6vw,38px);align-items:center;width:100%}
 /* left col: flex column, content centered vertically */
-.land-hero-left{display:flex;flex-direction:column;justify-content:center;gap:7px}
-.land-eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#f0a500;opacity:.8}
-.land-title{font-size:32px;font-weight:800;color:#e6edf3;line-height:1.15;margin:0}
+.land-hero-left{display:flex;flex-direction:column;justify-content:center;gap:clamp(9px,1vh,17px)}
+.land-eyebrow{font-size:clamp(14.5px,1.6vh,24px);font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#f0a500;opacity:.8}
+.land-title{font-size:clamp(41px,4.6vh,74px);font-weight:800;color:#e6edf3;line-height:1.1;margin:0}
 .land-title em{font-style:normal;color:#f0a500}
-.land-desc{font-size:12px;color:#8b949e;line-height:1.42;margin:0;max-width:94%}
-.land-enter-btn{display:inline-block;background:#f0a500;color:#0d1117;border:none;border-radius:6px;padding:8px 24px;font-size:12.5px;font-weight:800;cursor:pointer;letter-spacing:.4px;transition:background .15s,transform .1s;align-self:flex-start}
+.land-desc{font-size:clamp(17.5px,1.95vh,32px);color:#8b949e;line-height:1.35;margin:0;max-width:94%}
+.land-enter-btn{display:inline-block;background:#f0a500;color:#0d1117;border:none;border-radius:7px;padding:clamp(9px,1vh,15px) clamp(26px,1.65vw,44px);font-size:clamp(15.5px,1.75vh,26px);font-weight:800;cursor:pointer;letter-spacing:.4px;transition:background .15s,transform .1s;align-self:flex-start}
 .land-enter-btn:hover{background:#ffca66;transform:translateY(-2px)}
-.land-enter-hint{font-size:10.5px;color:#484f58;line-height:1.4;margin-top:-2px}
+.land-enter-hint{font-size:clamp(13px,1.45vh,22px);color:#484f58;line-height:1.35;margin-top:-2px}
 
-/* Preview card — stretches to fill full right-column height */
-.land-preview-card{background:#161b22;border:1px solid #30363d;border-radius:9px;padding:10px 16px;display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box}
-.land-preview-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.9px;color:#484f58}
-.land-preview-net{width:100%;flex:1;min-height:0;display:block}
-.land-preview-stats{display:flex;flex-direction:column;gap:5px;border-top:1px solid #21262d;padding-top:8px}
-.land-prev-row{display:flex;justify-content:space-between;align-items:center;font-size:10px}
+/* Preview card — sizes to its own content, centered on the hero row */
+.land-preview-card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:clamp(11px,1.25vh,18px) clamp(18px,1.15vw,30px);display:flex;flex-direction:column;gap:clamp(5px,0.55vh,8px);max-height:60vh;box-sizing:border-box}
+.land-preview-label{font-size:clamp(12.5px,1.4vh,21px);font-weight:700;text-transform:uppercase;letter-spacing:.9px;color:#484f58}
+.land-preview-net{width:100%;height:clamp(145px,16.1vh,240px);flex:none;display:block}
+.land-preview-stats{display:flex;flex-direction:column;gap:clamp(4px,0.45vh,7px);border-top:1px solid #21262d;padding-top:clamp(6px,0.65vh,10px)}
+.land-prev-row{display:flex;justify-content:space-between;align-items:center;font-size:clamp(12.5px,1.4vh,21px)}
 .land-prev-row span:first-child{color:#7d8590}
 .land-prev-row span:last-child{color:#c9d1d9;font-weight:600}
-.land-prev-bar{height:5px;background:#21262d;border-radius:2px;overflow:hidden;margin-top:4px}
+.land-prev-bar{height:clamp(5px,0.55vh,8px);background:#21262d;border-radius:2px;overflow:hidden;margin-top:3px}
 .land-prev-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,#f0a500,#ffca66)}
 
 /* ── 4 concept cards ── */
-.land-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%}
-.land-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:8px 12px;display:flex;flex-direction:column;gap:3px;transition:border-color .2s,transform .15s;cursor:default}
+.land-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,0.65vw,16px);width:100%}
+.land-card{background:#161b22;border:1px solid #30363d;border-radius:9px;padding:clamp(9px,1vh,15px) clamp(12px,0.8vw,20px);display:flex;flex-direction:column;gap:clamp(3px,0.35vh,5px);transition:border-color .2s,transform .15s;cursor:default}
 .land-card:hover{border-color:rgba(240,165,0,.5);transform:translateY(-2px)}
 .land-card-icon{font-size:14px}
-.land-card-title{font-size:12px;font-weight:700;color:#c9d1d9}
-.land-card-text{font-size:10.5px;color:#7d8590;line-height:1.35;flex:1}
+.land-card-title{font-size:clamp(14.5px,1.6vh,24px);font-weight:700;color:#c9d1d9}
+.land-card-text{font-size:clamp(12.5px,1.4vh,21px);color:#7d8590;line-height:1.32;flex:1}
 
 /* ── Questions panel ── */
-.land-questions-panel{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:7px 18px;width:100%}
-.land-q-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#f0a500;margin-bottom:5px}
-.land-questions-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
-.land-q-item{padding:4px 12px;background:#0d1117;border-radius:5px;border-left:3px solid #f0a500;font-size:10.5px;color:#8b949e;line-height:1.3}
+.land-questions-panel{background:#161b22;border:1px solid #30363d;border-radius:9px;padding:clamp(6px,0.65vh,10px) clamp(16px,1vw,26px);width:100%}
+.land-q-label{font-size:clamp(13.5px,1.5vh,22px);font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#f0a500;margin-bottom:clamp(4px,0.45vh,7px)}
+.land-questions-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(6px,0.65vh,10px)}
+.land-q-item{padding:clamp(5px,0.55vh,8px) clamp(12px,0.75vw,20px);background:#0d1117;border-radius:5px;border-left:3px solid #f0a500;font-size:clamp(12.5px,1.4vh,21px);color:#8b949e;line-height:1.3}
 .land-q-wide{grid-column:1/-1}
-.land-preview-sublabel{font-size:8.5px;color:#7d8590;line-height:1.3;margin-top:-2px}
-.land-bottom{display:flex;flex-direction:column;gap:4px}
-.land-data-strip{font-size:10px;color:#484f58;text-align:center;letter-spacing:.3px;padding:1px 0}
-/* 4-question grid uses 2 equal cols, no wide item needed */
-.land-questions-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.land-q-tag{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:4px;background:rgba(240,165,0,.12);color:#f0a500;font-size:.68em;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-style:normal;vertical-align:middle}
+.land-preview-sublabel{font-size:clamp(11.5px,1.28vh,15px);color:#7d8590;line-height:1.25;margin-top:-1px}
+.land-bottom{display:flex;flex-direction:column;gap:clamp(4px,0.45vh,7px)}
+.land-data-strip{font-size:clamp(11.5px,1.28vh,19px);color:#484f58;text-align:center;letter-spacing:.3px;padding:1px 0}
 
 @media(max-width:900px){
   .land-hero{grid-template-columns:1fr}
@@ -223,42 +273,48 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
 }
 
 /* ── Match takeaway ── */
-#match-takeaway{display:none;padding:6px 12px;background:#0d1423;border-bottom:1px solid #21262d;font-size:13.5px;color:#8b949e;line-height:1.25;flex-shrink:0}
-#match-takeaway .tk-label{font-size:12.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#f0a500;margin-right:8px}
-#match-takeaway b{color:#c9d1d9;font-size:13.5px}
+#match-takeaway{display:none;padding:8px 12px;background:#0d1423;border-bottom:1px solid #21262d;font-size:15px;color:#8b949e;line-height:1.3;flex-shrink:0}
+#match-takeaway .tk-label{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#f0a500;margin-right:8px}
+#match-takeaway b{color:#c9d1d9;font-size:15px}
 
 /* ── Help button ── */
-#help-btn{background:transparent;border:1px solid #30363d;color:#7d8590;padding:2px 6px;border-radius:3px;cursor:pointer;font-size:11px;transition:background .1s,color .1s;position:absolute;top:5px;right:12px}
+#help-btn{background:transparent;border:1px solid #30363d;color:#7d8590;padding:4px 8px;border-radius:4px;cursor:pointer;font-size:13px;transition:background .1s,color .1s;position:absolute;top:6px;right:12px}
 #help-btn:hover{background:#21262d;color:#c9d1d9}
 
-#tt{display:flex;gap:3px;margin-top:3px}
-.ttb{flex:1;padding:2px 0;background:#21262d;border:1px solid #30363d;color:#8b949e;border-radius:4px;cursor:pointer;font-size:8px;font-weight:700;letter-spacing:.1px;transition:background .15s,color .15s}
+#tt{display:flex;gap:4px;margin-top:5px}
+.ttb{flex:1;padding:6px 0;background:#21262d;border:1px solid #30363d;color:#8b949e;border-radius:4px;cursor:pointer;font-size:13px;font-weight:700;letter-spacing:.1px;transition:background .15s,color .15s}
 .ttb.active{background:#f0a500;color:#0d1117;border-color:#f0a500}
 .ttb:hover:not(.active){background:#30363d;color:#e6edf3}
 
 
-.vuln-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;height:100%}
-.vuln-col{display:flex;flex-direction:column}
-.vuln-explainer{font-size:12.5px;color:#c9d1d9;background:#161b22;border:1px solid #30363d;border-radius:6px;padding:9px 11px;margin-bottom:8px;line-height:1.4}
+.vuln-wrap{display:flex;flex-direction:column;height:100%}
+.vuln-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;flex:1;min-height:0}
+.vuln-col{display:flex;flex-direction:column;gap:14px;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px 28px;min-height:0}
+.vuln-col .def-col-title{font-size:26px;margin-bottom:0;border-bottom:none;padding-bottom:0}
+.vuln-explainer{font-size:17px;color:#c9d1d9;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px 24px;margin-bottom:16px;line-height:1.5;flex-shrink:0}
 .vuln-explainer b{color:#f0a500}
-.vuln-explainer-title{font-size:15px;font-weight:700;color:#f0a500;margin-bottom:5px}
-.vuln-explainer p{margin-bottom:4px}
+.vuln-explainer-title{font-size:21px;font-weight:700;color:#f0a500;margin-bottom:8px}
+.vuln-explainer p{margin-bottom:7px}
 .vuln-explainer p:last-child{margin-bottom:0}
-.vuln-head{font-size:15px;font-weight:700;color:#c9d1d9;margin-bottom:5px;display:flex;align-items:center;gap:5px}
-.vuln-icon{font-size:15px}
-.vuln-rank-contrast{font-size:11.5px;color:#8b949e;background:#161b22;border-left:3px solid #f0a500;padding:5px 8px;border-radius:4px;margin-bottom:6px;line-height:1.35}
-.vuln-btn{width:100%;padding:6px 0;border-radius:5px;font-size:12.5px;font-weight:700;cursor:pointer;border:1px solid;transition:background .12s}
+.vuln-head{font-size:26px;font-weight:700;color:#c9d1d9;margin-bottom:0;display:flex;align-items:center;gap:10px}
+.vuln-icon{font-size:28px}
+.vuln-rank-contrast{font-size:17px;color:#8b949e;background:#0d1117;border-left:4px solid #f0a500;padding:14px 18px;border-radius:6px;margin-bottom:0;line-height:1.5}
+.vuln-btn{width:100%;padding:15px 0;border-radius:8px;font-size:20px;font-weight:700;cursor:pointer;border:1px solid;transition:background .12s}
 .vuln-btn.remove{background:rgba(248,81,73,0.12);border-color:#f85149;color:#f85149}
 .vuln-btn.remove:hover{background:rgba(248,81,73,0.22)}
 .vuln-btn.restore{background:rgba(63,185,80,0.12);border-color:#3fb950;color:#3fb950}
 .vuln-btn.restore:hover{background:rgba(63,185,80,0.22)}
-.vuln-table{width:100%;border-collapse:collapse;margin-top:6px;font-size:11.5px}
-.vuln-table th{text-align:right;color:#7d8590;font-weight:600;padding:3px 5px;border-bottom:1px solid #21262d}
+.vuln-table{width:100%;border-collapse:collapse;margin-top:0;font-size:18px}
+.vuln-table th{text-align:right;color:#7d8590;font-weight:600;padding:11px 13px;border-bottom:1px solid #21262d}
 .vuln-table th:first-child{text-align:left}
-.vuln-table td{text-align:right;color:#c9d1d9;padding:3px 5px;border-bottom:1px solid #161b22}
+.vuln-table td{text-align:right;color:#c9d1d9;padding:11px 13px;border-bottom:1px solid #161b22}
 .vuln-table td:first-child{text-align:left;color:#8b949e}
 .vuln-table td.vd{color:#f85149;font-weight:700}
-.vuln-note{font-size:10.5px;color:#7d8590;margin-top:5px;line-height:1.35;font-style:italic}
+.vuln-note{font-size:15px;color:#7d8590;margin-top:9px;line-height:1.45;font-style:italic}
+.vuln-result{flex:1;display:flex;flex-direction:column;min-height:0}
+.vuln-placeholder{flex:1;display:flex;align-items:center;text-align:center;color:#7d8590;font-size:18px;border:2px dashed #30363d;border-radius:10px;padding:22px;line-height:1.55;min-height:70px}
+.vuln-placeholder span{display:block;width:100%}
+.vuln-placeholder b{color:#c9d1d9}
 </style>
 </head>
 <body>
@@ -308,8 +364,8 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
             <circle cx="288" cy="118" r="7" fill="#58a6ff" opacity="0.55"/>
             <circle cx="202" cy="118" r="8" fill="#58a6ff" opacity="0.6"/>
             <!-- Labels -->
-            <text x="78" y="158" text-anchor="middle" fill="#f0a500" font-size="10" font-family="system-ui,sans-serif" font-weight="600">Team A</text>
-            <text x="242" y="158" text-anchor="middle" fill="#58a6ff" font-size="10" font-family="system-ui,sans-serif" font-weight="600">Team B</text>
+            <text x="78" y="158" text-anchor="middle" fill="#f0a500" font-size="16" font-family="system-ui,sans-serif" font-weight="600">Team A</text>
+            <text x="242" y="158" text-anchor="middle" fill="#58a6ff" font-size="16" font-family="system-ui,sans-serif" font-weight="600">Team B</text>
           </svg>
           <div class="land-preview-stats">
             <div class="land-prev-row"><span>Composite dominance</span><span>Team A 67% · Team B 33%</span></div>
@@ -350,11 +406,80 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
           <div class="land-q-item">Does more possession mean better control?</div>
           <div class="land-q-item">Does more completed passing lead to winning?</div>
           <div class="land-q-item">What do successful low-possession teams look like?</div>
-          <div class="land-q-item">How did passing patterns change from 2018 to 2022?</div>
+          <div class="land-q-item">Do quarterfinalists have a distinct passing profile — in both 2018 and 2022? <span class="land-q-tag">exploratory</span></div>
         </div>
       </div>
     </div>
 
+  </div>
+</div>
+<!-- ═══════════════════════════════════════════════════ -->
+
+<!-- ═══════════════════ KEY FINDINGS PAGE ═══════════════════ -->
+<div id="findings-page">
+  <div class="fp-inner">
+    <div class="fp-header">
+      <div class="fp-title-col">
+        <div class="fp-eyebrow">Project Summary</div>
+        <h1 class="fp-title">Key Findings</h1>
+        <p class="fp-story">More possession created attacking volume — but not consistently better control or better match outcomes.</p>
+        <p class="fp-sub">Answers to the four questions this project was designed to investigate, grounded in match-level data, statistical analysis, and the underlying notebooks.</p>
+      </div>
+      <button class="fp-close" onclick="closeFindingsPage()">← Back to Dashboard</button>
+    </div>
+    <div class="fp-grid">
+      <div class="fp-card">
+        <div class="fp-q">Does higher passing volume translate to greater match control? <span class="fp-badge ok">Supported</span></div>
+        <div class="fp-source">Source: notebooks 04, 15</div>
+        <div class="fp-answer">Finding: No — quarterfinalists generated more attacking volume, not more efficient output, and in most matches the team that passed the most wasn't the team that passed the best.</div>
+        <div class="fp-stats">
+          <div class="fp-stat"><div class="fp-stat-val pos">+24%</div><div class="fp-stat-label">Passes, QF vs. non-QF</div></div>
+          <div class="fp-stat"><div class="fp-stat-val neg">−6%</div><div class="fp-stat-label">Entries / 100 passes</div></div>
+          <div class="fp-stat"><div class="fp-stat-val">57.8%</div><div class="fp-stat-label">Volume ≠ quality leader</div></div>
+        </div>
+        <div class="fp-note">Quality score = progressive passes, final-third entries &amp; key passes per 100 passes, plus network density. Mismatched leaders in 74 of 128 team-comparable matches.</div>
+        <div class="fp-meaning">Volume creates more attacking actions — it doesn't guarantee they're used efficiently.</div>
+        <button class="fp-explore" onclick="exploreFinding('metrics')">Explore Passing Metrics →</button>
+      </div>
+      <div class="fp-card">
+        <div class="fp-q">Are teams that complete more passes more likely to win? <span class="fp-badge no">Not Supported</span></div>
+        <div class="fp-source">Source: notebook 15</div>
+        <div class="fp-answer">Finding: Passing volume alone did not predict match success — the higher-passing team won only 52% of decided matches.</div>
+        <div class="fp-stats">
+          <div class="fp-stat"><div class="fp-stat-val">52/100</div><div class="fp-stat-label">Higher-passing team won</div></div>
+          <div class="fp-stat"><div class="fp-stat-val">48/100</div><div class="fp-stat-label">Lower-passing team won</div></div>
+        </div>
+        <div class="fp-note">Decided matches only — 100 of the 128 total matches had a winner in regulation; 28 draws excluded.</div>
+        <div class="fp-meaning">How possession is used appears more important than how much a team passes.</div>
+        <button class="fp-explore" onclick="exploreFinding('explore')">Explore Match Outcomes →</button>
+      </div>
+      <div class="fp-card">
+        <div class="fp-q">What distinguishes successful low-possession teams? <span class="fp-badge ok">Supported</span></div>
+        <div class="fp-source">Source: notebook 15</div>
+        <div class="fp-answer">Finding: Low-possession teams that won leaned on active, last-line defending — not on winning the ball back in midfield.</div>
+        <div class="fp-stats">
+          <div class="fp-stat"><div class="fp-stat-val pos">+32.1%</div><div class="fp-stat-label">Clearances</div></div>
+          <div class="fp-stat"><div class="fp-stat-val pos">+19.9%</div><div class="fp-stat-label">Blocks</div></div>
+          <div class="fp-stat"><div class="fp-stat-val pos">+17.8%</div><div class="fp-stat-label">Tackles</div></div>
+        </div>
+        <div class="fp-note">Low possession = completed fewer passes than the opponent that match (n=48 winners, 52 losers; per defender). Winners also recorded −11.9% interceptions and −8.9% recoveries.</div>
+        <div class="fp-meaning">Winning with less of the ball means defending the box repeatedly, not winning it back cleanly.</div>
+        <button class="fp-explore" onclick="exploreFinding('defense')">Explore Defensive Analysis →</button>
+      </div>
+      <div class="fp-card">
+        <div class="fp-q">Do quarterfinalists show a consistent passing profile across 2018 and 2022? <span class="fp-badge mixed">Mixed Evidence</span></div>
+        <div class="fp-source">Source: notebooks 05, 13, 14</div>
+        <div class="fp-answer">Finding: The quarterfinalist profile was substantially stronger in 2022 than 2018, limiting evidence of a stable cross-tournament pattern.</div>
+        <div class="fp-stats">
+          <div class="fp-stat"><div class="fp-stat-val pos">3/8</div><div class="fp-stat-label">2022 significant (FDR)</div></div>
+          <div class="fp-stat"><div class="fp-stat-val neg">0/8</div><div class="fp-stat-label">2018 significant</div></div>
+          <div class="fp-stat"><div class="fp-stat-val">6/8</div><div class="fp-stat-label">Same direction, both years</div></div>
+        </div>
+        <div class="fp-note">2022: completed passes, connections/100 passes &amp; passes/connection separated quarterfinalists (n=8 QF vs. 24 non-QF). Only unique passing pairs showed a meaningful effect in both years.</div>
+        <div class="fp-meaning">Some structural tendencies persisted, but the evidence doesn't support a robust tournament-independent signature.</div>
+        <button class="fp-explore" onclick="exploreFinding('explore')">Compare 2018 vs. 2022 →</button>
+      </div>
+    </div>
   </div>
 </div>
 <!-- ═══════════════════════════════════════════════════ -->
@@ -366,6 +491,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
       <button class="ttb" id="btn18" onclick="switchTournament(2018)">2018</button>
     </div>
   </div>
+  <button id="kfBtn" onclick="openFindingsPage()">Key Findings</button>
   <button id="defBtn" onclick="toggleDefinitions()">Definitions</button>
   <div id="def-panel">
     <div><b>Dom. wins</b> — the team that completed more raw passes also won the match.</div>
@@ -380,6 +506,7 @@ body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFo
   </div>
   <div id="match-list"></div>
 </div>
+<button id="sidebar-toggle" onclick="toggleSidebar()" title="Collapse sidebar">‹</button>
 
 <div id="main">
   <div id="topbar">
@@ -789,7 +916,7 @@ function renderDefenseTab(m,ins){
     const bench=CONTEXT.benchmarks.low_poss_winners;
     html+=`<div class="rc-bench">Winning underdogs averaged <b>${bench.clearances||0}</b> clearances and <b>${bench.blocks||0}</b> blocks per defender across the dataset.</div></div>`;
   }
-  html+='<div class="def-cols" style="height:calc(100% - '+(ins.low_poss_winner?'160px':'0px')+')">';
+  html+='<div class="def-cols">';
   ['home','away'].forEach(side=>{
     const team=side==='home'?m.home_team:m.away_team;
     const d=ins.defensive[side];
@@ -840,8 +967,8 @@ function renderSimilar(m,ins){
     .sort((a,b)=>a.d-b.d).slice(0,4);
   el.innerHTML=sim.map(({m:x,ins:xi})=>
     `<button class="sim-btn ${outcomeClass(xi)}" data-mid="${x.match_id}">`+
-    `<div style="font-weight:700;font-size:17px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
-    `<div style="font-size:13px;color:#7d8590;margin-top:3px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
+    `<div style="font-weight:700;font-size:18px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
+    `<div style="font-size:15px;color:#7d8590;margin-top:4px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
     `</button>`
   ).join('');
   el.querySelectorAll('.sim-btn').forEach(b=>{
@@ -1060,6 +1187,74 @@ function toggleDefinitions(){
   btn.classList.toggle('on',!open);
 }
 
+function sizeFindingsCards(){
+  document.querySelectorAll('.fp-card').forEach(card=>{ card.style.fontSize=''; });
+  if(window.innerWidth<=1100) return;
+  const cards=[...document.querySelectorAll('.fp-card')];
+  const fits=(size)=>{
+    cards.forEach(c=>{ c.style.fontSize=size+'px'; });
+    return cards.every(c=>c.scrollHeight<=c.clientHeight+0.5);
+  };
+  let lo=6, hi=26;
+  if(!fits(lo)){ cards.forEach(c=>{ c.style.fontSize=lo+'px'; }); return; }
+  for(let i=0;i<14;i++){
+    const mid=(lo+hi)/2;
+    if(fits(mid)) lo=mid; else hi=mid;
+  }
+  cards.forEach(c=>{ c.style.fontSize=lo+'px'; });
+}
+function sizeFindingsGrid(){
+  const grid=document.querySelector('.fp-grid');
+  const inner=document.querySelector('.fp-inner');
+  const header=document.querySelector('.fp-header');
+  if(!grid||!inner) return;
+  if(window.innerWidth<=1100){ grid.style.gridTemplateRows=''; sizeFindingsCards(); return; }
+  const rowGap=parseFloat(getComputedStyle(grid).rowGap)||0;
+  const cs=getComputedStyle(inner);
+  const padV=(parseFloat(cs.paddingTop)||0)+(parseFloat(cs.paddingBottom)||0);
+  const innerGap=parseFloat(cs.rowGap)||parseFloat(cs.gap)||0;
+  const headerH=header?header.offsetHeight:0;
+  const h=inner.clientHeight-padV-headerH-innerGap;
+  if(h<=0) return;
+  const rowH=(h-rowGap)/2;
+  grid.style.gridTemplateRows=rowH+'px '+rowH+'px';
+  sizeFindingsCards();
+}
+function openFindingsPage(){
+  document.getElementById('findings-page').style.display='flex';
+  sizeFindingsGrid();
+  setTimeout(sizeFindingsGrid,60);
+}
+function closeFindingsPage(){
+  document.getElementById('findings-page').style.display='none';
+}
+window.addEventListener('resize',()=>{
+  if(document.getElementById('findings-page').style.display==='flex') sizeFindingsGrid();
+});
+
+function exploreFinding(tabKey){
+  closeFindingsPage();
+  if(!curMatch){
+    const firstItem=document.querySelector('.match-item');
+    if(firstItem){
+      const mid=+firstItem.dataset.mid;
+      const match=CUR.matches.find(x=>x.match_id===mid);
+      if(match) selectMatch(match,firstItem);
+    }
+  }
+  const drawer=document.getElementById('drawer');
+  if(!drawer.classList.contains('open')) toggleDrawerPanel();
+  const tabBtn=document.querySelector('.dt[data-t="'+tabKey+'"]');
+  if(tabBtn) tabBtn.click();
+}
+
+function toggleSidebar(){
+  const collapsed=document.body.classList.toggle('sidebar-collapsed');
+  const btn=document.getElementById('sidebar-toggle');
+  btn.textContent=collapsed?'›':'‹';
+  btn.title=collapsed?'Expand sidebar':'Collapse sidebar';
+}
+
 buildSidebar();
 
 /* ── Landing page toggle ─────────────────────── */
@@ -1141,7 +1336,8 @@ function vulnKey(matchId,team){return `${matchId}_${team}`;}
 function getVulnInfo(matchId,team){return (typeof VULN_DATA!=='undefined'&&VULN_DATA[vulnKey(matchId,team)])||null;}
 
 function renderVulnerabilityTab(m,ins){
-  let html=`<div class="vuln-explainer">
+  let html='<div class="vuln-wrap">';
+  html+=`<div class="vuln-explainer">
     <div class="vuln-explainer-title">What is the "Most Critical Player"?</div>
     <p>I build the team's passing network, where players are nodes and completed passes are connections, and calculate its <b>network efficiency</b>, a graph theory measure of how efficiently players are connected through passing paths.</p>
     <p>Then, one at a time, I remove each eligible player from the network, including their node and every pass connection they were involved in, and recalculate the network efficiency. The percentage drop from the original network becomes that player's <b>"damage" score</b>.</p>
@@ -1164,6 +1360,7 @@ function renderVulnerabilityTab(m,ins){
         html+=`<div class="vuln-rank-contrast">Structural-damage rank <b>#1</b> \u00b7 Pass involvement <b>#${info.pass_involvement_rank}</b> \u00b7 Betweenness <b>${btRank}</b></div>`;
       }
       html+=`<button class="vuln-btn ${removed?'restore':'remove'}" id="vuln-btn-${side}">${removed?'Restore Original Network':'Remove Critical Player'}</button>`;
+      html+='<div class="vuln-result">';
       if(removed){
         html+=`<table class="vuln-table"><tr><th></th><th>Original</th><th>Without</th><th>Change</th></tr>`+
           `<tr><td>Network efficiency</td><td>${info.original_efficiency.toFixed(3)}</td><td>${info.removed_efficiency.toFixed(3)}</td><td class="vd">-${(info.efficiency_damage*100).toFixed(1)}%</td></tr>`+
@@ -1171,10 +1368,14 @@ function renderVulnerabilityTab(m,ins){
           `<tr><td>Progressive-passing capacity</td><td>${info.original_progressive}</td><td>${info.removed_progressive}</td><td class="vd">-${(info.progressive_capacity_damage*100).toFixed(1)}%</td></tr>`+
           `</table>`+
           `<div class="vuln-note">This simulation removes the player's observed passing connections to show how dependent the recorded network was on their structural role. It does not predict how the team would tactically reorganize without them.</div>`;
+      } else {
+        html+=`<div class="vuln-placeholder"><span>Click <b>"Remove Critical Player"</b> to see the before/after impact on ${sn(team)}'s passing network — efficiency, connections, and progressive-passing capacity.</span></div>`;
       }
+      html+='</div>';
     }
     html+='</div>';
   });
+  html+='</div>';
   html+='</div>';
   setTimeout(()=>{
     ['home','away'].forEach(side=>{
