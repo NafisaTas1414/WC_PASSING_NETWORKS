@@ -148,8 +148,10 @@ body.sidebar-collapsed #sidebar{width:0;border-right:none}
 #story-insight b{color:#c9d1d9}
 #drawer{position:absolute;bottom:0;left:0;right:0;height:0;overflow:hidden;transition:height .3s ease;background:#0d1117;border-top:1px solid #30363d;z-index:10}
 #drawer.open{height:100%}
+#drawer.open.half{height:44%}
+body.graph-focus #topbar,body.graph-focus #match-takeaway,body.graph-focus #story-bar{display:none!important}
 #drawer-tabs{display:flex;gap:0;border-bottom:1px solid #21262d;align-items:center}
-.dt{padding:9px 16px;background:transparent;border:none;color:#7d8590;font-size:14px;font-weight:700;cursor:pointer;border-bottom:2px solid transparent}
+.dt{padding:11px 18px;background:transparent;border:none;color:#7d8590;font-size:17px;font-weight:700;cursor:pointer;border-bottom:2px solid transparent}
 .dt.on{color:#f0a500;border-bottom-color:#f0a500}
 .dt:hover:not(.on){color:#c9d1d9}
 #drawer-close{margin-left:auto;padding:4px 10px;background:transparent;border:none;color:#7d8590;font-size:16px;cursor:pointer;line-height:1}
@@ -171,23 +173,23 @@ body.sidebar-collapsed #sidebar{width:0;border-right:none}
 .mb-fill.away{background:linear-gradient(90deg,#a06b00,#f0a500)}
 .mb-val{font-size:22px;font-weight:800;color:#e6edf3;text-align:right;letter-spacing:-.3px}
 .mb-lead{font-size:15px;font-weight:700;color:#3fb950;padding-left:2px;letter-spacing:.2px}
-.resistance-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;margin-bottom:10px}
-.rc-title{font-size:19px;font-weight:700;color:#58a6ff;margin-bottom:9px}
-.rc-grid{display:flex;gap:10px;flex-wrap:wrap}
-.rc-pill{text-align:center;min-width:104px;background:#0d1117;border-radius:10px;padding:16px 18px;border:1px solid #21262d}
-.rc-val{font-size:24px;font-weight:800;color:#e6edf3;line-height:1}
-.rc-lbl{font-size:13px;color:#7d8590;text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
-.rc-bench{font-size:13.5px;color:#7d8590;margin-top:9px;line-height:1.4;border-top:1px solid #21262d;padding-top:7px}
-.def-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.resistance-card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:20px 26px;margin-bottom:18px}
+.rc-title{font-size:26px;font-weight:700;color:#58a6ff;margin-bottom:16px}
+.rc-grid{display:flex;gap:16px;flex-wrap:wrap}
+.rc-pill{text-align:center;min-width:140px;background:#0d1117;border-radius:10px;padding:22px 26px;border:1px solid #21262d}
+.rc-val{font-size:34px;font-weight:800;color:#e6edf3;line-height:1}
+.rc-lbl{font-size:16px;color:#7d8590;text-transform:uppercase;letter-spacing:.5px;margin-top:6px}
+.rc-bench{font-size:16px;color:#7d8590;margin-top:14px;line-height:1.4;border-top:1px solid #21262d;padding-top:10px}
+.def-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .def-col{display:flex;flex-direction:column}
-.def-col-title{font-weight:800;color:#f0a500;margin-bottom:9px;font-size:19px;border-bottom:2px solid #21262d;padding-bottom:6px;flex-shrink:0}
-.def-player{padding:10px 0;border-bottom:1px solid #21262d}
-.def-player b{font-size:18px;color:#e6edf3}
-.def-pos{font-size:13.5px;color:#7d8590;margin-left:7px;font-weight:400}
-.def-stats{display:flex;gap:6px;margin-top:7px;flex-wrap:wrap}
-.def-stat-chip{background:#21262d;border-radius:6px;padding:5px 11px;font-size:14.5px;color:#c9d1d9;font-weight:700}
-.def-totals{font-size:15px;color:#58a6ff;margin-top:9px;font-weight:700;flex-shrink:0}
-.def-empty{color:#7d8590;font-size:15px;padding:9px 0}
+.def-col-title{font-weight:800;color:#f0a500;margin-bottom:14px;font-size:24px;border-bottom:2px solid #21262d;padding-bottom:10px;flex-shrink:0}
+.def-player{padding:16px 0;border-bottom:1px solid #21262d}
+.def-player b{font-size:22px;color:#e6edf3}
+.def-pos{font-size:16px;color:#7d8590;margin-left:7px;font-weight:400}
+.def-stats{display:flex;gap:9px;margin-top:10px;flex-wrap:wrap}
+.def-stat-chip{background:#21262d;border-radius:6px;padding:8px 15px;font-size:17px;color:#c9d1d9;font-weight:700}
+.def-totals{font-size:18px;color:#58a6ff;margin-top:14px;font-weight:700;flex-shrink:0}
+.def-empty{color:#7d8590;font-size:17px;padding:9px 0}
 .ctx-chip{margin-top:22px;padding:16px 20px;background:#161b22;border-radius:8px;color:#8b949e;font-size:17px;border-left:5px solid #f0a500;line-height:1.4}
 .scatter-desc{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px 20px;font-size:17px;color:#8b949e;line-height:1.45;flex-shrink:0}
 .ctx-chip-explore{font-size:16px;padding:14px 18px;margin-top:0}
@@ -288,31 +290,31 @@ body.sidebar-collapsed #sidebar{width:0;border-right:none}
 
 
 .vuln-wrap{display:flex;flex-direction:column;height:100%}
-.vuln-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;flex:1;min-height:0}
-.vuln-col{display:flex;flex-direction:column;gap:14px;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px 28px;min-height:0}
-.vuln-col .def-col-title{font-size:26px;margin-bottom:0;border-bottom:none;padding-bottom:0}
-.vuln-explainer{font-size:17px;color:#c9d1d9;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px 24px;margin-bottom:16px;line-height:1.5;flex-shrink:0}
+.vuln-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;flex:1;min-height:0}
+.vuln-col{display:flex;flex-direction:column;gap:8px;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:14px 16px;min-height:0}
+.vuln-col .def-col-title{font-size:18px;margin-bottom:0;border-bottom:none;padding-bottom:0}
+.vuln-explainer{font-size:13px;color:#c9d1d9;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:12px 14px;margin-bottom:10px;line-height:1.4;flex-shrink:0}
 .vuln-explainer b{color:#f0a500}
-.vuln-explainer-title{font-size:21px;font-weight:700;color:#f0a500;margin-bottom:8px}
-.vuln-explainer p{margin-bottom:7px}
+.vuln-explainer-title{font-size:15px;font-weight:700;color:#f0a500;margin-bottom:5px}
+.vuln-explainer p{margin-bottom:4px}
 .vuln-explainer p:last-child{margin-bottom:0}
-.vuln-head{font-size:26px;font-weight:700;color:#c9d1d9;margin-bottom:0;display:flex;align-items:center;gap:10px}
-.vuln-icon{font-size:28px}
-.vuln-rank-contrast{font-size:17px;color:#8b949e;background:#0d1117;border-left:4px solid #f0a500;padding:14px 18px;border-radius:6px;margin-bottom:0;line-height:1.5}
-.vuln-btn{width:100%;padding:15px 0;border-radius:8px;font-size:20px;font-weight:700;cursor:pointer;border:1px solid;transition:background .12s}
+.vuln-head{font-size:18px;font-weight:700;color:#c9d1d9;margin-bottom:0;display:flex;align-items:center;gap:6px}
+.vuln-icon{font-size:18px}
+.vuln-rank-contrast{font-size:13px;color:#8b949e;background:#0d1117;border-left:4px solid #f0a500;padding:8px 10px;border-radius:6px;margin-bottom:0;line-height:1.4}
+.vuln-btn{width:100%;padding:9px 0;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;border:1px solid;transition:background .12s}
 .vuln-btn.remove{background:rgba(248,81,73,0.12);border-color:#f85149;color:#f85149}
 .vuln-btn.remove:hover{background:rgba(248,81,73,0.22)}
 .vuln-btn.restore{background:rgba(63,185,80,0.12);border-color:#3fb950;color:#3fb950}
 .vuln-btn.restore:hover{background:rgba(63,185,80,0.22)}
-.vuln-table{width:100%;border-collapse:collapse;margin-top:0;font-size:18px}
-.vuln-table th{text-align:right;color:#7d8590;font-weight:600;padding:11px 13px;border-bottom:1px solid #21262d}
+.vuln-table{width:100%;border-collapse:collapse;margin-top:0;font-size:13px}
+.vuln-table th{text-align:right;color:#7d8590;font-weight:600;padding:6px 8px;border-bottom:1px solid #21262d}
 .vuln-table th:first-child{text-align:left}
-.vuln-table td{text-align:right;color:#c9d1d9;padding:11px 13px;border-bottom:1px solid #161b22}
+.vuln-table td{text-align:right;color:#c9d1d9;padding:6px 8px;border-bottom:1px solid #161b22}
 .vuln-table td:first-child{text-align:left;color:#8b949e}
 .vuln-table td.vd{color:#f85149;font-weight:700}
-.vuln-note{font-size:15px;color:#7d8590;margin-top:9px;line-height:1.45;font-style:italic}
+.vuln-note{font-size:12px;color:#7d8590;margin-top:6px;line-height:1.4;font-style:italic}
 .vuln-result{flex:1;display:flex;flex-direction:column;min-height:0}
-.vuln-placeholder{flex:1;display:flex;align-items:center;text-align:center;color:#7d8590;font-size:18px;border:2px dashed #30363d;border-radius:10px;padding:22px;line-height:1.55;min-height:70px}
+.vuln-placeholder{flex:1;display:flex;align-items:center;text-align:center;color:#7d8590;font-size:13px;border:2px dashed #30363d;border-radius:10px;padding:12px;line-height:1.5;min-height:40px}
 .vuln-placeholder span{display:block;width:100%}
 .vuln-placeholder b{color:#c9d1d9}
 </style>
@@ -758,10 +760,25 @@ document.getElementById('lblBtn').addEventListener('click',function(){
   allLbls=!allLbls; this.textContent=allLbls?'Top 3 players only':'Show all players';
   this.classList.toggle('on',allLbls); if(curMatch) renderBoth(curMatch);
 });
+function updateDrawerMode(){
+  const d=document.getElementById('drawer');
+  const focus=d.classList.contains('open')&&drawerTab==='vulnerability';
+  d.classList.toggle('half',focus);
+  document.body.classList.toggle('graph-focus',focus);
+  zoomStates['sv-home']=null; zoomStates['sv-away']=null;
+  // Panel dimensions only settle after the class toggle above has been
+  // painted (topbar/story-bar removal + drawer resize) — measuring
+  // clientWidth/clientHeight synchronously here can still catch the
+  // pre-toggle box on some browsers, so defer one frame.
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{ if(curMatch) renderBoth(curMatch); });
+  });
+}
 document.querySelectorAll('.dt').forEach(b=>{
   b.addEventListener('click',()=>{
     document.querySelectorAll('.dt').forEach(x=>x.classList.remove('on'));
     b.classList.add('on'); drawerTab=b.dataset.t;
+    updateDrawerMode();
     if(curMatch) renderDrawer(curMatch);
   });
 });
@@ -772,6 +789,7 @@ function toggleDrawerPanel(){
   const isOpen=d.classList.contains('open');
   d.classList.toggle('open',!isOpen);
   dh.classList.toggle('open',!isOpen);
+  updateDrawerMode();
   // Hide the pitch-filter bar while the drawer is open — it's irrelevant to the
   // drawer tabs (Metrics/Defense/Explore/Remove Critical Player) and reclaiming
   // its height lets #panels (and the 100%-of-panels drawer) grow enough to fit
@@ -1076,8 +1094,19 @@ function renderNet(svgId,matchId,team,removedPlayer){
   if(!zoomStates[svgId]) zoomStates[svgId]={vx:0,vy:0,vw:W,vh:H,bW:W,bH:H};
   const _vz=zoomStates[svgId]; svg.setAttribute('viewBox',`${_vz.vx} ${_vz.vy} ${_vz.vw} ${_vz.vh}`);
   initPan(svgId);
-  const P=20, pw=W-P*2, ph=H-P*2;
-  const tx=x=>P+(x/120)*pw, ty=y=>P+(y/80)*ph;
+  // The drawer overlays the bottom of this panel (position:absolute) without
+  // shrinking it, so svg.clientHeight still reports the full panel height
+  // even though that bottom slice is physically hidden underneath the open
+  // drawer. Keep the viewBox at the true physical size (no distortion) but
+  // fit/center the pitch only within the portion the drawer doesn't cover.
+  // (Computed from the known #drawer.open.half fraction rather than measured
+  // via offsetHeight, since the drawer's height is still mid-transition —
+  // animating toward that value — when this runs right after the tab switch.)
+  const coveredH=document.body.classList.contains('graph-focus')?H*0.44:0;
+  const P=20, avW=W-P*2, avH=H-coveredH-P*2;
+  const pscale=Math.min(avW/120,avH/80), pw=120*pscale, ph=80*pscale;
+  const ox=P+(avW-pw)/2, oy=P+(avH-ph)/2;
+  const tx=x=>ox+x*pscale, ty=y=>oy+y*pscale;
   const NS='http://www.w3.org/2000/svg';
   const mk=(tag,attrs,txt)=>{
     const e=document.createElementNS(NS,tag);
