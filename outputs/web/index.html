@@ -766,13 +766,16 @@ function updateDrawerMode(){
   d.classList.toggle('half',focus);
   document.body.classList.toggle('graph-focus',focus);
   zoomStates['sv-home']=null; zoomStates['sv-away']=null;
-  // Panel dimensions only settle after the class toggle above has been
-  // painted (topbar/story-bar removal + drawer resize) — measuring
-  // clientWidth/clientHeight synchronously here can still catch the
-  // pre-toggle box on some browsers, so defer one frame.
-  requestAnimationFrame(()=>{
-    requestAnimationFrame(()=>{ if(curMatch) renderBoth(curMatch); });
+  // renderNet() measures the drawer's actual offsetHeight to know how much
+  // of the graph panel it covers, but #drawer's height animates over .3s
+  // (see its CSS transition) — reading offsetHeight before that finishes
+  // catches a mid-animation value and mis-sizes the pitch. Wait for the
+  // transition to end (with a timeout fallback in case it doesn't fire).
+  const rerender=()=>{ if(curMatch) renderBoth(curMatch); };
+  d.addEventListener('transitionend',function h(e){
+    if(e.propertyName==='height'){ d.removeEventListener('transitionend',h); rerender(); }
   });
+  setTimeout(rerender,320);
 }
 document.querySelectorAll('.dt').forEach(b=>{
   b.addEventListener('click',()=>{
@@ -1099,10 +1102,14 @@ function renderNet(svgId,matchId,team,removedPlayer){
   // even though that bottom slice is physically hidden underneath the open
   // drawer. Keep the viewBox at the true physical size (no distortion) but
   // fit/center the pitch only within the portion the drawer doesn't cover.
-  // (Computed from the known #drawer.open.half fraction rather than measured
-  // via offsetHeight, since the drawer's height is still mid-transition —
-  // animating toward that value — when this runs right after the tab switch.)
-  const coveredH=document.body.classList.contains('graph-focus')?H*0.44:0;
+  // Measured directly off the drawer (not derived as a fraction of H) since
+  // the drawer's CSS height is a percentage of #panels, not of this svg —
+  // the svg is shorter than #panels by the stat-row height above it, so any
+  // fraction-of-H formula under-counts the covered area. updateDrawerMode()
+  // waits for the drawer's transition to finish before triggering this
+  // render, so offsetHeight here reflects its final size, not a mid-animation one.
+  const drawerEl=document.getElementById('drawer');
+  const coveredH=(document.body.classList.contains('graph-focus')&&drawerEl)?drawerEl.offsetHeight:0;
   const P=20, avW=W-P*2, avH=H-coveredH-P*2;
   const pscale=Math.min(avW/120,avH/80), pw=120*pscale, ph=80*pscale;
   const ox=P+(avW-pw)/2, oy=P+(avH-ph)/2;
