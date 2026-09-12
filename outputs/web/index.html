@@ -984,8 +984,8 @@ function renderSimilar(m,ins){
     .sort((a,b)=>a.d-b.d).slice(0,4);
   el.innerHTML=sim.map(({m:x,ins:xi})=>
     `<button class="sim-btn ${outcomeClass(xi)}" data-mid="${x.match_id}">`+
-    `<div style="font-weight:700;font-size:18px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
-    `<div style="font-size:15px;color:#7d8590;margin-top:4px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
+    `<div style="font-weight:700;font-size:11px;color:#e6edf3">${x.home_team} <span style="color:#7d8590">${x.home_score}–${x.away_score}</span> ${x.away_team}${xi.failed_dominance?' ⚡':''}</div>`+
+    `<div style="font-size:9px;color:#7d8590;margin-top:4px">Dominance ${xi.dominance_pct}% · ${xi.failed_dominance?'Failed dominance':xi.dominant_won?'Dominant team won':'Draw'}</div>`+
     `</button>`
   ).join('');
   el.querySelectorAll('.sim-btn').forEach(b=>{
@@ -1021,15 +1021,15 @@ function renderScatter(highlightMid){
     svg+=`<circle cx="${tx(x)}" cy="${ty(y)}" r="${r}" fill="${col}" stroke="#fff" stroke-width="${sw}" style="cursor:pointer" data-mid="${m.match_id}">`+
       `<title>${m.home_team} vs ${m.away_team} (${x}% / ${y>0?'+':''}${y} gd)</title></circle>`;
   });
-  svg+=`<text x="${P}" y="${H-9}" fill="#7d8590" font-size="13">← less possession dominance</text>`;
-  svg+=`<text x="${W-P}" y="${H-9}" fill="#7d8590" font-size="13" text-anchor="end">more →</text>`;
-  svg+=`<text x="${P}" y="${17}" fill="#7d8590" font-size="13">goal diff (home)</text>`;
+  svg+=`<text x="${P}" y="${H-9}" fill="#7d8590" font-size="9">← less possession dominance</text>`;
+  svg+=`<text x="${W-P}" y="${H-9}" fill="#7d8590" font-size="9" text-anchor="end">more →</text>`;
+  svg+=`<text x="${P}" y="${13}" fill="#7d8590" font-size="9">goal diff (home)</text>`;
   const leg=[['#3fb950','Dominant team won'],['#f85149','Dominant team lost (upset)'],['#d29922','Draw'],['#58a6ff','Split dominance']];
   const ly0=P+20;
   leg.forEach(([col,label],i)=>{
     const y=ly0+i*17;
     svg+=`<circle cx="${P+5}" cy="${y}" r="5" fill="${col}"/>`;
-    svg+=`<text x="${P+13}" y="${y+4}" fill="#c9d1d9" font-size="11.5">${label}</text>`;
+    svg+=`<text x="${P+13}" y="${y+4}" fill="#c9d1d9" font-size="8.5">${label}</text>`;
   });
   svg+=`</svg>`;
   host.innerHTML=svg;
